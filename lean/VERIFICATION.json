@@ -1,11 +1,19 @@
 {
   "schema_version": "typed-tmd-lean-verification/v1",
-  "status": "UNVERIFIED",
+  "status": "VERIFIED_ABSTRACT_SEED_BUILD",
   "toolchain": "leanprover/lean4:v4.21.0",
   "mathlib_dependency": false,
-  "build_executed": false,
-  "build_exit_code": null,
-  "build_log": null,
-  "verified_source_sha256": null,
-  "reason": "The authoring environment has no Lean, Lake, or elan executable. A successful lake build of this source on the selected toolchain remains required."
+  "build_executed": true,
+  "build_exit_code": 0,
+  "build_command": "lake build",
+  "build_elapsed_seconds": 0.325263833,
+  "build_log_text": "Build completed successfully.\n",
+  "build_log_sha256": "a30d6eefe7ccec7803482bd446c3d48f7cc46ed86ba99cb839fca134dd7a5a3d",
+  "verified_source_sha256": {
+    "TypedTMDSeed.lean": "35d7e1b0153a083b576b8a7503fd8a8ae90d8c358c2aa352a9d96194a3c17358",
+    "lakefile.toml": "6a62d0eeec9348e859101721ea8365cefa28a475fbeb4a7bc48ad085eb6e48a1",
+    "lean-toolchain": "d24fed434d3b13adfaab57724a0a7f270ea8bf1c818b5ae5cf25cbce24dd685c"
+  },
+  "scope": "Build verifies only the existing abstract Lean seed. No theorem about the new adapter, Python/native execution, IEEE arithmetic or QCD is claimed.",
+  "historical_receipt": "Replaces the original authoring-environment unverified receipt; that historical receipt remains in the private return."
 }

@@ -1,5 +1,5 @@
 {
-  "created_utc": "2026-10-21T01:19:57.619370+00:00",
+  "created_utc": "2026-10-21T01:22:22.982360+00:00",
   "mapping": [
     {
       "public_path": "src/typed_tmd/__init__.py",
@@ -275,7 +275,7 @@
       "public_path": "lean/VERIFICATION.json",
       "transformation": "byte-identical copy",
       "working_path": "lean/VERIFICATION.json",
-      "working_sha256": "3aff7dced59f1d7eefc1b264f390b4004af0d72fb915f5fa92d3b596c23d3d8f"
+      "working_sha256": "c3f2b71352e28f7f189d155c9e5b99e03338f62872d6dc29ae75557355cb6425"
     },
     {
       "public_path": "lean/lake-manifest.json",
@@ -631,6 +631,6 @@
     "Use one process-wide lock across adapter sessions; single-owner numerical paths unchanged.",
     "Allow preselected validation points to execute in separate native processes; frozen observation, parameters, data and tolerances unchanged."
   ],
-  "private_source_commit": "03a58e9489d8abd375444d6e4bfba6cdc34840f3",
+  "private_source_commit": "afbde63479310c8df8d4be77232a7cd7e3bfd4de",
   "scope": "allowlisted publication tree; private working history is not published; hashes identify every copied/generated payload"
 }
