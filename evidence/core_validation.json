@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "private_tests": {
+    "count": 81,
+    "exit_code": 0,
+    "log_sha256": "4fd43449e83143208105b8d08dc20cdf5bfa2a4f9b5df81dacf057de80ce34df"
+  },
+  "public_tests": {
+    "count": 66,
+    "exit_code": 0,
+    "scope": "clean export installed in independent environment; return-bundler tests omitted from publication tree"
+  },
+  "synthetic_closure": {
+    "status": "passed",
+    "checks": 12
+  },
+  "retained_frozen_baseline": {
+    "status": "passed",
+    "files": 45,
+    "scope": "all required retained scientific bytes unchanged"
+  },
+  "retained_extraction_replay": {
+    "status": "passed",
+    "scope": "full retained-input replay executed; original result identities preserved"
+  },
+  "Lean": {
+    "status": "passed",
+    "toolchain": "leanprover/lean4:v4.21.0",
+    "scope": "existing abstract seed only; no new adapter/compiler/physics proof",
+    "build_log_sha256": "a30d6eefe7ccec7803482bd446c3d48f7cc46ed86ba99cb839fca134dd7a5a3d"
+  }
+}

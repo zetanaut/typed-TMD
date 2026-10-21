@@ -1,0 +1,190 @@
+{
+  "backend": "arTeMiDe",
+  "code_commit": "ea0af1a75e21e316c1ac4ece51933988836a6650",
+  "code_url": "https://github.com/VladimirovAlexey/artemide-public.git",
+  "constant_changes": [
+    {
+      "key": [
+        0,
+        "A",
+        2
+      ],
+      "value": 0
+    },
+    {
+      "key": [
+        9,
+        "B",
+        1
+      ],
+      "value": "2.0E-7"
+    },
+    {
+      "key": [
+        9,
+        "B",
+        2
+      ],
+      "value": 32
+    },
+    {
+      "key": [
+        7,
+        "A",
+        1
+      ],
+      "value": "1.0E-6"
+    }
+  ],
+  "constants_sha256": "3bfa81bbb5d3c4534817183753c716a8e9ddff080753a31b7a0d111af53b2a72",
+  "dataprocessor_license": "no explicit license located at pin; fetch only, no source redistribution",
+  "dataset_file": "DataLib/unpolDY/A8-00y04.csv",
+  "dataset_sha256": "6c4ddf373b123d391590e59f85f82f3045b5c2e61e7e6a6cf160c004426a5228",
+  "fixed_parameter_vector": [
+    1.86041,
+    0.029551,
+    0.253434,
+    9.04351,
+    346.999,
+    2.47992,
+    -5.69988,
+    0.0,
+    0.0
+  ],
+  "input_commit": "18967d1c52dabf93e17a640405b548071904cfcc",
+  "input_url": "https://github.com/VladimirovAlexey/artemide-DataProcessor.git",
+  "lhapdf": {
+    "source_bytes": 946776,
+    "source_sha256": "641d5ea0942b79e4447e15e5a33491ff3c7032d71d618119935e14ad27f5e3a5",
+    "source_url": "https://lhapdf.hepforge.org/downloads/?f=LHAPDF-6.5.5.tar.gz",
+    "version": "6.5.5"
+  },
+  "model": "SV19 DY NNLO with central NNPDF31 member 0",
+  "model_selection": [
+    {
+      "destination": "src/Model/TMDR_model.f90",
+      "sha256": "c1926a863ddcba3bb686c8e3ecb48bfbd0eadf25d31415b24d175397807e91b1",
+      "source": "Models/SV19/Model/TMDR_model.f90"
+    },
+    {
+      "destination": "src/Model/TMDs_model.f90",
+      "sha256": "cb2b96e56d50884621db8c9a82c5c298fc8f1040ede7fc65a1981425513ba3c9",
+      "source": "Models/SV19/Model/TMDs_model.f90"
+    },
+    {
+      "destination": "src/Model/lpTMDPDF_model.f90",
+      "sha256": "90691e56b0c42eb2a2756868a0ef0d39d8be0bf1db6a6dcd782d0b8b28ac4f3e",
+      "source": "Models/SV19/Model/lpTMDPDF_model.f90"
+    },
+    {
+      "destination": "src/Model/uTMDFF_model.f90",
+      "sha256": "ae41cf465441f81e5dddf5de39b51fe2361aa352fbf783b373c4b068ffd49cd1",
+      "source": "Models/SV19/Model/uTMDFF_model.f90"
+    },
+    {
+      "destination": "src/Model/uTMDPDF_model.f90",
+      "sha256": "4746daffcf55b77cdc525a26afe943ed8e90cf37954537c5c2201d3f6d378eb6",
+      "source": "Models/SV19/Model/uTMDPDF_model.f90"
+    }
+  ],
+  "native_refinement": {
+    "Q_y_tolerance": "1.0E-7",
+    "minimum_qT_sections": 64
+  },
+  "original_constants": {
+    "path": "Models/SV19/constants-files/DY_nnlo/const-NNPDF31_NNLO",
+    "sha256": "be185ba8086f635d9ef52e84c0c36c2a5e853d05de971a967c926d71d9a907d7"
+  },
+  "parameter_source": {
+    "path": "Models/SV19/Replicas/DY_nnlo/DY_NNPDF31_nnlo.rep",
+    "row": "0 (published mean)",
+    "sha256": "8010c1a9473839c49b449f4e8e9479d358c52f4fb35b90eb6790ea8984148dd5"
+  },
+  "pdf_inputs": [
+    {
+      "bytes": 2381,
+      "distribution": "fetch from official origin; grids excluded from software export",
+      "name": "NNPDF31_nnlo_as_0118_1000.info",
+      "sha256": "f5fc2f70655a00dd426dda9294d5b7a3c617aaec63f84b8ada79637745404fde",
+      "url": "https://lhapdfsets.web.cern.ch/current/NNPDF31_nnlo_as_0118_1000/NNPDF31_nnlo_as_0118_1000.info"
+    },
+    {
+      "bytes": 1257508,
+      "distribution": "fetch from official origin; grids excluded from software export",
+      "name": "NNPDF31_nnlo_as_0118_1000_0000.dat",
+      "sha256": "b367000f810148b25b1b1b65a4b37138d2d27dd4351497b6674283f834bd090d",
+      "url": "https://lhapdfsets.web.cern.ch/current/NNPDF31_nnlo_as_0118_1000/NNPDF31_nnlo_as_0118_1000_0000.dat"
+    }
+  ],
+  "pdf_member": 0,
+  "pdf_set": "NNPDF31_nnlo_as_0118_1000",
+  "refined_constants_sha256": "fcd50d24a4697780fc7846ecc9f720c61759b218111d4a839f3ed8e37a75f87d",
+  "schema": "typed-tmd/external-lock/1",
+  "source_files": {
+    "harpy/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "harpy/artemide.pyf": "6af9658fc1c4013fb2ee240cfcf11b91112a68a3f89a62953a2e23e99d1a8654",
+    "harpy/harpy.f90": "29fa8333314a7814751499d2a200542cec9411013f7cbfb19c5e5c2d1263a442",
+    "harpy/harpy.py": "416e664e9800188e8cb81740c64cbec3cd7e1d7d6e6eb27b16420d96d3ffde2e",
+    "makefile": "ae3a4a5498589cd28ff52f8df97dc20b7d902481f88b5459136550651e0e2274",
+    "src/Code/Grids/TMDGrid-B-2.f90": "822f99a7de5d2a41562e9e96ad3fa3b40806be2baeffc4da2472ce3ad14f481a",
+    "src/Code/Grids/TMDGrid-B-VAR.f90": "db482376567d8015032266be74dca7faa6717971a72fc438e60db59c82027d83",
+    "src/Code/Grids/TMDGrid-B.f90": "a1152a5ab1b4bbe06161d5c2fbe18f463622c37818673831f75de4085aa80814",
+    "src/Code/IO_functions.f90": "835ad333feb35c6291277ca06272748a6196dae4266b256b9886c294a3687b2b",
+    "src/Code/IntegrationRoutines.f90": "ce501a66b4ebca956f8564ca8e6b937dc624712b824de1478c97aee12f7a43a6",
+    "src/Code/SiversTMDPDF/convolutions.f90": "edbc18d0400477a53f009dc2d6d8af75659deeca6205ab761b8298bc59f8ff4f",
+    "src/Code/SiversTMDPDF/modelTest.f90": "50f859d05f68f76a87cbf973b85f6631f8ad3dedae11cc326510172f4dde1b84",
+    "src/Code/TMDF/Ogata.f90": "ccf63249392f08dc646851dad51195c5d53f009eaa4e659412a5fbc99ffbf242",
+    "src/Code/TMDR/type1.f90": "b710728763dc6e10949c34b8c98a7d060739618163323d99c89d5dffeec4bb92",
+    "src/Code/TMDR/type2.f90": "789611e59684f96b6bccb8733237db7cb557dda598e20776b40bd31c8c5a1cbe",
+    "src/Code/TMDR/type3.f90": "96edce58b7caf43c56101db5db7d140d307f7475bd3f3e21913801507224ed07",
+    "src/Code/TMD_AD/AD_atMu.f90": "0c8a2103c488cc6d7a8324005dd2909012ca0e79c533f6fdf62ead2251648d3c",
+    "src/Code/TMD_AD/AD_primary.f90": "353e5ffe1c956d72b9e3c143452dffa09426fe4b94d52c00f8ae9bdc01bd9ba9",
+    "src/Code/TMD_AD/AD_secondary.f90": "9263f74b3a51c561ad528f8b7e7a645e6dfd8d93297e51e3295eb3ad2cef048b",
+    "src/Code/TMD_AD/exactZetaLine.f90": "b8dc5ff6193944042e72b8ecb0bed77da7343e82ff333a5c073577434b693586",
+    "src/Code/TMDs/TMD-calls.f90": "f5697a9d9b61a52fb2355f00e4333adb712a70a85be76bde2fc2f7863a9cba3f",
+    "src/Code/Twist2/Twist2Convolution-VAR.f90": "edbd505ee8c8ef5e8729f703d00d0109d970fc93ded4ea848b8115101e3fdbec",
+    "src/Code/Twist2/Twist2Convolution.f90": "0f3626a9c5119912dc7b00beb163ae5752e89dc58e6f5ea5f7129540e0a8ce7a",
+    "src/Code/Twist3/Twist3Convolution-VAR.f90": "ee1cd436a21c3eb6e33b1f17cc690c4271049cb95934d42ffe7de5a37acf356c",
+    "src/Code/Twist3/Twist3Convolution.f90": "a7240b37e625c1897f7b261f1997274956e1fc737908c60e8bc649107246e1a4",
+    "src/Code/aTMDe_Numerics.f90": "c290ce7d9501f720ad3d4994e5f6b718b38c6d01f4e09f043df5355a3ed3f8e5",
+    "src/Code/aTMDe_setup/const-modification.f90": "dedb32b6120f268c9f07524e97a70998d1777a72af5ab001fc09d1bd666e37cd",
+    "src/Code/lpTMDPDF/coeffFunc.f90": "d38ad0932ca4a653635e8c24d68816836fbedcd3b33348699c10a953b47734e4",
+    "src/Code/lpTMDPDF/convolutions.f90": "043da5a3c5f019cce9ca5a51241cd00f41a6ae32393db1790e6fd0ef01198b4d",
+    "src/Code/lpTMDPDF/modelTest.f90": "4d401463a200c93d5cc52964a4bac8d3ab6fe9402f425fe841ca056e7383803c",
+    "src/Code/uTMDFF/coeffFunc.f90": "74d37e11697860cd86e23d7b4f9d1a13554b703f0d1d29e708adc819b8fd592d",
+    "src/Code/uTMDFF/convolutions.f90": "674883ddfd9b246ff8f81ac554f27e3a99d4ef48782fb002f935827f4f7a9249",
+    "src/Code/uTMDFF/modelTest.f90": "6682e14e33f54389e0e50c876d252e1df3ad7902774684714e05626d739de480",
+    "src/Code/uTMDPDF/coeffFunc.f90": "e1410af0b2fc9da3b1d2c62b9f18fd8e908ba9eee68601e52fbd6d7313d577c0",
+    "src/Code/uTMDPDF/convolutions.f90": "9ca5b9df4610118d77de2cf3ad7d5e382b0ba63c6841c37246c8d39820ebb7ae",
+    "src/Code/uTMDPDF/modelTest.f90": "4d401463a200c93d5cc52964a4bac8d3ab6fe9402f425fe841ca056e7383803c",
+    "src/DYcoeff-func.f90": "33d6e0ca8a1d5582034f15e1bab43fc26c7be52710bd63c419aad582ae70f56b",
+    "src/EWinput.f90": "c506582b94b462fd96f07a28894191991ef72ebc9506c6827557f16133edfe7d",
+    "src/LeptonCutsDY.f90": "b1db0ebd1aca22381f63c15a8227790f4f300e1ee5a53f9c9f6856183bc03598",
+    "src/Model/SiversTMDPDF_model.f90": "8a4136542574cd4027a12bbdcc890aa26f929b2c576deb0d72686fb2250c57c5",
+    "src/Model/TMDR_model.f90": "c1926a863ddcba3bb686c8e3ecb48bfbd0eadf25d31415b24d175397807e91b1",
+    "src/Model/TMDs_model.f90": "cb2b96e56d50884621db8c9a82c5c298fc8f1040ede7fc65a1981425513ba3c9",
+    "src/Model/lpTMDPDF_model.f90": "90691e56b0c42eb2a2756868a0ef0d39d8be0bf1db6a6dcd782d0b8b28ac4f3e",
+    "src/Model/uTMDFF_model.f90": "ae41cf465441f81e5dddf5de39b51fe2361aa352fbf783b373c4b068ffd49cd1",
+    "src/Model/uTMDPDF_model.f90": "4746daffcf55b77cdc525a26afe943ed8e90cf37954537c5c2201d3f6d378eb6",
+    "src/QCDinput.f90": "bbe2eb5bf30ae6b7929b9817a09f607ea0227eeff468f97d38a06964fbe6a3c8",
+    "src/SiversTMDPDF.f90": "8d2f378f61ed507d499966d17d6054862ebeb42435325a8e3b4db60897a62b36",
+    "src/TMDF.f90": "5f2bb04f9e1ddc33434a11ecefd0a4857c020e758e1e378d8d3a5f388ceb59fa",
+    "src/TMDR.f90": "042ee69661607e3906860625e2b11337f7ef142509e88491fc0910129e22ed7c",
+    "src/TMDX_DY.f90": "ab21a234dad85aa19f3e035f5d9edf3868fe38a152db093b63e59c9e3131a2ba",
+    "src/TMDX_SIDIS.f90": "34e804a1f6e680276dcb20dec8e6dadad30804a72347c4ccb7a9d3f85aa24897",
+    "src/TMD_AD.f90": "37c3b24d65fcae47e5933901070339c524e17d2611e4c3a0d280f892e0028021",
+    "src/TMDs.f90": "03c0ad4185fb7665f1fd3a81098d8de239a4c645e76955e55dcb49c065236ea3",
+    "src/TMDs_inKT.f90": "a2c928f96b2ca18e270be98d48d9864bc1fb2fa88373170782ba569e3848ca01",
+    "src/Tables/BesselZero.f90": "a62ec2e989396ecbd5a05298737f48bbd58e2f0252e33b5dde4090cfbf2b90ec",
+    "src/Tables/BesselZero1000.f90": "56ab43986fd8343669e4ac69347ca6f019f85e6569cc798149a83b9518b80862",
+    "src/Tables/BesselZero200.f90": "a62ec2e989396ecbd5a05298737f48bbd58e2f0252e33b5dde4090cfbf2b90ec",
+    "src/Tables/G7K15.f90": "ce1fcbde368f1e5512c2a8c62b0f9330d2488f0257c54c8d53d79aed7016a92a",
+    "src/aTMDe_control.f90": "a3493ea0bd92939c5817367099df9839eebf9fb6d9ad00338a81757dd42276fd",
+    "src/aTMDe_setup.f90": "b8dfc28ac41a731be73f984fc3a18aade9b4f4d4fd232ea8f806f10db620c381",
+    "src/lpTMDPDF.f90": "bc4f9939e5e480662f7d14f77c26ce99110b08f7f19899f363cddf15728ce5d9",
+    "src/uTMDFF.f90": "69c5eca403f9390b5f1f2f21355d8e237f5729de78c42604e30a067ad3a058b3",
+    "src/uTMDPDF.f90": "fe74a7bada1fa0f2a1c12189d361446ec2c904d9f51ad945056c1ca74eb67efc"
+  },
+  "tag": "v2.05",
+  "upstream_license": "CC BY-NC-SA 4.0; external code fetched separately, not relicensed"
+}

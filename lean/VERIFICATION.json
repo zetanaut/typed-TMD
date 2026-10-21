@@ -1,0 +1,11 @@
+{
+  "schema_version": "typed-tmd-lean-verification/v1",
+  "status": "UNVERIFIED",
+  "toolchain": "leanprover/lean4:v4.21.0",
+  "mathlib_dependency": false,
+  "build_executed": false,
+  "build_exit_code": null,
+  "build_log": null,
+  "verified_source_sha256": null,
+  "reason": "The authoring environment has no Lean, Lake, or elan executable. A successful lake build of this source on the selected toolchain remains required."
+}

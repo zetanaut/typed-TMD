@@ -1,0 +1,28 @@
+{
+  "code_hashes": {
+    "scripts/external_campaign_006.py": "e1406271e3d5ef5f53be482e804c871f86f6e8b4d37919fc326e4efbf9c4d99e",
+    "scripts/run_external_006.py": "197749b1be3ec37d437c086d4685641705ffdcab1befe946cc52b347bbd613f9",
+    "src/typed_tmd/artemide_adapter.py": "aa1562fe99a11a58b5ef50000c08301eda36b79d1712deeca74006fcd61f936a",
+    "src/typed_tmd/observation_quadrature.py": "7708ffd99ffc7b453260b7a8e8587746616b3f1fe1a71802c7a968ebc1c43f29",
+    "src/typed_tmd/observations.py": "c54eafa056f835319904ae2ecab0ce71dbff2c3c7ae2509956e95254845ffe35"
+  },
+  "created_utc": "2026-10-20T22:20:58.836450+00:00",
+  "files": {
+    "experiment_plan.json": "83f49d85aa9559c6b522dd5f065d2fe93226a6e58db6d71dd2e26b3218a2fef8",
+    "external.lock.json": "80b8d178306964cc2fbd2bb122acecdfa11362226db9148eb24fefc87993f285",
+    "observation_contract.json": "1ee8937d6f1d6fd414a0b55ca177abea82806922555e51eedcd7b1c56e2518d7"
+  },
+  "pilot_evidence": [
+    {
+      "path": "evidence/pilots/nominal",
+      "summary_sha256": "46660fa8963a06576a04bc4a3e45eab2035aa80a9eaf09509fa199659c018f5a"
+    },
+    {
+      "path": "evidence/pilots/refined",
+      "summary_sha256": "11efad079c930469af0bb7800194da06cfda0e753ea69ab7a031810515297a69"
+    }
+  ],
+  "private_source_commit": "118b746930b92786c642e724d162272a17052187",
+  "prospective_statement": "No injected midpoint prediction or fit has been evaluated before this freeze.",
+  "schema": "typed-tmd/frozen-experiment/1"
+}

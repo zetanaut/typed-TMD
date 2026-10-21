@@ -1,0 +1,18 @@
+{
+  "DOI": null,
+  "authors_and_contact": {
+    "authors": [
+      {
+        "family_names": "Keller",
+        "given_names": "Dustin"
+      }
+    ],
+    "email": null,
+    "project_contact": "https://github.com/zetanaut/typed-TMD/issues"
+  },
+  "license": "MIT",
+  "persistent_archive_status": "deferred_by_author; GitHub release only requested",
+  "publication_receipt": "The GitHub tag/release and its verification asset establish publication; this source file does not predict those remote results.",
+  "repository": "https://github.com/zetanaut/typed-TMD",
+  "status": "reviewed_release_source"
+}

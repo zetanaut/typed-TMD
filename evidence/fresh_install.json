@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "scope": "clean source export installation, 66 analytic/public tests, synthetic closure, saved-array coverage, and full external four-fit campaign",
+  "tested_candidate_manifest_sha256": "522a73d380e5ef5c9901dc9af5b2c2c29b4e8cd1fdd2b4b08bb92c2257813052",
+  "tested_candidate_source_commit": "4e7c409ce4d6e2983c545ce017e079fddea46047",
+  "independent_assets": "Fresh conda environment, official LHAPDF tarball, pinned arTeMiDe and DataProcessor checkouts, and official PDF info/member0 were independently acquired. Development native caches and editable install were not used.",
+  "native_input_lock_sha256": "80b8d178306964cc2fbd2bb122acecdfa11362226db9148eb24fefc87993f285",
+  "native_input_lock_matches_frozen": true,
+  "versions": {
+    "Python": "3.11.17",
+    "NumPy": "1.26.4",
+    "SciPy": "1.14.1",
+    "GNU_Fortran": "16.2.0",
+    "LHAPDF": "6.5.5"
+  },
+  "stages": [
+    {
+      "stage": "install",
+      "exit_code": 0,
+      "elapsed_seconds": 0.7675314169900957
+    },
+    {
+      "stage": "import",
+      "exit_code": 0,
+      "elapsed_seconds": 0.05074812498060055
+    },
+    {
+      "stage": "tests",
+      "exit_code": 0,
+      "elapsed_seconds": 1.1137782910082024
+    },
+    {
+      "stage": "closure",
+      "exit_code": 0,
+      "elapsed_seconds": 0.6329439170076512
+    },
+    {
+      "stage": "coverage",
+      "exit_code": 0,
+      "elapsed_seconds": 0.10982362501090392
+    },
+    {
+      "stage": "campaign",
+      "exit_code": 0,
+      "elapsed_seconds": 342.03767945902655
+    }
+  ],
+  "reproduction_instructions": "docs/INSTALL_EXTERNAL.md",
+  "comparison": "evidence/fresh_replay_comparison.json; exact binary64 for all retained scientific fields excluding elapsed_seconds",
+  "final_release_scope": "This receipt identifies the tested intermediate export. A separate release-validation asset records the final candidate manifest and execution from those exact exported bytes.",
+  "prior_failed_candidate": {
+    "status": "failed",
+    "stage": "closure",
+    "reason": "missing configs/benchmark.json in first public allowlist; included in this passing candidate"
+  }
+}

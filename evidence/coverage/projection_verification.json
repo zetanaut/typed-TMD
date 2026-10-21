@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "comparison": "Exact Python equality of all summaries, checks, per-replica rows and boundary IDs between full verified original inputs and consumed-field projection",
+  "original_archive": {
+    "archive_name": "typed_tmd_return_004_20261011T202838Z.zip",
+    "archive_sha256": "1233ba0375a21dda7a362c901d8118e97aedd946be3ae462210989bcb74bec92",
+    "manifested_files_verified": 427,
+    "input_files": {
+      "coefficient_control.json": {
+        "path": "project/results/local/checkpoint_004_local_01/coefficient_control.json",
+        "bytes": 3846,
+        "sha256": "1a24f36175f7d31df80738e20874e2c39d09f788f6796abaa707f1db2bfb2988"
+      },
+      "data.json": {
+        "path": "project/results/local/checkpoint_004_local_01/data.json",
+        "bytes": 118233,
+        "sha256": "3a7474f862cf90b21bbe26361d2f89a641fc317cb4302c6b885826efb2ee167c"
+      },
+      "frozen_truth.json": {
+        "path": "project/results/local/checkpoint_004_local_01/frozen_truth.json",
+        "bytes": 1152,
+        "sha256": "031edaa3beaabf8a7d4c0c347e1780bd0bc77961efc6ae48d14f05501c6673e7"
+      },
+      "replicas.json": {
+        "path": "project/results/local/checkpoint_004_local_01/replicas.json",
+        "bytes": 4071512,
+        "sha256": "8a45dc266508289d8e186c533c60b2d46cc81ebf52cb75c946cdbfa00dff403c"
+      }
+    }
+  }
+}

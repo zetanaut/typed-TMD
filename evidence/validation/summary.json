@@ -1,0 +1,7 @@
+{
+  "all_required_points_present": true,
+  "isolated_workers": 3,
+  "point_count": 6,
+  "stage": "validate",
+  "status": "passed"
+}

@@ -1,0 +1,491 @@
+{
+  "axes": {
+    "Q": "GeV",
+    "qT": "GeV",
+    "s": "GeV^2",
+    "y": "dimensionless"
+  },
+  "case_id": "SV19-A8-00y04-local-c0",
+  "contract": {
+    "bins": [
+      {
+        "Q": [
+          66.0,
+          116.0
+        ],
+        "cuts": [
+          20.0,
+          20.0,
+          -2.4,
+          2.4
+        ],
+        "include_cuts": true,
+        "name": "A8-00y04.0",
+        "process": [
+          1,
+          1,
+          5
+        ],
+        "qT": [
+          0.0,
+          2.0
+        ],
+        "rapidity_multiplicity": 2.0,
+        "s": 64000000.0,
+        "y": [
+          0.0,
+          0.4
+        ]
+      },
+      {
+        "Q": [
+          66.0,
+          116.0
+        ],
+        "cuts": [
+          20.0,
+          20.0,
+          -2.4,
+          2.4
+        ],
+        "include_cuts": true,
+        "name": "A8-00y04.1",
+        "process": [
+          1,
+          1,
+          5
+        ],
+        "qT": [
+          2.0,
+          4.0
+        ],
+        "rapidity_multiplicity": 2.0,
+        "s": 64000000.0,
+        "y": [
+          0.0,
+          0.4
+        ]
+      },
+      {
+        "Q": [
+          66.0,
+          116.0
+        ],
+        "cuts": [
+          20.0,
+          20.0,
+          -2.4,
+          2.4
+        ],
+        "include_cuts": true,
+        "name": "A8-00y04.2",
+        "process": [
+          1,
+          1,
+          5
+        ],
+        "qT": [
+          4.0,
+          6.0
+        ],
+        "rapidity_multiplicity": 2.0,
+        "s": 64000000.0,
+        "y": [
+          0.0,
+          0.4
+        ]
+      },
+      {
+        "Q": [
+          66.0,
+          116.0
+        ],
+        "cuts": [
+          20.0,
+          20.0,
+          -2.4,
+          2.4
+        ],
+        "include_cuts": true,
+        "name": "A8-00y04.3",
+        "process": [
+          1,
+          1,
+          5
+        ],
+        "qT": [
+          6.0,
+          8.0
+        ],
+        "rapidity_multiplicity": 2.0,
+        "s": 64000000.0,
+        "y": [
+          0.0,
+          0.4
+        ]
+      },
+      {
+        "Q": [
+          66.0,
+          116.0
+        ],
+        "cuts": [
+          20.0,
+          20.0,
+          -2.4,
+          2.4
+        ],
+        "include_cuts": true,
+        "name": "A8-00y04.4",
+        "process": [
+          1,
+          1,
+          5
+        ],
+        "qT": [
+          8.0,
+          10.0
+        ],
+        "rapidity_multiplicity": 2.0,
+        "s": 64000000.0,
+        "y": [
+          0.0,
+          0.4
+        ]
+      },
+      {
+        "Q": [
+          66.0,
+          116.0
+        ],
+        "cuts": [
+          20.0,
+          20.0,
+          -2.4,
+          2.4
+        ],
+        "include_cuts": true,
+        "name": "A8-00y04.5",
+        "process": [
+          1,
+          1,
+          5
+        ],
+        "qT": [
+          10.0,
+          13.0
+        ],
+        "rapidity_multiplicity": 2.0,
+        "s": 64000000.0,
+        "y": [
+          0.0,
+          0.4
+        ]
+      },
+      {
+        "Q": [
+          66.0,
+          116.0
+        ],
+        "cuts": [
+          20.0,
+          20.0,
+          -2.4,
+          2.4
+        ],
+        "include_cuts": true,
+        "name": "A8-00y04.6",
+        "process": [
+          1,
+          1,
+          5
+        ],
+        "qT": [
+          13.0,
+          16.0
+        ],
+        "rapidity_multiplicity": 2.0,
+        "s": 64000000.0,
+        "y": [
+          0.0,
+          0.4
+        ]
+      }
+    ],
+    "measure": "dqT",
+    "physics_identity": "351451bd943d242eff4b91d04575045e6a796c5e01f0d86bac2533ffcdf781bb"
+  },
+  "contract_digest": "ae1377c749c1272f3dd57575569d3acb6e3595007e01022956a8dc876b730584",
+  "independent_scope": "independent observation integration sharing the native physics kernel",
+  "native_integrated": {
+    "kind": "bin_yield",
+    "units": "pb"
+  },
+  "native_point": {
+    "kind": "point_density",
+    "measure": [
+      "dqT2",
+      "dQ2",
+      "dy"
+    ],
+    "units": "pb/GeV^4"
+  },
+  "observation_map": "integrate 4*qT*Q*h over qT,Q,y and native cuts; multiply source rapidity factor 2; divide only by delta-qT",
+  "physics": {
+    "Fourier": "native Bessel kernel and prefactors; no additional 2pi factor in adapter",
+    "PDF": "NNPDF31_nnlo_as_0118_1000",
+    "PDF_member": 0,
+    "coupling": "native LHAPDF alpha_s from pinned central PDF data",
+    "definition": "native arTeMiDe SV19 unpolarized DY TMD with zeta prescription; pinned source fixes regulator/subtraction conventions",
+    "evolution_solution": "native type 3",
+    "exact_x": true,
+    "flavors": "native signed u,d,s,c,b sum",
+    "large_qT_Y_term": false,
+    "order_inventory": {
+      "cusp": 3,
+      "hard": 2,
+      "matching": 2,
+      "noncusp": 2,
+      "rapidity": 2,
+      "zeta_line": 2
+    },
+    "pi_squared_resummation": false,
+    "process": "pp -> gamma*/Z -> lepton pair, including interference",
+    "scales": "native pinned zeta-prescription construction; c1=c2=c3=c4=1",
+    "sqrt_s_GeV": 8000
+  },
+  "requested": {
+    "absolute": true,
+    "kind": "bin_average",
+    "measure": "dqT",
+    "units": "pb/GeV"
+  },
+  "schema": "typed-tmd/external-observation/1",
+  "semantic_source_audit": "docs/EXTERNAL_SV19.md",
+  "source_rows": [
+    {
+      "row": {
+        "Q": [
+          66.0,
+          116.0
+        ],
+        "cuts": [
+          20.0,
+          20.0,
+          -2.4,
+          2.4
+        ],
+        "include_cuts": true,
+        "name": "A8-00y04.0",
+        "process": [
+          1,
+          1,
+          5
+        ],
+        "qT": [
+          0.0,
+          2.0
+        ],
+        "rapidity_multiplicity": 2.0,
+        "s": 64000000.0,
+        "y": [
+          0.0,
+          0.4
+        ]
+      },
+      "source_theory_factor": 1.0
+    },
+    {
+      "row": {
+        "Q": [
+          66.0,
+          116.0
+        ],
+        "cuts": [
+          20.0,
+          20.0,
+          -2.4,
+          2.4
+        ],
+        "include_cuts": true,
+        "name": "A8-00y04.1",
+        "process": [
+          1,
+          1,
+          5
+        ],
+        "qT": [
+          2.0,
+          4.0
+        ],
+        "rapidity_multiplicity": 2.0,
+        "s": 64000000.0,
+        "y": [
+          0.0,
+          0.4
+        ]
+      },
+      "source_theory_factor": 1.0
+    },
+    {
+      "row": {
+        "Q": [
+          66.0,
+          116.0
+        ],
+        "cuts": [
+          20.0,
+          20.0,
+          -2.4,
+          2.4
+        ],
+        "include_cuts": true,
+        "name": "A8-00y04.2",
+        "process": [
+          1,
+          1,
+          5
+        ],
+        "qT": [
+          4.0,
+          6.0
+        ],
+        "rapidity_multiplicity": 2.0,
+        "s": 64000000.0,
+        "y": [
+          0.0,
+          0.4
+        ]
+      },
+      "source_theory_factor": 1.0
+    },
+    {
+      "row": {
+        "Q": [
+          66.0,
+          116.0
+        ],
+        "cuts": [
+          20.0,
+          20.0,
+          -2.4,
+          2.4
+        ],
+        "include_cuts": true,
+        "name": "A8-00y04.3",
+        "process": [
+          1,
+          1,
+          5
+        ],
+        "qT": [
+          6.0,
+          8.0
+        ],
+        "rapidity_multiplicity": 2.0,
+        "s": 64000000.0,
+        "y": [
+          0.0,
+          0.4
+        ]
+      },
+      "source_theory_factor": 1.0
+    },
+    {
+      "row": {
+        "Q": [
+          66.0,
+          116.0
+        ],
+        "cuts": [
+          20.0,
+          20.0,
+          -2.4,
+          2.4
+        ],
+        "include_cuts": true,
+        "name": "A8-00y04.4",
+        "process": [
+          1,
+          1,
+          5
+        ],
+        "qT": [
+          8.0,
+          10.0
+        ],
+        "rapidity_multiplicity": 2.0,
+        "s": 64000000.0,
+        "y": [
+          0.0,
+          0.4
+        ]
+      },
+      "source_theory_factor": 1.0
+    },
+    {
+      "row": {
+        "Q": [
+          66.0,
+          116.0
+        ],
+        "cuts": [
+          20.0,
+          20.0,
+          -2.4,
+          2.4
+        ],
+        "include_cuts": true,
+        "name": "A8-00y04.5",
+        "process": [
+          1,
+          1,
+          5
+        ],
+        "qT": [
+          10.0,
+          13.0
+        ],
+        "rapidity_multiplicity": 2.0,
+        "s": 64000000.0,
+        "y": [
+          0.0,
+          0.4
+        ]
+      },
+      "source_theory_factor": 0.6666666666666666
+    },
+    {
+      "row": {
+        "Q": [
+          66.0,
+          116.0
+        ],
+        "cuts": [
+          20.0,
+          20.0,
+          -2.4,
+          2.4
+        ],
+        "include_cuts": true,
+        "name": "A8-00y04.6",
+        "process": [
+          1,
+          1,
+          5
+        ],
+        "qT": [
+          13.0,
+          16.0
+        ],
+        "rapidity_multiplicity": 2.0,
+        "s": 64000000.0,
+        "y": [
+          0.0,
+          0.4
+        ]
+      },
+      "source_theory_factor": 0.6666666666666666
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+name = "typed-tmd-seed"
+version = "0.1.0"
+defaultTargets = ["TypedTMDSeed"]
+
+[[lean_lib]]
+name = "TypedTMDSeed"

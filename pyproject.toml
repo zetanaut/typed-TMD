@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "typed-tmd-core"
+version = "0.3.0"
+description = "Typed TMD transport, fixed QCD forward diagnostic and finite-window extraction"
+authors = [{name = "Dustin Keller"}]
+license = {file = "LICENSE"}
+requires-python = ">=3.11"
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/zetanaut/typed-TMD"
+Issues = "https://github.com/zetanaut/typed-TMD/issues"
+
+[project.optional-dependencies]
+numerics = ["scipy>=1.11,<2"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

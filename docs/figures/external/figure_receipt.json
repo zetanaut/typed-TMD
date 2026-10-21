@@ -1,0 +1,5 @@
+{
+  "matplotlib": "3.9.4",
+  "scope": "static plots of saved scientific and timing arrays; no fits or noise generated",
+  "synthetic_data": true
+}

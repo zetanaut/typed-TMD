@@ -1,0 +1,52 @@
+{
+  "correct_fixed_noise": {
+    "atol": 6.619627517283542e-08,
+    "component_budget_max_ratio": 0.2562596995428263,
+    "component_passed": true,
+    "max_absolute": 8.091682638733388e-05,
+    "refinement_passed": true,
+    "rtol": 0.0001,
+    "whitened_norm": 0.0012722279344766338,
+    "whitened_passed": true
+  },
+  "correct_noiseless": {
+    "atol": 6.608861160222764e-08,
+    "component_budget_max_ratio": 0.25456229570970856,
+    "component_passed": true,
+    "max_absolute": 8.097391499495288e-05,
+    "refinement_passed": true,
+    "rtol": 0.0001,
+    "whitened_norm": 0.0012731254400488111,
+    "whitened_passed": true
+  },
+  "truth": {
+    "atol": 6.608888536525717e-08,
+    "component_budget_max_ratio": 0.25456663000770985,
+    "component_passed": true,
+    "max_absolute": 8.097376672955292e-05,
+    "refinement_passed": true,
+    "rtol": 0.0001,
+    "whitened_norm": 0.0012731231058873485,
+    "whitened_passed": true
+  },
+  "unchecked_fixed_noise": {
+    "atol": 6.688012965510651e-08,
+    "component_budget_max_ratio": 0.26670692450835676,
+    "component_passed": true,
+    "max_absolute": 8.051417651966375e-05,
+    "refinement_passed": true,
+    "rtol": 0.0001,
+    "whitened_norm": 0.0012658976645970861,
+    "whitened_passed": true
+  },
+  "unchecked_noiseless": {
+    "atol": 6.679599233320816e-08,
+    "component_budget_max_ratio": 0.26541416369967646,
+    "component_passed": true,
+    "max_absolute": 8.05635175264996e-05,
+    "refinement_passed": true,
+    "rtol": 0.0001,
+    "whitened_norm": 0.0012666733238667137,
+    "whitened_passed": true
+  }
+}

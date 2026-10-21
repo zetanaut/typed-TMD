@@ -1,0 +1,24 @@
+{
+  "all_validation_checks_passed": true,
+  "all_native_refinements_passed": true,
+  "max_component_budget_ratio": 0.8609355866265448,
+  "max_whitened_integration_difference": 0.0044023277731190654,
+  "max_native_refinement_whitened_norm": 0.0012731254400488111,
+  "effect_resolution": {
+    "noiseless": {
+      "objective_difference": 1.5628318663083265,
+      "declared_response_budget_per_route": 0.05,
+      "objective_change_budget_sum": 0.13010793170769863,
+      "resolved_against_declared_empirical_budget": true,
+      "inequality": "|delta chi2| <= 2||r||||e||+||e||^2; quadrature convergence supplies empirical e evidence, not a rigorous universal bound"
+    },
+    "fixed_noise": {
+      "objective_difference": 2.846001482302493,
+      "declared_response_budget_per_route": 0.05,
+      "objective_change_budget_sum": 0.38803044360009803,
+      "resolved_against_declared_empirical_budget": true,
+      "inequality": "|delta chi2| <= 2||r||||e||+||e||^2; quadrature convergence supplies empirical e evidence, not a rigorous universal bound"
+    }
+  },
+  "numerical_evidence": "empirical convergence checks, not analytic error bounds"
+}

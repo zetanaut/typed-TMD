@@ -1,0 +1,12 @@
+{
+  "LHAPDF": "6.5.5",
+  "compiler": "GNU Fortran 16.2.0",
+  "flags": "-O2 -fPIC -fallow-argument-mismatch",
+  "initialization_seconds": 36.35381874997984,
+  "native_binary_sha256": "2b79534b83f030539a8fd7d0652d766c250107f4bb74562dcc0c3f7d0a0e6244",
+  "numpy": "1.26.4",
+  "openmp": false,
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.11.17 (main, Oct 13 2026, 16:38:53) [Clang 21.1.8 ]",
+  "scope": "local execution provenance; binary is not redistributed"
+}

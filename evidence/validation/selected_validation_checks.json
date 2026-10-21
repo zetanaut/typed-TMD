@@ -1,0 +1,331 @@
+{
+  "correct_fixed_noise": {
+    "GL_16_8_4": {
+      "atol": 6.619625275422897e-08,
+      "component_budget_max_ratio": 0.19033311539631578,
+      "component_passed": true,
+      "max_absolute": 0.0001246068029994163,
+      "refinement_passed": true,
+      "rtol": 0.0001,
+      "whitened_norm": 0.0012866291854797646,
+      "whitened_passed": true
+    },
+    "GL_8_16_4": {
+      "atol": 6.619625275422897e-08,
+      "component_budget_max_ratio": 2.4181161599060394e-05,
+      "component_passed": true,
+      "max_absolute": 9.392010724695865e-09,
+      "refinement_passed": true,
+      "rtol": 0.0001,
+      "whitened_norm": 1.9418734276462483e-07,
+      "whitened_passed": true
+    },
+    "GL_8_8_8": {
+      "atol": 6.619625275422897e-08,
+      "component_budget_max_ratio": 0.01081428162062609,
+      "component_passed": true,
+      "max_absolute": 3.2430115712855923e-06,
+      "refinement_passed": true,
+      "rtol": 0.0001,
+      "whitened_norm": 8.023747125133481e-05,
+      "whitened_passed": true
+    },
+    "midpoint_Qy_refinement_0": {
+      "atol": 6.689510227594063e-08,
+      "component_budget_max_ratio": 3.472552701651906e-05,
+      "component_passed": true,
+      "max_absolute": 1.995613807537211e-08,
+      "refinement_passed": true,
+      "rtol": 0.0001,
+      "whitened_norm": 2.7151361386124526e-07,
+      "whitened_passed": true
+    },
+    "midpoint_Qy_refinement_1": {
+      "atol": 6.689510227594063e-08,
+      "component_budget_max_ratio": 0.011248310728955543,
+      "component_passed": true,
+      "max_absolute": 4.347935744331011e-06,
+      "refinement_passed": true,
+      "rtol": 0.0001,
+      "whitened_norm": 7.885830320641292e-05,
+      "whitened_passed": true
+    },
+    "native_independent": {
+      "atol": 6.619627517283542e-08,
+      "component_budget_max_ratio": 0.22826461358127628,
+      "component_passed": true,
+      "max_absolute": 0.00010057332242219275,
+      "rtol": 0.0001,
+      "whitened_norm": 0.0014282007109416024,
+      "whitened_passed": true
+    }
+  },
+  "correct_noiseless": {
+    "GL_16_8_4": {
+      "atol": 6.608858894021277e-08,
+      "component_budget_max_ratio": 0.19113181564636111,
+      "component_passed": true,
+      "max_absolute": 0.00012521889231909,
+      "refinement_passed": true,
+      "rtol": 0.0001,
+      "whitened_norm": 0.00128664428410543,
+      "whitened_passed": true
+    },
+    "GL_8_16_4": {
+      "atol": 6.608858894021277e-08,
+      "component_budget_max_ratio": 2.4243318298824203e-05,
+      "component_passed": true,
+      "max_absolute": 9.383263055440239e-09,
+      "refinement_passed": true,
+      "rtol": 0.0001,
+      "whitened_norm": 1.954114792857299e-07,
+      "whitened_passed": true
+    },
+    "GL_8_8_8": {
+      "atol": 6.608858894021277e-08,
+      "component_budget_max_ratio": 0.010837134069341878,
+      "component_passed": true,
+      "max_absolute": 3.2489621668574387e-06,
+      "refinement_passed": true,
+      "rtol": 0.0001,
+      "whitened_norm": 8.086576412758799e-05,
+      "whitened_passed": true
+    },
+    "midpoint_Qy_refinement_0": {
+      "atol": 6.692570793700248e-08,
+      "component_budget_max_ratio": 3.4714886731460205e-05,
+      "component_passed": true,
+      "max_absolute": 1.992307918641245e-08,
+      "refinement_passed": true,
+      "rtol": 0.0001,
+      "whitened_norm": 2.7915813159273054e-07,
+      "whitened_passed": true
+    },
+    "midpoint_Qy_refinement_1": {
+      "atol": 6.692570793700248e-08,
+      "component_budget_max_ratio": 0.01128085465576422,
+      "component_passed": true,
+      "max_absolute": 4.358276910920722e-06,
+      "refinement_passed": true,
+      "rtol": 0.0001,
+      "whitened_norm": 7.967321120196791e-05,
+      "whitened_passed": true
+    },
+    "native_independent": {
+      "atol": 6.608861160222764e-08,
+      "component_budget_max_ratio": 0.22433650733208738,
+      "component_passed": true,
+      "max_absolute": 0.00010099607917180009,
+      "rtol": 0.0001,
+      "whitened_norm": 0.0014221458735425487,
+      "whitened_passed": true
+    }
+  },
+  "geometry": {
+    "additivity": {
+      "atol": 6.608886270384504e-08,
+      "component_budget_max_ratio": 0.8609355866265448,
+      "component_passed": true,
+      "max_absolute": 0.00027384435015154196,
+      "rtol": 0.0001,
+      "whitened_norm": 0.0044023277731190654,
+      "whitened_passed": true
+    },
+    "full_covariance_transport": {
+      "passed": true
+    },
+    "parameter_change_reset": {
+      "passed": true
+    },
+    "point_limit": {
+      "passed": true,
+      "scope": "empirical approach at qT=1; not an exact finite-bin equivalence"
+    },
+    "same_yield_average_conversion": {
+      "passed": true
+    }
+  },
+  "truth": {
+    "GL_16_8_4": {
+      "atol": 6.608886270384504e-08,
+      "component_budget_max_ratio": 0.19112975902653256,
+      "component_passed": true,
+      "max_absolute": 0.0001252173390158262,
+      "refinement_passed": true,
+      "rtol": 0.0001,
+      "whitened_norm": 0.0012866452363880841,
+      "whitened_passed": true
+    },
+    "GL_8_16_4": {
+      "atol": 6.608886270384504e-08,
+      "component_budget_max_ratio": 2.4243159782917147e-05,
+      "component_passed": true,
+      "max_absolute": 9.383284371722311e-09,
+      "refinement_passed": true,
+      "rtol": 0.0001,
+      "whitened_norm": 1.9456847421698247e-07,
+      "whitened_passed": true
+    },
+    "GL_8_8_8": {
+      "atol": 6.608886270384504e-08,
+      "component_budget_max_ratio": 0.010836490921353715,
+      "component_passed": true,
+      "max_absolute": 3.2487716326023985e-06,
+      "refinement_passed": true,
+      "rtol": 0.0001,
+      "whitened_norm": 8.086221056169322e-05,
+      "whitened_passed": true
+    },
+    "midpoint_Qy_refinement_0": {
+      "atol": 6.692564373240487e-08,
+      "component_budget_max_ratio": 3.471472980177967e-05,
+      "component_passed": true,
+      "max_absolute": 1.992305698195196e-08,
+      "refinement_passed": true,
+      "rtol": 0.0001,
+      "whitened_norm": 2.791921635380267e-07,
+      "whitened_passed": true
+    },
+    "midpoint_Qy_refinement_1": {
+      "atol": 6.692564373240487e-08,
+      "component_budget_max_ratio": 0.01128077236295448,
+      "component_passed": true,
+      "max_absolute": 4.358250771385741e-06,
+      "refinement_passed": true,
+      "rtol": 0.0001,
+      "whitened_norm": 7.967128677930327e-05,
+      "whitened_passed": true
+    },
+    "native_independent": {
+      "atol": 6.608888536525717e-08,
+      "component_budget_max_ratio": 0.2243464698104327,
+      "component_passed": true,
+      "max_absolute": 0.00010099501112836862,
+      "rtol": 0.0001,
+      "whitened_norm": 0.0014221618439895626,
+      "whitened_passed": true
+    }
+  },
+  "unchecked_fixed_noise": {
+    "GL_16_8_4": {
+      "atol": 6.688010902076569e-08,
+      "component_budget_max_ratio": 0.18553939903512554,
+      "component_passed": true,
+      "max_absolute": 0.00012057005523935516,
+      "refinement_passed": true,
+      "rtol": 0.0001,
+      "whitened_norm": 0.0012869519149347377,
+      "whitened_passed": true
+    },
+    "GL_8_16_4": {
+      "atol": 6.688010902076569e-08,
+      "component_budget_max_ratio": 2.381653151873172e-05,
+      "component_passed": true,
+      "max_absolute": 9.456998739665323e-09,
+      "refinement_passed": true,
+      "rtol": 0.0001,
+      "whitened_norm": 1.9210333734079753e-07,
+      "whitened_passed": true
+    },
+    "GL_8_8_8": {
+      "atol": 6.688010902076569e-08,
+      "component_budget_max_ratio": 0.010661254789380025,
+      "component_passed": true,
+      "max_absolute": 3.2031547236854863e-06,
+      "refinement_passed": true,
+      "rtol": 0.0001,
+      "whitened_norm": 7.668172566093201e-05,
+      "whitened_passed": true
+    },
+    "midpoint_Qy_refinement_0": {
+      "atol": 6.723204637807055e-08,
+      "component_budget_max_ratio": 3.480002678889875e-05,
+      "component_passed": true,
+      "max_absolute": 2.0262440614260413e-08,
+      "refinement_passed": true,
+      "rtol": 0.0001,
+      "whitened_norm": 2.811995731580596e-07,
+      "whitened_passed": true
+    },
+    "midpoint_Qy_refinement_1": {
+      "atol": 6.723204637807055e-08,
+      "component_budget_max_ratio": 0.011028575072824162,
+      "component_passed": true,
+      "max_absolute": 4.2779859432684475e-06,
+      "refinement_passed": true,
+      "rtol": 0.0001,
+      "whitened_norm": 7.470740323190243e-05,
+      "whitened_passed": true
+    },
+    "native_independent": {
+      "atol": 6.688012965510651e-08,
+      "component_budget_max_ratio": 0.25426945755609703,
+      "component_passed": true,
+      "max_absolute": 9.771136401681701e-05,
+      "rtol": 0.0001,
+      "whitened_norm": 0.0014693638530432435,
+      "whitened_passed": true
+    }
+  },
+  "unchecked_noiseless": {
+    "GL_16_8_4": {
+      "atol": 6.679597145631547e-08,
+      "component_budget_max_ratio": 0.18611839759222662,
+      "component_passed": true,
+      "max_absolute": 0.00012108885913519885,
+      "refinement_passed": true,
+      "rtol": 0.0001,
+      "whitened_norm": 0.001286960818661542,
+      "whitened_passed": true
+    },
+    "GL_8_16_4": {
+      "atol": 6.679597145631547e-08,
+      "component_budget_max_ratio": 2.3859501698335057e-05,
+      "component_passed": true,
+      "max_absolute": 9.448021032198994e-09,
+      "refinement_passed": true,
+      "rtol": 0.0001,
+      "whitened_norm": 1.9240744836133035e-07,
+      "whitened_passed": true
+    },
+    "GL_8_8_8": {
+      "atol": 6.679597145631547e-08,
+      "component_budget_max_ratio": 0.010681011420554921,
+      "component_passed": true,
+      "max_absolute": 3.2082957961421243e-06,
+      "refinement_passed": true,
+      "rtol": 0.0001,
+      "whitened_norm": 7.709100229742332e-05,
+      "whitened_passed": true
+    },
+    "midpoint_Qy_refinement_0": {
+      "atol": 6.713980459231264e-08,
+      "component_budget_max_ratio": 3.479091339344422e-05,
+      "component_passed": true,
+      "max_absolute": 2.0220577212626267e-08,
+      "refinement_passed": true,
+      "rtol": 0.0001,
+      "whitened_norm": 2.810985377204093e-07,
+      "whitened_passed": true
+    },
+    "midpoint_Qy_refinement_1": {
+      "atol": 6.713980459231264e-08,
+      "component_budget_max_ratio": 0.011057267496523832,
+      "component_passed": true,
+      "max_absolute": 4.287127792768075e-06,
+      "refinement_passed": true,
+      "rtol": 0.0001,
+      "whitened_norm": 7.515785107965815e-05,
+      "whitened_passed": true
+    },
+    "native_independent": {
+      "atol": 6.679599233320816e-08,
+      "component_budget_max_ratio": 0.2508702103106461,
+      "component_passed": true,
+      "max_absolute": 9.808903292363169e-05,
+      "rtol": 0.0001,
+      "whitened_norm": 0.0014637992553544583,
+      "whitened_passed": true
+    }
+  }
+}

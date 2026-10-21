@@ -1,0 +1,11 @@
+{
+  "freeze_identity": "da93c958f67bc49a6591870158db18a4294cc8dfa42626955a813a62579544f4",
+  "native_calls": {
+    "native_bin": 0,
+    "native_point_batches": 935,
+    "native_points": 1914880,
+    "parameter_sets": 161
+  },
+  "stage": "timing",
+  "status": "passed"
+}

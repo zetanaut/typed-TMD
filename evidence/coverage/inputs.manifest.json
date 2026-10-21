@@ -1,0 +1,5 @@
+{
+  "bytes": 89675,
+  "sha256": "f9751b63bb0e321c39f1dcca9d2662c54f11cfd8b6ea5f3de9669c857fa17606",
+  "field_projection": "scripts/replay_coverage.py calculate inputs; binary64 hex noise retained exactly"
+}

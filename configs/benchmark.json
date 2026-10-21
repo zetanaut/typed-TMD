@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "benchmark_id": "handoff-001-synthetic-two-boundary-dy-v1",
+  "status": "specification_for_local_reproduction_no_physics_validation_claim",
+  "disclaimer": "Exactly integrable synthetic Gaussian fixture with a Drell-Yan-like flavor contraction. It is not a QCD TMD fit, a full NLL prediction, or an independent physical benchmark.",
+  "fixture": {
+    "id": "synthetic-gaussian-v1",
+    "mu_ref_GeV": 2.0,
+    "zeta_ref_GeV2": 4.0,
+    "gamma_K": 0.24,
+    "gamma0": 0.18,
+    "width_GeV2": 0.25,
+    "g2_GeV2": 0.04
+  },
+  "boundaries": {
+    "A": {"mu_GeV": 2.0, "zeta_GeV2": 4.0},
+    "B": {"mu_GeV": 4.0, "zeta_GeV2": 16.0}
+  },
+  "target": {"mu_GeV": 5.0, "zeta_GeV2": 25.0},
+  "kinematics": {
+    "Q_GeV": 5.0,
+    "qT_GeV": 0.5,
+    "x_a": 0.2,
+    "x_b": 0.3,
+    "derived_sqrt_s_GeV": 20.412414523193153,
+    "derived_rapidity": -0.20273255405408222,
+    "definition": "x_a and x_b are primary fixture inputs; s=Q^2/(x_a*x_b), y=0.5*ln(x_a/x_b)."
+  },
+  "flavors": [
+    {"pid": 1, "charge": -0.3333333333333333},
+    {"pid": 2, "charge": 0.6666666666666666}
+  ],
+  "pdf_provider": {
+    "id": "analytic-fixture-v1",
+    "returns": "f_i(x,mu), not x*f_i(x,mu)",
+    "scale_dependence": "none_synthetic_only",
+    "shape": "N_pid*x^0.3*(1-x)^3",
+    "normalizations": {"1": 2.0, "2": 4.0, "-1": 0.2, "-2": 0.4},
+    "unsupported_pid_policy": "explicit_error",
+    "lhapdf_set": null,
+    "lhapdf_member": null,
+    "lhapdf_smoke_test_only": true
+  },
+  "hard_factor": {
+    "id": "synthetic-rg-counterfactor-v1",
+    "canonical_value": 1.0,
+    "off_canonical_expression": "exp(-2*gamma0*ln(mu/Q)-gamma_K*ln(mu/Q)^2)",
+    "interpretation": "Synthetic counterfactor under zeta_a*zeta_b=Q^4; not a perturbative QCD hard coefficient."
+  },
+  "observable": {
+    "id": "azimuth-symmetric-dy-like-W",
+    "primary_density": "per_d2_qT",
+    "primary_units": "GeV^-2",
+    "fourier_forward": "F_tilde(b)=integral d2k exp(-i*k.b) F(k)",
+    "fourier_inverse": "F(k)=integral d2b/(2*pi)^2 exp(+i*k.b) F_tilde(b)",
+    "radial_transform": "W(qT)=H/(2*pi)*integral_0^infinity db*b*J0(b*qT)*luminosity_b(b)",
+    "per_dqT_density": "2*pi*qT*W",
+    "per_dqT_squared_density": "pi*W",
+    "photon_dy_prefactor_applied": false,
+    "electroweak_and_unit_conversion_status": "future_explicit_step"
+  },
+  "domain": {
+    "x_min": 0.0,
+    "x_max": 1.0,
+    "x_endpoints": "excluded",
+    "Q_min_GeV": 2.0,
+    "Q_max_GeV": 100.0,
+    "max_qT_over_Q": 0.2,
+    "qT_min_GeV": 0.0,
+    "scale_condition": "mu>0 and zeta>0",
+    "gaussian_transform_condition": "width_GeV2+g2_GeV2*ln(sqrt(zeta)/mu_ref_GeV)>0"
+  },
+  "integration": {
+    "abs_tol": 1e-8,
+    "rel_tol": 1e-6,
+    "radial_interval_GeV_inv": [0.0, "infinity"],
+    "comparison_rule": "abs(numerical-exact)<=abs_tol+rel_tol*abs(exact)",
+    "reference": "closed Gaussian transform, evaluated without using the production evolution or Fourier implementation"
+  },
+  "verification_plan": {
+    "execution_status": "not_asserted_by_this_configuration",
+    "boundary_transport_b_GeV_inv": [0.0, 0.1, 0.5, 1.0, 2.0],
+    "evolution_abs_tol": 1e-12,
+    "evolution_rel_tol": 1e-11,
+    "canonical_Q_GeV": [4.0, 5.0, 8.0],
+    "radial_bin_GeV": [0.0, 1.0],
+    "required_checks": [
+      "boundary_A_to_target_equals_transported_B_to_target",
+      "independent_line_integral_or_derivative_connection_check",
+      "numerical_Bessel_integral_equals_closed_evolved_Gaussian",
+      "density_Jacobians_and_finite_radial_bin",
+      "invalid_composition_reports_failure_without_a_physics_bias_claim"
+    ]
+  },
+  "accuracy_inventory": {
+    "mode": "synthetic_exact_connection",
+    "resummation_label": null,
+    "qcd_beta_loop_order": null,
+    "qcd_cusp_loop_order": null,
+    "qcd_non_cusp_loop_order": null,
+    "qcd_K_matching_order": null,
+    "qcd_small_b_C_order": null,
+    "qcd_hard_H_order": null,
+    "collinear_pdf_perturbative_order": null,
+    "fixed_order_Y_matching_order": null,
+    "all_QCD_coefficients_are_unimplemented_in_this_fixture": true
+  },
+  "physical_QCD_next_stage": {
+    "status": "planned_for_handoff_002_after_review_of_handoff_001_evidence",
+    "proposed_label": "one-loop-generator/tree-matching-diagnostic",
+    "proposed_operator_scheme": "Collins-soft-subtracted-TMD-with-MSbar-UV-renormalization",
+    "proposed_cusp_loop_order": 1,
+    "proposed_non_cusp_loop_order": 1,
+    "proposed_K_boundary_order": 1,
+    "proposed_small_b_C_order": 0,
+    "proposed_hard_H_order": 0,
+    "proposed_Y_matching_order": null,
+    "resummation_label": null,
+    "pdf_set": null,
+    "pdf_member": null,
+    "alpha_s_provider_and_order": null,
+    "heavy_flavor_convention": null,
+    "independent_reference_id": null,
+    "scientific_decisions_required": [
+      "exact_PDF_set_member_alpha_s_order_and_heavy_flavor_treatment",
+      "approved_b_profile_Fourier_domain_and_tail_error_policy",
+      "independent_reference_implementation_and_common_validity_domain"
+    ],
+    "optimizer_authorized_in_handoff_001": false,
+    "external_fit_replication_authorized_in_handoff_001": false
+  },
+  "sources": {
+    "Collins2011": "https://arxiv.org/abs/1107.4123",
+    "ScimemiVladimirov2018": "https://arxiv.org/abs/1803.11089",
+    "CollinsRogers2017": "https://arxiv.org/abs/1705.07167",
+    "LHAPDF_API": "https://www.lhapdf.org/classLHAPDF_1_1PDF.html"
+  }
+}

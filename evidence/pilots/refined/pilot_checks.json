@@ -1,0 +1,57 @@
+{
+  "native_Qy_and_qT_refinement": {
+    "atol": 6.608888536525717e-08,
+    "component_budget_max_ratio": 0.25456663000770985,
+    "component_passed": true,
+    "max_absolute": 8.097376672955292e-05,
+    "refinement_passed": true,
+    "rtol": 0.0001,
+    "whitened_norm": 0.001273155521622204,
+    "whitened_passed": true
+  },
+  "refined_native_vs_GL_16_16_8": {
+    "atol": 6.608888512316125e-08,
+    "component_budget_max_ratio": 0.1744412489263792,
+    "component_passed": true,
+    "max_absolute": 5.548569118651869e-05,
+    "rtol": 0.0001,
+    "whitened_norm": 0.000897391405042141,
+    "whitened_passed": true
+  },
+  "refined_native_vs_GL_16_8_4": {
+    "atol": 6.608888512316125e-08,
+    "component_budget_max_ratio": 0.18204669912594504,
+    "component_passed": true,
+    "max_absolute": 5.7904807443165396e-05,
+    "rtol": 0.0001,
+    "whitened_norm": 0.0009350979971880337,
+    "whitened_passed": true
+  },
+  "refined_native_vs_GL_8_16_4": {
+    "atol": 6.608888512316125e-08,
+    "component_budget_max_ratio": 0.15433278442421605,
+    "component_passed": true,
+    "max_absolute": 0.00010110849519673337,
+    "rtol": 0.0001,
+    "whitened_norm": 0.0008871931073042464,
+    "whitened_passed": true
+  },
+  "refined_native_vs_GL_8_8_4": {
+    "atol": 6.608888512316125e-08,
+    "component_budget_max_ratio": 0.154343654065233,
+    "component_passed": true,
+    "max_absolute": 0.00010111561625691934,
+    "rtol": 0.0001,
+    "whitened_norm": 0.0008872453053263554,
+    "whitened_passed": true
+  },
+  "refined_native_vs_GL_8_8_8": {
+    "atol": 6.608888512316125e-08,
+    "component_budget_max_ratio": 0.15338098860561694,
+    "component_passed": true,
+    "max_absolute": 0.00010048494237668848,
+    "rtol": 0.0001,
+    "whitened_norm": 0.0008833245193186985,
+    "whitened_passed": true
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "checks": {
+    "GL_16_8_4_refinement": {
+      "atol": 6.608886270384504e-08,
+      "component_budget_max_ratio": 0.19112975902653256,
+      "component_passed": true,
+      "max_absolute": 0.0001252173390158262,
+      "refinement_passed": true,
+      "rtol": 0.0001,
+      "whitened_norm": 0.0012866452363880841,
+      "whitened_passed": true
+    },
+    "GL_8_16_4_refinement": {
+      "atol": 6.608886270384504e-08,
+      "component_budget_max_ratio": 2.4243159782917147e-05,
+      "component_passed": true,
+      "max_absolute": 9.383284371722311e-09,
+      "refinement_passed": true,
+      "rtol": 0.0001,
+      "whitened_norm": 1.9456847421698247e-07,
+      "whitened_passed": true
+    },
+    "GL_8_8_8_refinement": {
+      "atol": 6.608886270384504e-08,
+      "component_budget_max_ratio": 0.010836490921353715,
+      "component_passed": true,
+      "max_absolute": 3.2487716326023985e-06,
+      "refinement_passed": true,
+      "rtol": 0.0001,
+      "whitened_norm": 8.086221056169322e-05,
+      "whitened_passed": true
+    },
+    "native_independent": {
+      "atol": 6.608888536525717e-08,
+      "component_budget_max_ratio": 0.0801298217735508,
+      "component_passed": true,
+      "max_absolute": 2.5488075543034228e-05,
+      "rtol": 0.0001,
+      "whitened_norm": 0.00045379480392549766,
+      "whitened_passed": true
+    },
+    "native_typed_central_offcentral_reset": {
+      "binary_equal": true,
+      "parameters": [
+        0.029551,
+        0.02,
+        0.029551
+      ],
+      "passed": true
+    }
+  },
+  "effect_size": "not_assessed",
+  "handoff_id": "typed-tmd-006",
+  "native_calls": {
+    "native_bin": 9,
+    "native_point_batches": 35,
+    "native_points": 215040,
+    "parameter_sets": 8
+  },
+  "scope": "native semantic/precision pilot; no impact experiment",
+  "status": "passed"
+}

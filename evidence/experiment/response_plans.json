@@ -1,0 +1,82 @@
+{
+  "correct": {
+    "backend_identity": "351451bd943d242eff4b91d04575045e6a796c5e01f0d86bac2533ffcdf781bb",
+    "check_origin": "pinned source audit and native/independent observation comparisons; caller metadata is not a proof",
+    "evidence_kind": "runtime_contract; not Lean-verified translation",
+    "meaning": {
+      "kind": "bin_average",
+      "measure": "dqT",
+      "observation_identity": "ae1377c749c1272f3dd57575569d3acb6e3595007e01022956a8dc876b730584",
+      "units": "pb/GeV"
+    },
+    "numerical_plan": [
+      [
+        "operation",
+        "independent_bin_average"
+      ],
+      [
+        "native_minimum_Simpson_sections",
+        "32"
+      ],
+      [
+        "native_constants_sha256",
+        "3bfa81bbb5d3c4534817183753c716a8e9ddff080753a31b7a0d111af53b2a72"
+      ],
+      [
+        "GL_orders",
+        "(8, 8, 4)"
+      ],
+      [
+        "Q_breaks_GeV",
+        "(80.0, 86.0, 89.0, 91.0, 93.0, 96.0, 102.0)"
+      ]
+    ],
+    "parameter_dependencies": [
+      "SV19.c0"
+    ],
+    "plan_identity": "e64efdb6b11012226a60439ece7b398059683a53ef49a2d096e2cf5349d351c5",
+    "source_expression": "GL[dqT,dQ,dy](4*qT*Q*native.point(theta),cuts)/bin_measure * rapidity_multiplicity",
+    "source_identity": "e283684e7033f3cb17275a7ee66d106c07fb1065e5e65e6a9fb6b4d179ab034e",
+    "state_epoch": 0
+  },
+  "fault": {
+    "backend_identity": "351451bd943d242eff4b91d04575045e6a796c5e01f0d86bac2533ffcdf781bb",
+    "check_origin": "pinned source audit and native/independent observation comparisons; caller metadata is not a proof",
+    "evidence_kind": "runtime_contract; not Lean-verified translation",
+    "meaning": {
+      "kind": "point_density",
+      "measure": "dqT",
+      "observation_identity": "ae1377c749c1272f3dd57575569d3acb6e3595007e01022956a8dc876b730584",
+      "units": "pb/GeV"
+    },
+    "numerical_plan": [
+      [
+        "operation",
+        "qT_point_density"
+      ],
+      [
+        "native_minimum_Simpson_sections",
+        "32"
+      ],
+      [
+        "native_constants_sha256",
+        "3bfa81bbb5d3c4534817183753c716a8e9ddff080753a31b7a0d111af53b2a72"
+      ],
+      [
+        "GL_orders",
+        "(8, 8, 4)"
+      ],
+      [
+        "Q_breaks_GeV",
+        "(80.0, 86.0, 89.0, 91.0, 93.0, 96.0, 102.0)"
+      ]
+    ],
+    "parameter_dependencies": [
+      "SV19.c0"
+    ],
+    "plan_identity": "9063d5f917ac2ddebf9088601597638fa65e7291d182753ab281915ef09e4f89",
+    "source_expression": "point(qT_mid, integral[dQ2,dy](native.point(theta),cuts)) * qT_measure_Jacobian * rapidity_multiplicity",
+    "source_identity": "8ad0fbc6ef6eb9113c8c34f26bb31a2b728ddab6d567d6526ad90f19f36e0a1a",
+    "state_epoch": 0
+  }
+}

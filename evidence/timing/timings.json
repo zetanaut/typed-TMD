@@ -1,0 +1,1242 @@
+{
+  "batch_scope": "same batched native point requests and independent observation quadrature; excludes upstream adaptive bin API",
+  "blocks": 30,
+  "cache": "same native interpolation grid; no response cache; full NP rebind on every evaluation",
+  "clock": "perf_counter_ns",
+  "clock_info": {
+    "adjustable": false,
+    "implementation": "mach_absolute_time()",
+    "monotonic": true,
+    "resolution": 4.166666666666667e-08
+  },
+  "memory_scope": "not measured; process high-water marks are not per-call allocations",
+  "order": "alternating native-first and typed-first",
+  "startup": "separate environment receipt; includes import/configuration/initial grid binding once",
+  "threads": 1,
+  "workloads": {
+    "construction_validation": {
+      "NP_bindings_per_repetition_each_route": 0,
+      "measured_timed_call_counts": {
+        "native": {
+          "native_bin": 0,
+          "native_point_batches": 0,
+          "native_points": 0,
+          "parameter_sets": 0
+        },
+        "typed": {
+          "native_bin": 0,
+          "native_point_batches": 0,
+          "native_points": 0,
+          "parameter_sets": 0
+        }
+      },
+      "median_extra_seconds": 2.0341854545454544e-05,
+      "median_native_seconds": 5.9437689393939396e-05,
+      "median_paired_ratio": 1.342175358869638,
+      "median_typed_seconds": 7.98096590909091e-05,
+      "native_point_batches_per_repetition_each_route": 0,
+      "native_points_per_repetition_each_route": 0,
+      "outputs_binary_equal": null,
+      "paired_ratio_IQR": [
+        1.3396713943600649,
+        1.3445623794916277
+      ],
+      "pilot_ns": [
+        60750,
+        91458
+      ],
+      "repetitions_per_block": 330,
+      "samples": [
+        {
+          "block": 0,
+          "native_ns": 20183500,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 26431792
+        },
+        {
+          "block": 1,
+          "native_ns": 19661416,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 26347375
+        },
+        {
+          "block": 2,
+          "native_ns": 19531250,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 26283083
+        },
+        {
+          "block": 3,
+          "native_ns": 19569750,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 26315458
+        },
+        {
+          "block": 4,
+          "native_ns": 19544666,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 26179375
+        },
+        {
+          "block": 5,
+          "native_ns": 19615250,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 26205917
+        },
+        {
+          "block": 6,
+          "native_ns": 19529291,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 26167584
+        },
+        {
+          "block": 7,
+          "native_ns": 19770333,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 26224291
+        },
+        {
+          "block": 8,
+          "native_ns": 19674583,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 26332375
+        },
+        {
+          "block": 9,
+          "native_ns": 19585417,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 26258791
+        },
+        {
+          "block": 10,
+          "native_ns": 19637417,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 26198833
+        },
+        {
+          "block": 11,
+          "native_ns": 19456916,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 26152959
+        },
+        {
+          "block": 12,
+          "native_ns": 19693042,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 26417000
+        },
+        {
+          "block": 13,
+          "native_ns": 19706792,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 26405917
+        },
+        {
+          "block": 14,
+          "native_ns": 19620209,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 26357500
+        },
+        {
+          "block": 15,
+          "native_ns": 19555584,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 26363041
+        },
+        {
+          "block": 16,
+          "native_ns": 19613625,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 26353125
+        },
+        {
+          "block": 17,
+          "native_ns": 19609167,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 26400166
+        },
+        {
+          "block": 18,
+          "native_ns": 19671584,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 26477250
+        },
+        {
+          "block": 19,
+          "native_ns": 19576750,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 26219958
+        },
+        {
+          "block": 20,
+          "native_ns": 19521875,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 26259375
+        },
+        {
+          "block": 21,
+          "native_ns": 19562542,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 26277041
+        },
+        {
+          "block": 22,
+          "native_ns": 19602000,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 26342000
+        },
+        {
+          "block": 23,
+          "native_ns": 19567250,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 26233708
+        },
+        {
+          "block": 24,
+          "native_ns": 19646292,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 26452250
+        },
+        {
+          "block": 25,
+          "native_ns": 19668042,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 26359750
+        },
+        {
+          "block": 26,
+          "native_ns": 19629333,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 26365792
+        },
+        {
+          "block": 27,
+          "native_ns": 19569917,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 26321666
+        },
+        {
+          "block": 28,
+          "native_ns": 19726125,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 26490459
+        },
+        {
+          "block": 29,
+          "native_ns": 19762417,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 26473542
+        }
+      ],
+      "warmups_each_route": 2
+    },
+    "parameter_changing_objective": {
+      "NP_bindings_per_repetition_each_route": 3,
+      "measured_timed_call_counts": {
+        "native": {
+          "native_bin": 0,
+          "native_point_batches": 630,
+          "native_points": 1290240,
+          "parameter_sets": 90
+        },
+        "typed": {
+          "native_bin": 0,
+          "native_point_batches": 630,
+          "native_points": 1290240,
+          "parameter_sets": 90
+        }
+      },
+      "median_extra_seconds": -0.014049729,
+      "median_native_seconds": 4.6522797295,
+      "median_paired_ratio": 0.9969717723036672,
+      "median_typed_seconds": 4.6411856665,
+      "native_point_batches_per_repetition_each_route": 21,
+      "native_points_per_repetition_each_route": 43008,
+      "outputs_binary_equal": true,
+      "paired_ratio_IQR": [
+        0.9954542850565522,
+        0.9989562667038577
+      ],
+      "pilot_ns": [
+        4643303250,
+        4623154083
+      ],
+      "repetitions_per_block": 1,
+      "samples": [
+        {
+          "block": 0,
+          "native_ns": 4639161542,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 4624740917
+        },
+        {
+          "block": 1,
+          "native_ns": 4657026833,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 4630556542
+        },
+        {
+          "block": 2,
+          "native_ns": 4644752916,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 4663567083
+        },
+        {
+          "block": 3,
+          "native_ns": 4639513666,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 4623124166
+        },
+        {
+          "block": 4,
+          "native_ns": 4639107166,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 4630179958
+        },
+        {
+          "block": 5,
+          "native_ns": 4640118291,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 4622005541
+        },
+        {
+          "block": 6,
+          "native_ns": 4662001750,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 4623853375
+        },
+        {
+          "block": 7,
+          "native_ns": 4639214625,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 4630286375
+        },
+        {
+          "block": 8,
+          "native_ns": 4646665375,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 4625276708
+        },
+        {
+          "block": 9,
+          "native_ns": 4641554083,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 4626850458
+        },
+        {
+          "block": 10,
+          "native_ns": 4640037750,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 4626358917
+        },
+        {
+          "block": 11,
+          "native_ns": 4648917709,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 4642975500
+        },
+        {
+          "block": 12,
+          "native_ns": 4630239667,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 4656097791
+        },
+        {
+          "block": 13,
+          "native_ns": 4676583625,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 4628204083
+        },
+        {
+          "block": 14,
+          "native_ns": 4654878333,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 4636847250
+        },
+        {
+          "block": 15,
+          "native_ns": 4648998209,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 4637258625
+        },
+        {
+          "block": 16,
+          "native_ns": 4681256459,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 4660781500
+        },
+        {
+          "block": 17,
+          "native_ns": 4681125542,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 4655166500
+        },
+        {
+          "block": 18,
+          "native_ns": 4661388125,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 4660754125
+        },
+        {
+          "block": 19,
+          "native_ns": 4660409333,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 4673205750
+        },
+        {
+          "block": 20,
+          "native_ns": 4663158125,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 4680428583
+        },
+        {
+          "block": 21,
+          "native_ns": 4652976792,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 4650620125
+        },
+        {
+          "block": 22,
+          "native_ns": 4668663625,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 4645016208
+        },
+        {
+          "block": 23,
+          "native_ns": 4679122375,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 4628514958
+        },
+        {
+          "block": 24,
+          "native_ns": 4651582667,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 4669660000
+        },
+        {
+          "block": 25,
+          "native_ns": 4647092583,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 4641531416
+        },
+        {
+          "block": 26,
+          "native_ns": 4645451666,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 4640839917
+        },
+        {
+          "block": 27,
+          "native_ns": 4690164709,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 4661381708
+        },
+        {
+          "block": 28,
+          "native_ns": 4663267834,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 4644081708
+        },
+        {
+          "block": 29,
+          "native_ns": 4677403041,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 4668570791
+        }
+      ],
+      "warmups_each_route": 2
+    },
+    "warm_batch": {
+      "NP_bindings_per_repetition_each_route": 1,
+      "measured_timed_call_counts": {
+        "native": {
+          "native_bin": 0,
+          "native_point_batches": 210,
+          "native_points": 430080,
+          "parameter_sets": 30
+        },
+        "typed": {
+          "native_bin": 0,
+          "native_point_batches": 210,
+          "native_points": 430080,
+          "parameter_sets": 30
+        }
+      },
+      "median_extra_seconds": -0.005121792,
+      "median_native_seconds": 1.5472689585000001,
+      "median_paired_ratio": 0.9966875546165342,
+      "median_typed_seconds": 1.5425095420000001,
+      "native_point_batches_per_repetition_each_route": 7,
+      "native_points_per_repetition_each_route": 14336,
+      "outputs_binary_equal": true,
+      "paired_ratio_IQR": [
+        0.9899240779881415,
+        0.9983721410844587
+      ],
+      "pilot_ns": [
+        1552201209,
+        1553291208
+      ],
+      "repetitions_per_block": 1,
+      "samples": [
+        {
+          "block": 0,
+          "native_ns": 1561965709,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 1541020166
+        },
+        {
+          "block": 1,
+          "native_ns": 1582986708,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 1543590792
+        },
+        {
+          "block": 2,
+          "native_ns": 1549886000,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 1565548416
+        },
+        {
+          "block": 3,
+          "native_ns": 1554988084,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 1551357708
+        },
+        {
+          "block": 4,
+          "native_ns": 1570044625,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 1542566584
+        },
+        {
+          "block": 5,
+          "native_ns": 1567439000,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 1546879292
+        },
+        {
+          "block": 6,
+          "native_ns": 1546847667,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 1542305750
+        },
+        {
+          "block": 7,
+          "native_ns": 1579767250,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 1548428709
+        },
+        {
+          "block": 8,
+          "native_ns": 1560148750,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 1548922583
+        },
+        {
+          "block": 9,
+          "native_ns": 1569102334,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 1541856041
+        },
+        {
+          "block": 10,
+          "native_ns": 1548020584,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 1541284958
+        },
+        {
+          "block": 11,
+          "native_ns": 1547625792,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 1540647708
+        },
+        {
+          "block": 12,
+          "native_ns": 1550616500,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 1540654084
+        },
+        {
+          "block": 13,
+          "native_ns": 1547525875,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 1541308792
+        },
+        {
+          "block": 14,
+          "native_ns": 1547012042,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 1541276125
+        },
+        {
+          "block": 15,
+          "native_ns": 1546780000,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 1542911792
+        },
+        {
+          "block": 16,
+          "native_ns": 1545759167,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 1544981917
+        },
+        {
+          "block": 17,
+          "native_ns": 1545806417,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 1548256250
+        },
+        {
+          "block": 18,
+          "native_ns": 1543116625,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 1543964834
+        },
+        {
+          "block": 19,
+          "native_ns": 1557197792,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 1539672333
+        },
+        {
+          "block": 20,
+          "native_ns": 1558991042,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 1541785958
+        },
+        {
+          "block": 21,
+          "native_ns": 1544952250,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 1542657334
+        },
+        {
+          "block": 22,
+          "native_ns": 1545595625,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 1540593625
+        },
+        {
+          "block": 23,
+          "native_ns": 1546829709,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 1541588125
+        },
+        {
+          "block": 24,
+          "native_ns": 1545629000,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 1542452500
+        },
+        {
+          "block": 25,
+          "native_ns": 1545645709,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 1544526208
+        },
+        {
+          "block": 26,
+          "native_ns": 1546494500,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 1544899042
+        },
+        {
+          "block": 27,
+          "native_ns": 1545906375,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 1559417291
+        },
+        {
+          "block": 28,
+          "native_ns": 1546077750,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 1541756667
+        },
+        {
+          "block": 29,
+          "native_ns": 1546149042,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 1541502583
+        }
+      ],
+      "warmups_each_route": 2
+    },
+    "warm_scalar": {
+      "NP_bindings_per_repetition_each_route": 1,
+      "measured_timed_call_counts": {
+        "native": {
+          "native_bin": 0,
+          "native_point_batches": 30,
+          "native_points": 61440,
+          "parameter_sets": 30
+        },
+        "typed": {
+          "native_bin": 0,
+          "native_point_batches": 30,
+          "native_points": 61440,
+          "parameter_sets": 30
+        }
+      },
+      "median_extra_seconds": -0.00048460500000000004,
+      "median_native_seconds": 0.2033635835,
+      "median_paired_ratio": 0.9976136981644026,
+      "median_typed_seconds": 0.20304102100000002,
+      "native_point_batches_per_repetition_each_route": 1,
+      "native_points_per_repetition_each_route": 2048,
+      "outputs_binary_equal": true,
+      "paired_ratio_IQR": [
+        0.990319977053584,
+        1.0011271385754168
+      ],
+      "pilot_ns": [
+        203319541,
+        209260625
+      ],
+      "repetitions_per_block": 1,
+      "samples": [
+        {
+          "block": 0,
+          "native_ns": 203855875,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 204632125
+        },
+        {
+          "block": 1,
+          "native_ns": 202494750,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 204738958
+        },
+        {
+          "block": 2,
+          "native_ns": 202623750,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 202631875
+        },
+        {
+          "block": 3,
+          "native_ns": 202646334,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 202649458
+        },
+        {
+          "block": 4,
+          "native_ns": 202410167,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 202444792
+        },
+        {
+          "block": 5,
+          "native_ns": 209512792,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 205118333
+        },
+        {
+          "block": 6,
+          "native_ns": 206454959,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 203282084
+        },
+        {
+          "block": 7,
+          "native_ns": 203153292,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 202671083
+        },
+        {
+          "block": 8,
+          "native_ns": 203043417,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 202602250
+        },
+        {
+          "block": 9,
+          "native_ns": 203431500,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 202380708
+        },
+        {
+          "block": 10,
+          "native_ns": 209444625,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 207128666
+        },
+        {
+          "block": 11,
+          "native_ns": 203272375,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 204833583
+        },
+        {
+          "block": 12,
+          "native_ns": 203467500,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 202799958
+        },
+        {
+          "block": 13,
+          "native_ns": 209479250,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 207346917
+        },
+        {
+          "block": 14,
+          "native_ns": 204476375,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 202115917
+        },
+        {
+          "block": 15,
+          "native_ns": 203178583,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 206208416
+        },
+        {
+          "block": 16,
+          "native_ns": 208875834,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 209177833
+        },
+        {
+          "block": 17,
+          "native_ns": 203283584,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 208264500
+        },
+        {
+          "block": 18,
+          "native_ns": 203483333,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 208675000
+        },
+        {
+          "block": 19,
+          "native_ns": 207634541,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 202582834
+        },
+        {
+          "block": 20,
+          "native_ns": 209822417,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 204252167
+        },
+        {
+          "block": 21,
+          "native_ns": 209675916,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 207960250
+        },
+        {
+          "block": 22,
+          "native_ns": 207545917,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 202492875
+        },
+        {
+          "block": 23,
+          "native_ns": 203118250,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 202731958
+        },
+        {
+          "block": 24,
+          "native_ns": 203173333,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 202433917
+        },
+        {
+          "block": 25,
+          "native_ns": 203411959,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 203364625
+        },
+        {
+          "block": 26,
+          "native_ns": 203315208,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 205486625
+        },
+        {
+          "block": 27,
+          "native_ns": 203003167,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 202516166
+        },
+        {
+          "block": 28,
+          "native_ns": 203143166,
+          "order": [
+            "native",
+            "typed"
+          ],
+          "typed_ns": 202627292
+        },
+        {
+          "block": 29,
+          "native_ns": 203157750,
+          "order": [
+            "typed",
+            "native"
+          ],
+          "typed_ns": 202403417
+        }
+      ],
+      "warmups_each_route": 2
+    }
+  }
+}

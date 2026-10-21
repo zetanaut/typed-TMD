@@ -1,0 +1,11 @@
+{
+  "freeze_identity": "da93c958f67bc49a6591870158db18a4294cc8dfa42626955a813a62579544f4",
+  "native_calls": {
+    "native_bin": 7,
+    "native_point_batches": 1818,
+    "native_points": 2072832,
+    "parameter_sets": 361
+  },
+  "stage": "campaign",
+  "status": "passed"
+}

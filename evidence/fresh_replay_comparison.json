@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "scope": "all data, fit histories, selected fits, rank diagnostics, consequences and rejection fields; exclude only elapsed_seconds",
+  "tolerance": "exact binary64 and nonnumerical field equality",
+  "files": [
+    {
+      "file": "data.json",
+      "reference_sha256": "efb84287457cc50794aabe645abd1afebad89e3b9d2c6907d5fa64e7798485d5",
+      "replay_sha256": "efb84287457cc50794aabe645abd1afebad89e3b9d2c6907d5fa64e7798485d5",
+      "binary_values_equal_except_elapsed_seconds": true
+    },
+    {
+      "file": "fits.json",
+      "reference_sha256": "6fa92311b53cc946dc7c021c65aa3d2cfb55a6e7675292808e7a5ffa839fbf8b",
+      "replay_sha256": "022fed1c07bda25cd531a7c687b89fff8a2750333ea2dae8553ad5389823a2a7",
+      "binary_values_equal_except_elapsed_seconds": true
+    },
+    {
+      "file": "rank_check.json",
+      "reference_sha256": "b82443597401652eac89457a25afcc0b9af3b2085f6aab3ca60df68c5642ba93",
+      "replay_sha256": "b82443597401652eac89457a25afcc0b9af3b2085f6aab3ca60df68c5642ba93",
+      "binary_values_equal_except_elapsed_seconds": true
+    },
+    {
+      "file": "consequences.json",
+      "reference_sha256": "c62a9c53b8a71b23cf51b6865b14ac97dc41e60e69f2ebd1039621588cd0012c",
+      "replay_sha256": "c62a9c53b8a71b23cf51b6865b14ac97dc41e60e69f2ebd1039621588cd0012c",
+      "binary_values_equal_except_elapsed_seconds": true
+    },
+    {
+      "file": "rejection.json",
+      "reference_sha256": "b221da0ee6a8ba97a8b30eb1198e3d3e9330c6a2be539da64646335ce59fb9d7",
+      "replay_sha256": "b221da0ee6a8ba97a8b30eb1198e3d3e9330c6a2be539da64646335ce59fb9d7",
+      "binary_values_equal_except_elapsed_seconds": true
+    }
+  ]
+}

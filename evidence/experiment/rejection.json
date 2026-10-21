@@ -1,0 +1,25 @@
+{
+  "backend_call_delta": {
+    "native_bin": 0,
+    "native_point_batches": 0,
+    "native_points": 0,
+    "parameter_sets": 0
+  },
+  "code": "observation_mismatch",
+  "expected": {
+    "kind": "bin_average",
+    "measure": "dqT",
+    "observation_identity": "ae1377c749c1272f3dd57575569d3acb6e3595007e01022956a8dc876b730584",
+    "units": "pb/GeV"
+  },
+  "optimizer_calls": 0,
+  "passed": true,
+  "required_operation": "integrate the point density over the declared qT bin with its measure, then divide by the bin measure",
+  "stage": "fit_problem_construction",
+  "supplied": {
+    "kind": "point_density",
+    "measure": "dqT",
+    "observation_identity": "ae1377c749c1272f3dd57575569d3acb6e3595007e01022956a8dc876b730584",
+    "units": "pb/GeV"
+  }
+}

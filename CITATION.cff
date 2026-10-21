@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use typed-TMD, please cite this software and the relevant scientific inputs listed in docs/THIRD_PARTY_NOTICES.md."
+type: software
+title: "typed-TMD"
+version: "0.3.0"
+authors:
+  - family-names: Keller
+    given-names: Dustin
+license: MIT
+repository-code: "https://github.com/zetanaut/typed-TMD"
+url: "https://github.com/zetanaut/typed-TMD"
+abstract: "Typed scientific contexts and observation maps, with a controlled external Drell-Yan midpoint-versus-bin comparison and reproducible numerical evidence."

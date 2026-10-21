@@ -1,0 +1,38 @@
+{
+  "fixed_noise": {
+    "c0_uncorrected_minus_corrected": 0.04308556219082447,
+    "chi2_uncorrected_minus_corrected": 2.846001482302493,
+    "heldout_difference": [
+      0.0008659909010555467,
+      -0.003871852406698739
+    ],
+    "response_uncorrected_minus_corrected": [
+      0.01384987341947852,
+      0.1005654667405329,
+      0.1035793623841581,
+      0.05367370809175398,
+      0.02287287081650735,
+      0.0008659909010555467,
+      -0.003871852406698739
+    ],
+    "shift_in_truth_local_sigma": 2.6341911205906667
+  },
+  "noiseless": {
+    "c0_uncorrected_minus_corrected": 0.04386373447121898,
+    "chi2_uncorrected_minus_corrected": 1.5628318663083265,
+    "heldout_difference": [
+      0.00112307260846789,
+      -0.003758978774144328
+    ],
+    "response_uncorrected_minus_corrected": [
+      0.01050749810547602,
+      0.10326015948551603,
+      0.10512156520998772,
+      0.05421228186016691,
+      0.02324966637260406,
+      0.00112307260846789,
+      -0.003758978774144328
+    ],
+    "shift_in_truth_local_sigma": 2.6817674874076127
+  }
+}

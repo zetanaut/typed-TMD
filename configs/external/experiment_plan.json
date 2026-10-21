@@ -1,0 +1,171 @@
+{
+  "case_id": "SV19-A8-00y04-local-c0",
+  "claim_scope": {
+    "Lean_verified_adapter": false,
+    "independent_QCD_reproduction": false,
+    "injected_misuse_is_upstream_bug": false,
+    "one_native_engine": true,
+    "published_global_refit": false,
+    "synthetic_data": true
+  },
+  "covariance": "fixed synthetic diagonal: sigma_i=max(.02*abs(t_i),1e-4*max_training(abs(t)))",
+  "fault": "replace only qT bin average by qT midpoint point density after full Q2/y integration, retaining correct point type",
+  "fault_location": "scripts/external_campaign_006.py:fit_case; deliberately bypassed observation constructor, not a production option",
+  "fit": {
+    "bound_fraction_tolerance": 1e-05,
+    "chart": "c0 = .001 + .099*u",
+    "correct_operation": "independent_bin_average",
+    "domain": [
+      0.001,
+      0.1
+    ],
+    "domain_rationale": "local positive subset of published [0.001,5.0] domain; no H004 parameter identification",
+    "fixed_parameter_vector": [
+      1.86041,
+      0.029551,
+      0.253434,
+      9.04351,
+      346.999,
+      2.47992,
+      -5.69988,
+      0.0,
+      0.0
+    ],
+    "free_vector_index": 1,
+    "generating_operation": "native_bin_average",
+    "global_optimum_claim": false,
+    "heldout_indices": [
+      5,
+      6
+    ],
+    "holdout_rule": "last two source-ordered bins for fewer than nine bins",
+    "jacobian_chart_step": 0.001,
+    "local_rank_pilot": {
+      "parameter": "SV19.c0",
+      "rank": 1,
+      "relative_step_change": 7.581818085307714e-08,
+      "scope": "local training sensitivity before any misuse impact or fit",
+      "singular_value": 61.13861489346913,
+      "steps": [
+        0.0001,
+        5e-05
+      ]
+    },
+    "parameter": "SV19.c0",
+    "solver": "scipy.optimize.least_squares, trf, linear loss; explicit central-difference Jacobian",
+    "solver_options": {
+      "ftol": 1e-07,
+      "gtol": 1e-07,
+      "max_nfev": 50,
+      "method": "trf",
+      "xtol": 1e-07
+    },
+    "start_fractions": [
+      0.125,
+      0.25,
+      0.5,
+      0.75,
+      0.875
+    ],
+    "training_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "truth": 0.029551,
+    "units": "GeV^2"
+  },
+  "freeze_utc": "2026-10-20T22:20:58.836450+00:00",
+  "noise_generator": "NumPy PCG64, standard_normal once over all seven bins",
+  "noise_seed": 2026102006,
+  "numerical_acceptance": {
+    "N1_N2": "binary equality",
+    "atol_fraction_of_native_batch_max": 1e-08,
+    "fit_effect_resolution": "compare observed chi2 difference to sum of 2*||r||*||e||+||e||^2 for both routes; refinements are empirical evidence",
+    "refinement_whitened_norm": 0.016666666666666666,
+    "rtol": 0.0001,
+    "whitened_norm": 0.05
+  },
+  "quadrature": {
+    "mass_breaks_GeV": [
+      80.0,
+      86.0,
+      89.0,
+      91.0,
+      93.0,
+      96.0,
+      102.0
+    ],
+    "native_Fourier_tolerance": 1e-06,
+    "native_Q_y_tolerance": 2e-07,
+    "native_nominal_qT_sections": [
+      32,
+      32,
+      32,
+      32,
+      32,
+      34,
+      34
+    ],
+    "native_refined_Q_y_tolerance": 1e-07,
+    "native_refined_qT_sections": [
+      64,
+      64,
+      64,
+      64,
+      64,
+      66,
+      66
+    ],
+    "nominal_orders": [
+      8,
+      8,
+      4
+    ],
+    "refinement_orders": [
+      [
+        16,
+        8,
+        4
+      ],
+      [
+        8,
+        16,
+        4
+      ],
+      [
+        8,
+        8,
+        8
+      ]
+    ]
+  },
+  "required_fits": [
+    "correct_noiseless",
+    "unchecked_noiseless",
+    "correct_fixed_noise",
+    "unchecked_fixed_noise"
+  ],
+  "required_rejection": {
+    "backend_calls": 0,
+    "optimizer_calls": 0,
+    "stage": "fit_problem_construction"
+  },
+  "schema": "typed-tmd/h006-external-experiment/1",
+  "selection": "all source-ordered A8-00y04 bins with qT_upper/Q_lower <= 0.25; no fit impact inspected",
+  "sensitivity_steps": [
+    0.0001,
+    5e-05
+  ],
+  "status": "frozen_before_impact",
+  "timing": "paired alternating order; perf_counter_ns; pilot reps for >=20ms blocks capped at 10000; same native point calls/full NP rebinding/quadrature/cache regime",
+  "timing_blocks": 30,
+  "timing_workloads": [
+    "construction_validation",
+    "warm_scalar",
+    "warm_batch",
+    "parameter_changing_objective"
+  ]
+}

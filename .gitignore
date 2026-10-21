@@ -1,0 +1,11 @@
+.venv/
+.conda-external/
+.cache/
+native/
+results/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+lean/.lake/

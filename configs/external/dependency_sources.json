@@ -1,0 +1,43 @@
+{
+  "dependencies": [
+    {
+      "name": "artemide_source",
+      "url": "https://codeload.github.com/VladimirovAlexey/artemide-public/tar.gz/ea0af1a75e21e316c1ac4ece51933988836a6650",
+      "bytes": 1737243,
+      "sha256": "1f6e4ede222f8be1ef669c2c86e60eaf48e2f7a83c170596cdcc1e9307201e72",
+      "rights": "CC BY-NC-SA 4.0; fetch only; not included in export",
+      "scope": "Observed official source snapshot envelope; build pins Git commit and per-file source hashes independently"
+    },
+    {
+      "name": "dataprocessor_inputs",
+      "url": "https://codeload.github.com/VladimirovAlexey/artemide-DataProcessor/tar.gz/18967d1c52dabf93e17a640405b548071904cfcc",
+      "bytes": 668096,
+      "sha256": "7b547efa5b90d2b91a15e08a291d301f0b14ab8cd20b119466348d3ebb5647b7",
+      "rights": "No explicit license located at pin; fetch only; not redistributed",
+      "scope": "Observed official source snapshot envelope; build pins Git commit and per-file source hashes independently"
+    },
+    {
+      "bytes": 2381,
+      "distribution": "fetch from official origin; grids excluded from software export",
+      "name": "NNPDF31_nnlo_as_0118_1000.info",
+      "sha256": "f5fc2f70655a00dd426dda9294d5b7a3c617aaec63f84b8ada79637745404fde",
+      "url": "https://lhapdfsets.web.cern.ch/current/NNPDF31_nnlo_as_0118_1000/NNPDF31_nnlo_as_0118_1000.info"
+    },
+    {
+      "bytes": 1257508,
+      "distribution": "fetch from official origin; grids excluded from software export",
+      "name": "NNPDF31_nnlo_as_0118_1000_0000.dat",
+      "sha256": "b367000f810148b25b1b1b65a4b37138d2d27dd4351497b6674283f834bd090d",
+      "url": "https://lhapdfsets.web.cern.ch/current/NNPDF31_nnlo_as_0118_1000/NNPDF31_nnlo_as_0118_1000_0000.dat"
+    },
+    {
+      "name": "LHAPDF_source",
+      "source_bytes": 946776,
+      "source_sha256": "641d5ea0942b79e4447e15e5a33491ff3c7032d71d618119935e14ad27f5e3a5",
+      "source_url": "https://lhapdf.hepforge.org/downloads/?f=LHAPDF-6.5.5.tar.gz",
+      "version": "6.5.5",
+      "rights": "GPL-3.0 source; fetched separately, not redistributed"
+    }
+  ],
+  "redistributed_native_sources_or_grids": false
+}
