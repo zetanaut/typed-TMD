@@ -83,11 +83,12 @@ alone is not an explanation, and no general recalibration follows.
 Runtime records preserve observation operators, parameter dependencies,
 source/plan identities and declared evidence. The pinned Lean seed builds,
 but no Lean proof of this adapter, Python, native code or QCD is claimed.
-The concrete dependency-preserving checker remains specified future work,
-with no new implementation task assigned. The bounded results are accepted
-and [GitHub v0.3.0 is published and verified](RELEASE_STATUS.md). DOI archiving
-is explicitly deferred. Acceptance and publication do not expand the
-numerical/software claims above.
+Version 0.4.0 adds the [concrete finite-plan checker and category laws](formal/README.md),
+with 24 Lean theorem reports and four selected positive literal roots plus a
+negative certificate. These exact finite-semantic results are separate from
+the native campaign reported here. The accepted v0.3.0 physics arrays, fits,
+noise and timings are unchanged; no new native execution is claimed. DOI
+archiving remains explicitly deferred. See [release status](RELEASE_STATUS.md).
 
 ## Checking cost on the tested machine
 

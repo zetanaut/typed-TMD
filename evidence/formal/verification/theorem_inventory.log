@@ -1,0 +1,132 @@
+TypedTMDPlan.Category.Arrow.ext {X Y : TypedTMDPlan.Category.Interface} (f g : TypedTMDPlan.Category.Arrow X Y)
+  (h :
+    ∀ (j : Fin (TypedTMDPlan.Category.Interface.size Y)),
+      Eq.{1} (TypedTMDPlan.Category.Arrow.terms f j) (TypedTMDPlan.Category.Arrow.terms g j)) :
+  Eq.{1} f g
+'TypedTMDPlan.Category.Arrow.ext' depends on axioms: [Quot.sound]
+TypedTMDPlan.Category.Arrow.id_comp {X Y : TypedTMDPlan.Category.Interface} (f : TypedTMDPlan.Category.Arrow X Y) :
+  Eq.{1} (TypedTMDPlan.Category.Arrow.comp (TypedTMDPlan.Category.Arrow.id Y) f) f
+'TypedTMDPlan.Category.Arrow.id_comp' depends on axioms: [propext, Quot.sound]
+TypedTMDPlan.Category.Arrow.comp_id {X Y : TypedTMDPlan.Category.Interface} (f : TypedTMDPlan.Category.Arrow X Y) :
+  Eq.{1} (TypedTMDPlan.Category.Arrow.comp f (TypedTMDPlan.Category.Arrow.id X)) f
+'TypedTMDPlan.Category.Arrow.comp_id' depends on axioms: [propext, Quot.sound]
+TypedTMDPlan.Category.Arrow.comp_assoc {X Y Z W : TypedTMDPlan.Category.Interface} (h : TypedTMDPlan.Category.Arrow Z W)
+  (g : TypedTMDPlan.Category.Arrow Y Z) (f : TypedTMDPlan.Category.Arrow X Y) :
+  Eq.{1} (TypedTMDPlan.Category.Arrow.comp h (TypedTMDPlan.Category.Arrow.comp g f))
+    (TypedTMDPlan.Category.Arrow.comp (TypedTMDPlan.Category.Arrow.comp h g) f)
+'TypedTMDPlan.Category.Arrow.comp_assoc' depends on axioms: [propext, Quot.sound]
+TypedTMDPlan.Category.Arrow.interpret_id.{u} {α : Type u} (M : TypedTMDPlan.Model.{u} α)
+  (X : TypedTMDPlan.Category.Interface) :
+  Eq.{u + 1} (TypedTMDPlan.Category.Arrow.interpret.{u} M (TypedTMDPlan.Category.Arrow.id X)) fun θ => θ
+'TypedTMDPlan.Category.Arrow.interpret_id' depends on axioms: [propext]
+TypedTMDPlan.Category.Arrow.interpret_comp.{u} {X Y Z : TypedTMDPlan.Category.Interface} {α : Type u}
+  (M : TypedTMDPlan.Model.{u} α) (g : TypedTMDPlan.Category.Arrow Y Z) (f : TypedTMDPlan.Category.Arrow X Y) :
+  Eq.{u + 1} (TypedTMDPlan.Category.Arrow.interpret.{u} M (TypedTMDPlan.Category.Arrow.comp g f)) fun θ =>
+    TypedTMDPlan.Category.Arrow.interpret.{u} M g (TypedTMDPlan.Category.Arrow.interpret.{u} M f θ)
+'TypedTMDPlan.Category.Arrow.interpret_comp' depends on axioms: [propext, Quot.sound]
+TypedTMDPlan.Category.Arrow.fixed_slice_preserved.{u} {X Y : TypedTMDPlan.Category.Interface} {α : Type u}
+  (M : TypedTMDPlan.Model.{u} α) (f : TypedTMDPlan.Category.Arrow X Y)
+  (θ0 θ : Fin (TypedTMDPlan.Category.Interface.size X) → α)
+  (fixed : TypedTMDPlan.FixedAgreement.{u} (TypedTMDPlan.Category.Interface.varies X) θ0 θ) :
+  TypedTMDPlan.FixedAgreement.{u} (TypedTMDPlan.Category.Interface.varies Y)
+    (TypedTMDPlan.Category.Arrow.interpret.{u} M f θ0) (TypedTMDPlan.Category.Arrow.interpret.{u} M f θ)
+'TypedTMDPlan.Category.Arrow.fixed_slice_preserved' depends on axioms: [propext]
+TypedTMDPlan.Category.Arrow.checked_composition.{u} {X Y Z : TypedTMDPlan.Category.Interface} {α : Type u}
+  (M : TypedTMDPlan.Model.{u} α) (f : TypedTMDPlan.Category.Arrow X Y) (g : TypedTMDPlan.Category.Arrow Y Z)
+  (pf : Fin (TypedTMDPlan.Category.Interface.size Y) → TypedTMDPlan.Plan (TypedTMDPlan.Category.Interface.size X))
+  (pg : Fin (TypedTMDPlan.Category.Interface.size Z) → TypedTMDPlan.Plan (TypedTMDPlan.Category.Interface.size Y))
+  (hf :
+    ∀ (j : Fin (TypedTMDPlan.Category.Interface.size Y)),
+      Eq.{1}
+        (TypedTMDPlan.check (TypedTMDPlan.Category.Interface.varies X) (TypedTMDPlan.Category.Arrow.terms f j) (pf j))
+        true)
+  (hg :
+    ∀ (j : Fin (TypedTMDPlan.Category.Interface.size Z)),
+      Eq.{1}
+        (TypedTMDPlan.check (TypedTMDPlan.Category.Interface.varies Y) (TypedTMDPlan.Category.Arrow.terms g j) (pg j))
+        true)
+  (θ0 θ : Fin (TypedTMDPlan.Category.Interface.size X) → α)
+  (fixed : TypedTMDPlan.FixedAgreement.{u} (TypedTMDPlan.Category.Interface.varies X) θ0 θ) :
+  Eq.{u + 1}
+    (fun j =>
+      TypedTMDPlan.Plan.eval.{u} M (TypedTMDPlan.Category.Arrow.interpret.{u} M f θ0)
+        (fun i => TypedTMDPlan.Plan.eval.{u} M θ0 θ (pf i)) (pg j))
+    (TypedTMDPlan.Category.Arrow.interpret.{u} M (TypedTMDPlan.Category.Arrow.comp g f) θ)
+'TypedTMDPlan.Category.Arrow.checked_composition' depends on axioms: [propext, Quot.sound]
+TypedTMDPlan.congrTwo.{u} {α β γ : Sort u} (f : α → β → γ) {a a' : α} {b b' : β} (ha : Eq.{u} a a') (hb : Eq.{u} b b') :
+  Eq.{u} (f a b) (f a' b')
+'TypedTMDPlan.congrTwo' does not depend on any axioms
+TypedTMDPlan.Expr.dependency_sound.{u} {n : Nat} {α : Type u} (M : TypedTMDPlan.Model.{u} α) (e : TypedTMDPlan.Expr n)
+  (θ η : Fin n → α) :
+  (∀ (i : Fin n), Eq.{1} (TypedTMDPlan.Expr.uses e i) true → Eq.{u + 1} (θ i) (η i)) →
+    Eq.{u + 1} (TypedTMDPlan.Expr.eval.{u} M θ e) (TypedTMDPlan.Expr.eval.{u} M η e)
+'TypedTMDPlan.Expr.dependency_sound' depends on axioms: [propext]
+TypedTMDPlan.Expr.interpretation_unique.{u} {n : Nat} {α : Type u} (M : TypedTMDPlan.Model.{u} α) (θ : Fin n → α)
+  (F : TypedTMDPlan.Expr n → α) (hvar : ∀ (i : Fin n), Eq.{u + 1} (F (TypedTMDPlan.Expr.var i)) (θ i))
+  (hatom : ∀ (k : Nat), Eq.{u + 1} (F (TypedTMDPlan.Expr.atom k)) (TypedTMDPlan.Model.atom.{u} M k))
+  (hunary :
+    ∀ (k : Nat) (e : TypedTMDPlan.Expr n),
+      Eq.{u + 1} (F (TypedTMDPlan.Expr.unary k e)) (TypedTMDPlan.Model.unary.{u} M k (F e)))
+  (hbinary :
+    ∀ (k : Nat) (e f : TypedTMDPlan.Expr n),
+      Eq.{u + 1} (F (TypedTMDPlan.Expr.binary k e f)) (TypedTMDPlan.Model.binary.{u} M k (F e) (F f)))
+  (e : TypedTMDPlan.Expr n) : Eq.{u + 1} (F e) (TypedTMDPlan.Expr.eval.{u} M θ e)
+'TypedTMDPlan.Expr.interpretation_unique' does not depend on any axioms
+TypedTMDPlan.Expr.subst_vars {n : Nat} (e : TypedTMDPlan.Expr n) :
+  Eq.{1} (TypedTMDPlan.Expr.subst TypedTMDPlan.Expr.var e) e
+'TypedTMDPlan.Expr.subst_vars' depends on axioms: [propext]
+TypedTMDPlan.Expr.subst_comp {n m k : Nat} (σ : Fin n → TypedTMDPlan.Expr m) (τ : Fin m → TypedTMDPlan.Expr k)
+  (e : TypedTMDPlan.Expr n) :
+  Eq.{1} (TypedTMDPlan.Expr.subst τ (TypedTMDPlan.Expr.subst σ e))
+    (TypedTMDPlan.Expr.subst (fun i => TypedTMDPlan.Expr.subst τ (σ i)) e)
+'TypedTMDPlan.Expr.subst_comp' depends on axioms: [propext]
+TypedTMDPlan.Expr.eval_subst.{u} {n m : Nat} {α : Type u} (M : TypedTMDPlan.Model.{u} α)
+  (σ : Fin n → TypedTMDPlan.Expr m) (e : TypedTMDPlan.Expr n) (θ : Fin m → α) :
+  Eq.{u + 1} (TypedTMDPlan.Expr.eval.{u} M θ (TypedTMDPlan.Expr.subst σ e))
+    (TypedTMDPlan.Expr.eval.{u} M (fun i => TypedTMDPlan.Expr.eval.{u} M θ (σ i)) e)
+'TypedTMDPlan.Expr.eval_subst' depends on axioms: [propext]
+TypedTMDPlan.cacheable_sound.{u} {n : Nat} {α : Type u} (M : TypedTMDPlan.Model.{u} α) (vary : Fin n → Bool)
+  (θ0 θ : Fin n → α) (fixed : TypedTMDPlan.FixedAgreement.{u} vary θ0 θ) (e : TypedTMDPlan.Expr n) :
+  Eq.{1} (TypedTMDPlan.Expr.cacheable vary e) true →
+    Eq.{u + 1} (TypedTMDPlan.Expr.eval.{u} M θ e) (TypedTMDPlan.Expr.eval.{u} M θ0 e)
+'TypedTMDPlan.cacheable_sound' depends on axioms: [propext]
+TypedTMDPlan.cacheable_subst {n m : Nat} (σ : Fin n → TypedTMDPlan.Expr m) (source : Fin m → Bool)
+  (target : Fin n → Bool)
+  (pres : ∀ (i : Fin n), Eq.{1} (target i) false → Eq.{1} (TypedTMDPlan.Expr.cacheable source (σ i)) true)
+  (e : TypedTMDPlan.Expr n) :
+  Eq.{1} (TypedTMDPlan.Expr.cacheable target e) true →
+    Eq.{1} (TypedTMDPlan.Expr.cacheable source (TypedTMDPlan.Expr.subst σ e)) true
+'TypedTMDPlan.cacheable_subst' depends on axioms: [propext]
+TypedTMDPlan.Plan.safe_sound.{u} {n : Nat} {α : Type u} (M : TypedTMDPlan.Model.{u} α) (vary : Fin n → Bool)
+  (θ0 θ : Fin n → α) (fixed : TypedTMDPlan.FixedAgreement.{u} vary θ0 θ) (p : TypedTMDPlan.Plan n) :
+  Eq.{1} (TypedTMDPlan.Plan.safe vary p) true →
+    Eq.{u + 1} (TypedTMDPlan.Plan.eval.{u} M θ0 θ p) (TypedTMDPlan.Expr.eval.{u} M θ (TypedTMDPlan.Plan.erase p))
+'TypedTMDPlan.Plan.safe_sound' depends on axioms: [propext]
+TypedTMDPlan.check_sound.{u} {n : Nat} {α : Type u} (M : TypedTMDPlan.Model.{u} α) (vary : Fin n → Bool)
+  (θ0 θ : Fin n → α) (source : TypedTMDPlan.Expr n) (candidate : TypedTMDPlan.Plan n)
+  (fixed : TypedTMDPlan.FixedAgreement.{u} vary θ0 θ)
+  (accepted : Eq.{1} (TypedTMDPlan.check vary source candidate) true) :
+  Eq.{u + 1} (TypedTMDPlan.Plan.eval.{u} M θ0 θ candidate) (TypedTMDPlan.Expr.eval.{u} M θ source)
+'TypedTMDPlan.check_sound' depends on axioms: [propext]
+TypedTMDPlan.live_accepted {n : Nat} (vary : Fin n → Bool) (e : TypedTMDPlan.Expr n) :
+  Eq.{1} (TypedTMDPlan.check vary e (TypedTMDPlan.Plan.live e)) true
+'TypedTMDPlan.live_accepted' depends on axioms: [propext]
+TypedTMDPlan.Examples.good_accepts :
+  Eq.{1} (TypedTMDPlan.check TypedTMDPlan.Examples.varying TypedTMDPlan.Examples.source TypedTMDPlan.Examples.good) true
+'TypedTMDPlan.Examples.good_accepts' does not depend on any axioms
+TypedTMDPlan.Examples.bad_rejects :
+  Eq.{1} (TypedTMDPlan.check TypedTMDPlan.Examples.varying TypedTMDPlan.Examples.source TypedTMDPlan.Examples.bad) false
+'TypedTMDPlan.Examples.bad_rejects' does not depend on any axioms
+TypedTMDPlan.Examples.good_preserves {α : Type} (M : TypedTMDPlan.Model.{0} α) (θ0 θ : Fin 2 → α) :
+  Eq.{1} (TypedTMDPlan.Plan.eval.{0} M θ0 θ TypedTMDPlan.Examples.good)
+    (TypedTMDPlan.Expr.eval.{0} M θ TypedTMDPlan.Examples.source)
+'TypedTMDPlan.Examples.good_preserves' depends on axioms: [propext]
+TypedTMDPlan.Examples.fixed_g_cache_is_admissible :
+  Eq.{1} (TypedTMDPlan.check TypedTMDPlan.Examples.onlyA TypedTMDPlan.Examples.source TypedTMDPlan.Examples.bad) true
+'TypedTMDPlan.Examples.fixed_g_cache_is_admissible' does not depend on any axioms
+TypedTMDPlan.Examples.quadrature_accepts :
+  Eq.{1}
+    (TypedTMDPlan.check TypedTMDPlan.Examples.varying TypedTMDPlan.Examples.quadrature
+      TypedTMDPlan.Examples.quadraturePlan)
+    true
+'TypedTMDPlan.Examples.quadrature_accepts' does not depend on any axioms

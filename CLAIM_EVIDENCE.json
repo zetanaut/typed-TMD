@@ -1,0 +1,592 @@
+{
+  "actual_axioms": [
+    "Quot.sound",
+    "propext"
+  ],
+  "claims": [
+    {
+      "artifacts": [
+        {
+          "bytes": 13881,
+          "path": "evidence/formal/verification/PORTABLE.json",
+          "sha256": "eb23f756b35f9964992388403ef82021c05d57b2ac18913aaea8d370f118bcd9"
+        },
+        {
+          "bytes": 9878,
+          "path": "evidence/formal/verification/theorem_inventory.log",
+          "sha256": "74fa84d65738cb9354b975476504fa5b5d01e18b755a001db614489a91c17c97"
+        },
+        {
+          "bytes": 9136,
+          "path": "formal/007/TypedTMDPlan/Core.lean",
+          "sha256": "b7bd6edce2860a8dd2d3f0cbc1f005b55f72445432bebd4a7539461eee93c18f"
+        }
+      ],
+      "assumptions": [
+        "Fixed pure Model",
+        "Agreement on coordinates declared fixed",
+        "Concrete erasure and dependency checks accept"
+      ],
+      "example_commands": [
+        ".venv/bin/python scripts/check_formal.py --output-dir results/formal-check"
+      ],
+      "id": "FP-CACHE",
+      "limitations": [
+        "No proof of Python, decoder, callback purity, IEEE, quadrature or QCD",
+        "Conservative supported grammar may reject equivalent unsupported transformations"
+      ],
+      "scope": "Exact finite source/plan interpretations, universally quantified environments.",
+      "statement": "Concrete checker acceptance preserves the admitted parameter family.",
+      "status": "kernel_checked",
+      "theorems": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "line": 61,
+          "name": "TypedTMDPlan.Expr.dependency_sound",
+          "source": "formal/007/TypedTMDPlan/Core.lean",
+          "source_sha256": "b7bd6edce2860a8dd2d3f0cbc1f005b55f72445432bebd4a7539461eee93c18f"
+        },
+        {
+          "axioms": [
+            "propext"
+          ],
+          "line": 130,
+          "name": "TypedTMDPlan.cacheable_sound",
+          "source": "formal/007/TypedTMDPlan/Core.lean",
+          "source_sha256": "b7bd6edce2860a8dd2d3f0cbc1f005b55f72445432bebd4a7539461eee93c18f"
+        },
+        {
+          "axioms": [
+            "propext"
+          ],
+          "line": 206,
+          "name": "TypedTMDPlan.Plan.safe_sound",
+          "source": "formal/007/TypedTMDPlan/Core.lean",
+          "source_sha256": "b7bd6edce2860a8dd2d3f0cbc1f005b55f72445432bebd4a7539461eee93c18f"
+        },
+        {
+          "axioms": [
+            "propext"
+          ],
+          "line": 233,
+          "name": "TypedTMDPlan.check_sound",
+          "source": "formal/007/TypedTMDPlan/Core.lean",
+          "source_sha256": "b7bd6edce2860a8dd2d3f0cbc1f005b55f72445432bebd4a7539461eee93c18f"
+        }
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "bytes": 13881,
+          "path": "evidence/formal/verification/PORTABLE.json",
+          "sha256": "eb23f756b35f9964992388403ef82021c05d57b2ac18913aaea8d370f118bcd9"
+        },
+        {
+          "bytes": 9878,
+          "path": "evidence/formal/verification/theorem_inventory.log",
+          "sha256": "74fa84d65738cb9354b975476504fa5b5d01e18b755a001db614489a91c17c97"
+        },
+        {
+          "bytes": 4142,
+          "path": "formal/007/TypedTMDPlan/Category.lean",
+          "sha256": "7d97b9aad4f076145f76b27d0090dc803144847f3873a4f40378aa0cd0d6e98c"
+        }
+      ],
+      "assumptions": [
+        "Target-fixed expressions depend only on source-fixed coordinates",
+        "Fixed Model"
+      ],
+      "example_commands": [
+        ".venv/bin/python scripts/check_formal.py --output-dir results/formal-check"
+      ],
+      "id": "FP-CATEGORY",
+      "limitations": [
+        "Single-sorted value language",
+        "Not a full category of physical TMDs",
+        "No general categorical composition on plan syntax"
+      ],
+      "scope": "Finite coordinates and variation masks, concrete substitution under a fixed interpretation.",
+      "statement": "Admissible finite-interface arrows form a source category; interpretation preserves identity/composition.",
+      "status": "kernel_checked",
+      "theorems": [
+        {
+          "axioms": [],
+          "line": 87,
+          "name": "TypedTMDPlan.Expr.interpretation_unique",
+          "source": "formal/007/TypedTMDPlan/Core.lean",
+          "source_sha256": "b7bd6edce2860a8dd2d3f0cbc1f005b55f72445432bebd4a7539461eee93c18f"
+        },
+        {
+          "axioms": [
+            "propext"
+          ],
+          "line": 109,
+          "name": "TypedTMDPlan.Expr.subst_vars",
+          "source": "formal/007/TypedTMDPlan/Core.lean",
+          "source_sha256": "b7bd6edce2860a8dd2d3f0cbc1f005b55f72445432bebd4a7539461eee93c18f"
+        },
+        {
+          "axioms": [
+            "propext"
+          ],
+          "line": 112,
+          "name": "TypedTMDPlan.Expr.subst_comp",
+          "source": "formal/007/TypedTMDPlan/Core.lean",
+          "source_sha256": "b7bd6edce2860a8dd2d3f0cbc1f005b55f72445432bebd4a7539461eee93c18f"
+        },
+        {
+          "axioms": [
+            "propext"
+          ],
+          "line": 116,
+          "name": "TypedTMDPlan.Expr.eval_subst",
+          "source": "formal/007/TypedTMDPlan/Core.lean",
+          "source_sha256": "b7bd6edce2860a8dd2d3f0cbc1f005b55f72445432bebd4a7539461eee93c18f"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "line": 46,
+          "name": "TypedTMDPlan.Category.Arrow.id_comp",
+          "source": "formal/007/TypedTMDPlan/Category.lean",
+          "source_sha256": "7d97b9aad4f076145f76b27d0090dc803144847f3873a4f40378aa0cd0d6e98c"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "line": 51,
+          "name": "TypedTMDPlan.Category.Arrow.comp_id",
+          "source": "formal/007/TypedTMDPlan/Category.lean",
+          "source_sha256": "7d97b9aad4f076145f76b27d0090dc803144847f3873a4f40378aa0cd0d6e98c"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "line": 56,
+          "name": "TypedTMDPlan.Category.Arrow.comp_assoc",
+          "source": "formal/007/TypedTMDPlan/Category.lean",
+          "source_sha256": "7d97b9aad4f076145f76b27d0090dc803144847f3873a4f40378aa0cd0d6e98c"
+        },
+        {
+          "axioms": [
+            "propext"
+          ],
+          "line": 67,
+          "name": "TypedTMDPlan.Category.Arrow.interpret_id",
+          "source": "formal/007/TypedTMDPlan/Category.lean",
+          "source_sha256": "7d97b9aad4f076145f76b27d0090dc803144847f3873a4f40378aa0cd0d6e98c"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "line": 71,
+          "name": "TypedTMDPlan.Category.Arrow.interpret_comp",
+          "source": "formal/007/TypedTMDPlan/Category.lean",
+          "source_sha256": "7d97b9aad4f076145f76b27d0090dc803144847f3873a4f40378aa0cd0d6e98c"
+        }
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "bytes": 13881,
+          "path": "evidence/formal/verification/PORTABLE.json",
+          "sha256": "eb23f756b35f9964992388403ef82021c05d57b2ac18913aaea8d370f118bcd9"
+        },
+        {
+          "bytes": 9878,
+          "path": "evidence/formal/verification/theorem_inventory.log",
+          "sha256": "74fa84d65738cb9354b975476504fa5b5d01e18b755a001db614489a91c17c97"
+        },
+        {
+          "bytes": 3604,
+          "path": "examples/formal/cache_and_composition.py",
+          "sha256": "28506dcd90ea9153053cf6134daf049f4b5c96e9164590121eeb797f7368ac2a"
+        }
+      ],
+      "assumptions": [
+        "Both plans accepted",
+        "Admissible arrows and fixed agreement",
+        "eta0=f(theta0)"
+      ],
+      "example_commands": [
+        ".venv/bin/python scripts/check_formal.py --output-dir results/formal-check",
+        ".venv/bin/python examples/formal/cache_and_composition.py"
+      ],
+      "id": "FP-TRANSPORT",
+      "limitations": [
+        "Unrelated second reference not covered",
+        "Does not equate distinct parameter boundaries without model transport"
+      ],
+      "scope": "Second reference equals interpretation of the first source at its reference.",
+      "statement": "Checked staged plans preserve composition with the transported second cache reference.",
+      "status": "kernel_checked",
+      "theorems": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "line": 77,
+          "name": "TypedTMDPlan.Category.Arrow.fixed_slice_preserved",
+          "source": "formal/007/TypedTMDPlan/Category.lean",
+          "source_sha256": "7d97b9aad4f076145f76b27d0090dc803144847f3873a4f40378aa0cd0d6e98c"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "line": 85,
+          "name": "TypedTMDPlan.Category.Arrow.checked_composition",
+          "source": "formal/007/TypedTMDPlan/Category.lean",
+          "source_sha256": "7d97b9aad4f076145f76b27d0090dc803144847f3873a4f40378aa0cd0d6e98c"
+        }
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "bytes": 3604,
+          "path": "examples/formal/cache_and_composition.py",
+          "sha256": "28506dcd90ea9153053cf6134daf049f4b5c96e9164590121eeb797f7368ac2a"
+        },
+        {
+          "bytes": 15982,
+          "path": "tests/test_finite_plan.py",
+          "sha256": "b2383d25f38f9c71ed6b3d78bc634d93266526aa01c736452048266f70943374"
+        }
+      ],
+      "assumptions": [
+        "Declared variation and context identities",
+        "Supported pure callbacks"
+      ],
+      "example_commands": [
+        ".venv/bin/python examples/formal/cache_and_composition.py"
+      ],
+      "id": "FP-REFUSAL",
+      "limitations": [
+        "Reference-value closure alone is insufficient",
+        "Fixing g changes the model",
+        "Fixture is not physical LL/NLL or extraction"
+      ],
+      "scope": "Readable Python example and accepted regression suite.",
+      "statement": "Unsafe fitted-kernel caching and wrong staged reference are refused; fixed-g restriction is explicit.",
+      "status": "runtime_tested",
+      "theorems": []
+    },
+    {
+      "artifacts": [
+        {
+          "bytes": 13881,
+          "path": "evidence/formal/verification/PORTABLE.json",
+          "sha256": "eb23f756b35f9964992388403ef82021c05d57b2ac18913aaea8d370f118bcd9"
+        },
+        {
+          "bytes": 9878,
+          "path": "evidence/formal/verification/theorem_inventory.log",
+          "sha256": "74fa84d65738cb9354b975476504fa5b5d01e18b755a001db614489a91c17c97"
+        },
+        {
+          "bytes": 329176,
+          "path": "evidence/formal/fixtures/MANIFEST.json",
+          "sha256": "bfaaa58b88689b7c4bf0efe3ea960d6743777bd9614bd11a011199fefc25ebe6"
+        }
+      ],
+      "assumptions": [
+        "Lean 4.21.0 fresh build",
+        "65536-KiB process thread stack",
+        "Correct encoding and primitive bindings"
+      ],
+      "example_commands": [
+        ".venv/bin/python scripts/check_formal.py --output-dir results/formal-check"
+      ],
+      "id": "FP-LITERALS",
+      "limitations": [
+        "Four selected roots; not all runtime-tested roots",
+        "Repeated verification is not a new snapshot set",
+        "H006 callback is analytic, not native arTeMiDe"
+      ],
+      "scope": "One public local snapshot set: kernel, finite-window A/B output 0 and analytic-geometry bin 0.",
+      "statement": "Four complete positive literal roots and one negative root are checked and the accepted sealed plans execute.",
+      "status": "kernel_checked",
+      "theorems": []
+    },
+    {
+      "artifacts": [
+        {
+          "bytes": 329176,
+          "path": "evidence/formal/fixtures/MANIFEST.json",
+          "sha256": "bfaaa58b88689b7c4bf0efe3ea960d6743777bd9614bd11a011199fefc25ebe6"
+        },
+        {
+          "bytes": 10284,
+          "path": "evidence/formal/verification/replay.json",
+          "sha256": "2d5d6e45fb15a55865786b38cbb908f1f270df3289adf5a64d75c3eae472a2a7"
+        }
+      ],
+      "assumptions": [
+        "Frozen coefficient/snapshot identity",
+        "H004 abs budget 1e-13+1e-11*abs(target)",
+        "H006 budget 2e-13*max(1,abs(target))"
+      ],
+      "example_commands": [
+        ".venv/bin/python scripts/replay_finite_plans.py --output results/finite-replay.json"
+      ],
+      "id": "FP-REPLAY",
+      "limitations": [
+        "Original NumPy reduction may differ from balanced tree in rounding",
+        "No new fit, provider or native execution",
+        "Numerical agreement is not a proof"
+      ],
+      "scope": "100 scalar comparisons; source/plan interpreter values also agree exactly in the executed checks.",
+      "statement": "All nine finite-window targets in both charts and seven analytic observation bins compare to saved targets at four parameter points.",
+      "status": "numerically_compared",
+      "theorems": []
+    },
+    {
+      "artifacts": [
+        {
+          "bytes": 756,
+          "path": "evidence/experiment/rejection.json",
+          "sha256": "b221da0ee6a8ba97a8b30eb1198e3d3e9330c6a2be539da64646335ce59fb9d7"
+        },
+        {
+          "bytes": 7933,
+          "path": "tests/test_observations.py",
+          "sha256": "1044e65e4469276dbdbd6d4ad0c361e50776ba35ef38c53de2348f692834d7e3"
+        }
+      ],
+      "assumptions": [
+        "Explicit observation contracts",
+        "Audited native adapter semantics"
+      ],
+      "example_commands": [
+        ".venv/bin/python -m unittest discover -s tests -v"
+      ],
+      "id": "OBS-REFUSAL",
+      "limitations": [
+        "Not a proof that arbitrary user labels are truthful",
+        "Deliberately injected interface fault, not upstream physics bug"
+      ],
+      "scope": "Audited observation constructor and test coverage.",
+      "statement": "A midpoint point-density route is rejected when a bin average is required, before backend or optimizer work.",
+      "status": "runtime_tested",
+      "theorems": []
+    },
+    {
+      "artifacts": [
+        {
+          "bytes": 1060,
+          "path": "evidence/experiment/consequences.json",
+          "sha256": "c62a9c53b8a71b23cf51b6865b14ac97dc41e60e69f2ebd1039621588cd0012c"
+        },
+        {
+          "bytes": 54046,
+          "path": "evidence/experiment/fits.json",
+          "sha256": "6fa92311b53cc946dc7c021c65aa3d2cfb55a6e7675292808e7a5ffa839fbf8b"
+        },
+        {
+          "bytes": 10690,
+          "path": "evidence/validation/selected_validation_checks.json",
+          "sha256": "278a6ccbf155514faddc844bd250c23a23dc96d3f361b3a2cc6a935e6d4f0b28"
+        },
+        {
+          "bytes": 27243,
+          "path": "evidence/timing/timings.json",
+          "sha256": "7f05b01f48a1e28fb5923947c35ec2c7802929e557099770944837f6bff8cba9"
+        }
+      ],
+      "assumptions": [
+        "Pinned backend/model/PDF and full parameter vector",
+        "Original tolerances, seed, geometry and sample unchanged"
+      ],
+      "example_commands": [
+        "Follow docs/INSTALL_EXTERNAL.md for the optional native route"
+      ],
+      "id": "NATIVE-RESULT",
+      "limitations": [
+        "No new native campaign in 0.4.0",
+        "Shared physics engine, not independent QCD",
+        "Sensitivity units not calibrated confidence; no global-optimum proof"
+      ],
+      "scope": "Preserved v0.3.0 native campaign: one parameter, five training bins, two held-out bins, frozen synthetic noise/covariance.",
+      "statement": "The accepted SV19 synthetic experiment measures midpoint-versus-integrated fit consequences.",
+      "status": "historical_native_execution",
+      "theorems": []
+    },
+    {
+      "artifacts": [
+        {
+          "bytes": 89675,
+          "path": "evidence/coverage/inputs.json",
+          "sha256": "f9751b63bb0e321c39f1dcca9d2662c54f11cfd8b6ea5f3de9669c857fa17606"
+        },
+        {
+          "bytes": 7839,
+          "path": "scripts/replay_coverage.py",
+          "sha256": "a937189a9fae04e273f00d4e87d6b02ddbd600cf5450580e9878d697e943f8b3"
+        }
+      ],
+      "assumptions": [
+        "Same declared saved arrays"
+      ],
+      "example_commands": [
+        ".venv/bin/python scripts/replay_coverage.py --inputs evidence/coverage/inputs.json --output results/coverage.json"
+      ],
+      "id": "COVERAGE-SAVED",
+      "limitations": [
+        "184/200 nominal inclusion does not establish calibration",
+        "No new extraction"
+      ],
+      "scope": "Original synthetic draws and Jacobian; no redraw or refit.",
+      "statement": "Saved-array replay retains the 200-draw post-hoc coverage diagnostic.",
+      "status": "numerically_compared",
+      "theorems": []
+    },
+    {
+      "artifacts": [
+        {
+          "bytes": 329176,
+          "path": "evidence/formal/fixtures/MANIFEST.json",
+          "sha256": "bfaaa58b88689b7c4bf0efe3ea960d6743777bd9614bd11a011199fefc25ebe6"
+        }
+      ],
+      "assumptions": [
+        "Exact companion identity listed in reproduction guide"
+      ],
+      "example_commands": [
+        "See docs/formal/REPRODUCE.md"
+      ],
+      "id": "UPSTREAM-REGEN",
+      "limitations": [
+        "Companion not distributed in this release",
+        "Missing companion is never a passed regeneration"
+      ],
+      "scope": "Optional regeneration only; shipped-coefficient runtime and formal replay have no such dependency.",
+      "statement": "Full upstream finite-window coefficient regeneration requires the separate provider companion.",
+      "status": "blocked",
+      "theorems": []
+    },
+    {
+      "artifacts": [
+        {
+          "bytes": 2642,
+          "path": "docs/formal/TRUST_AND_SCOPE.md",
+          "sha256": "cb1560648fec46eb4ff198fd49f89e70f5661d4886acaabf268400672887295e"
+        }
+      ],
+      "assumptions": [],
+      "example_commands": [],
+      "id": "OUT-OF-SCOPE",
+      "limitations": [
+        "No implication beyond the theorem hypotheses and executed evidence"
+      ],
+      "scope": "Explicit boundary of the delivered finite-plan guarantees.",
+      "statement": "No verified end-to-end compiler/decoder, IEEE, quadrature remainder, QCD factorization, Yoneda or identifiability theorem is claimed.",
+      "status": "not_claimed",
+      "theorems": []
+    }
+  ],
+  "formal_component_version": "0.1.0",
+  "lean": "4.21.0",
+  "schema": "typed-tmd/claim-evidence/1",
+  "selected_roots": [
+    {
+      "case": "kernel_fixture",
+      "certificate": "selected/kernel_fixture/Certificate.lean",
+      "certificate_sha256": "226566e18cc3c2e4510b1c98b654c359964b5992a97393a02aaee7f6310721ae",
+      "expression_nodes": 11,
+      "parent_fixture": "good.json",
+      "parent_wire_sha256": "da79972f25a8d4cbd5751a7d14d0b454c41f97ce615e162d8ab802cafae04402",
+      "plan_nodes": 11,
+      "selected_output": 0,
+      "status": "kernel_checked",
+      "theory_sources": {
+        "TypedTMDPlan.lean": "ae0a52fd8d5d5a76711a057f7cea5a894ab0d1ceac67566804b1fae8c3995eef",
+        "TypedTMDPlan/Category.lean": "7d97b9aad4f076145f76b27d0090dc803144847f3873a4f40378aa0cd0d6e98c",
+        "TypedTMDPlan/Core.lean": "b7bd6edce2860a8dd2d3f0cbc1f005b55f72445432bebd4a7539461eee93c18f",
+        "TypedTMDPlan/Examples.lean": "fb203760aa7d82366e870f5470356c107ed09fa32dd51d6d5d578c43fecc7607",
+        "lakefile.toml": "1b70059a81ee691526ab746cec63a1ec98be234650d800f6c41b649a575e2369",
+        "lean-toolchain": "d24fed434d3b13adfaab57724a0a7f270ea8bf1c818b5ae5cf25cbce24dd685c"
+      },
+      "thread_stack_kb": 65536,
+      "wire_sha256": "da79972f25a8d4cbd5751a7d14d0b454c41f97ce615e162d8ab802cafae04402"
+    },
+    {
+      "case": "H004_A",
+      "certificate": "selected/H004_A/Certificate.lean",
+      "certificate_sha256": "eb5278694f3c812038bda4d680731e090a9cc121020b23d63e7527af6b940684",
+      "expression_nodes": 4996,
+      "parent_fixture": "H004_A_finite_plan.json.gz",
+      "parent_wire_sha256": "9a67c1c0153e0f8de98a051c38a6dfcbfae7a706ebe86747c65625859a4671be",
+      "plan_nodes": 4228,
+      "selected_output": 0,
+      "status": "kernel_checked",
+      "theory_sources": {
+        "TypedTMDPlan.lean": "ae0a52fd8d5d5a76711a057f7cea5a894ab0d1ceac67566804b1fae8c3995eef",
+        "TypedTMDPlan/Category.lean": "7d97b9aad4f076145f76b27d0090dc803144847f3873a4f40378aa0cd0d6e98c",
+        "TypedTMDPlan/Core.lean": "b7bd6edce2860a8dd2d3f0cbc1f005b55f72445432bebd4a7539461eee93c18f",
+        "TypedTMDPlan/Examples.lean": "fb203760aa7d82366e870f5470356c107ed09fa32dd51d6d5d578c43fecc7607",
+        "lakefile.toml": "1b70059a81ee691526ab746cec63a1ec98be234650d800f6c41b649a575e2369",
+        "lean-toolchain": "d24fed434d3b13adfaab57724a0a7f270ea8bf1c818b5ae5cf25cbce24dd685c"
+      },
+      "thread_stack_kb": 65536,
+      "wire_sha256": "25eba5d137cf5af173d2002e30d407bcbe191a1b4a625f91382003629e155e6c"
+    },
+    {
+      "case": "H004_B",
+      "certificate": "selected/H004_B/Certificate.lean",
+      "certificate_sha256": "5104eb5d92af7cb5c188c60e518bc4a45a9eaabac91120afea6bc52972a6a7e4",
+      "expression_nodes": 6148,
+      "parent_fixture": "H004_B_finite_plan.json.gz",
+      "parent_wire_sha256": "62692a73c12f0d848020e5963b5d4d53ceec5db5a80892c386a0677520750327",
+      "plan_nodes": 5380,
+      "selected_output": 0,
+      "status": "kernel_checked",
+      "theory_sources": {
+        "TypedTMDPlan.lean": "ae0a52fd8d5d5a76711a057f7cea5a894ab0d1ceac67566804b1fae8c3995eef",
+        "TypedTMDPlan/Category.lean": "7d97b9aad4f076145f76b27d0090dc803144847f3873a4f40378aa0cd0d6e98c",
+        "TypedTMDPlan/Core.lean": "b7bd6edce2860a8dd2d3f0cbc1f005b55f72445432bebd4a7539461eee93c18f",
+        "TypedTMDPlan/Examples.lean": "fb203760aa7d82366e870f5470356c107ed09fa32dd51d6d5d578c43fecc7607",
+        "lakefile.toml": "1b70059a81ee691526ab746cec63a1ec98be234650d800f6c41b649a575e2369",
+        "lean-toolchain": "d24fed434d3b13adfaab57724a0a7f270ea8bf1c818b5ae5cf25cbce24dd685c"
+      },
+      "thread_stack_kb": 65536,
+      "wire_sha256": "f55f1f38a57a4623c213a1641dd027040962d01e0943485e0b31a4c239da40aa"
+    },
+    {
+      "case": "H006_observation",
+      "certificate": "selected/H006_observation/Certificate.lean",
+      "certificate_sha256": "6fc40a67a426fd93ebae0454476f4919d0b470e538acb12def5483eb5c383151",
+      "expression_nodes": 7917,
+      "parent_fixture": "H006_geometry_plan.json.gz",
+      "parent_wire_sha256": "2e6ee5181509db2b4cc72e2b797734536074c1714c8e6577628e5905274a781d",
+      "plan_nodes": 7170,
+      "selected_output": 0,
+      "status": "kernel_checked",
+      "theory_sources": {
+        "TypedTMDPlan.lean": "ae0a52fd8d5d5a76711a057f7cea5a894ab0d1ceac67566804b1fae8c3995eef",
+        "TypedTMDPlan/Category.lean": "7d97b9aad4f076145f76b27d0090dc803144847f3873a4f40378aa0cd0d6e98c",
+        "TypedTMDPlan/Core.lean": "b7bd6edce2860a8dd2d3f0cbc1f005b55f72445432bebd4a7539461eee93c18f",
+        "TypedTMDPlan/Examples.lean": "fb203760aa7d82366e870f5470356c107ed09fa32dd51d6d5d578c43fecc7607",
+        "lakefile.toml": "1b70059a81ee691526ab746cec63a1ec98be234650d800f6c41b649a575e2369",
+        "lean-toolchain": "d24fed434d3b13adfaab57724a0a7f270ea8bf1c818b5ae5cf25cbce24dd685c"
+      },
+      "thread_stack_kb": 65536,
+      "wire_sha256": "73d42fa664be7d804f11d35f18af5e07da00ca1d86d80b130e58505d240e8ef2"
+    }
+  ],
+  "software_version": "0.4.0",
+  "theorem_count": 24
+}

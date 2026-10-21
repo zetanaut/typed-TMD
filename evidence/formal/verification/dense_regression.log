@@ -1,0 +1,6 @@
+test_dense_literal_plan_is_kernel_checked_and_the_same_plan_executes (test_finite_plan.DenseKernelCertificateTests.test_dense_literal_plan_is_kernel_checked_and_the_same_plan_executes) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 3.146s
+
+OK

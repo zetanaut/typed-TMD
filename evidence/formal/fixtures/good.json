@@ -1,0 +1,200 @@
+{
+  "atoms_hex": [
+    "0x1.999999999999ap-3",
+    "-0x1.2be2192560051p+1",
+    "-0x1.b0a3d70a3d70bp+0"
+  ],
+  "binary_symbols": [
+    "add",
+    "mul"
+  ],
+  "context": {
+    "QA_GeV_hex": "0x1.4000000000000p+2",
+    "Q_GeV_hex": "0x1.4000000000000p+4",
+    "b_GeV_inv_hex": "0x1.4cccccccccccdp+0",
+    "fixture": "fitted-kernel-transport",
+    "stage": "finite idealized plan",
+    "units": "dimensionless"
+  },
+  "expressions": [
+    {
+      "args": [],
+      "id": 0,
+      "tag": "atom"
+    },
+    {
+      "args": [],
+      "id": 1,
+      "tag": "var"
+    },
+    {
+      "args": [],
+      "id": 1,
+      "tag": "atom"
+    },
+    {
+      "args": [
+        1,
+        2
+      ],
+      "id": 1,
+      "tag": "binary"
+    },
+    {
+      "args": [
+        0,
+        3
+      ],
+      "id": 0,
+      "tag": "binary"
+    },
+    {
+      "args": [
+        4
+      ],
+      "id": 0,
+      "tag": "unary"
+    },
+    {
+      "args": [],
+      "id": 0,
+      "tag": "var"
+    },
+    {
+      "args": [],
+      "id": 2,
+      "tag": "atom"
+    },
+    {
+      "args": [
+        6,
+        7
+      ],
+      "id": 1,
+      "tag": "binary"
+    },
+    {
+      "args": [
+        8
+      ],
+      "id": 0,
+      "tag": "unary"
+    },
+    {
+      "args": [
+        5,
+        9
+      ],
+      "id": 1,
+      "tag": "binary"
+    }
+  ],
+  "parameters": {
+    "names": [
+      "a",
+      "g2"
+    ],
+    "reference_hex": [
+      "0x1.0000000000000p-2",
+      "0x1.47ae147ae147bp-5"
+    ],
+    "varying": [
+      true,
+      true
+    ]
+  },
+  "plan_roots": [
+    10
+  ],
+  "plans": [
+    {
+      "args": [],
+      "expr": 0,
+      "id": 0,
+      "tag": "cache"
+    },
+    {
+      "args": [],
+      "expr": 1,
+      "id": 0,
+      "tag": "live"
+    },
+    {
+      "args": [],
+      "expr": 2,
+      "id": 0,
+      "tag": "cache"
+    },
+    {
+      "args": [
+        1,
+        2
+      ],
+      "expr": null,
+      "id": 1,
+      "tag": "binary"
+    },
+    {
+      "args": [
+        0,
+        3
+      ],
+      "expr": null,
+      "id": 0,
+      "tag": "binary"
+    },
+    {
+      "args": [
+        4
+      ],
+      "expr": null,
+      "id": 0,
+      "tag": "unary"
+    },
+    {
+      "args": [],
+      "expr": 6,
+      "id": 0,
+      "tag": "live"
+    },
+    {
+      "args": [],
+      "expr": 7,
+      "id": 0,
+      "tag": "cache"
+    },
+    {
+      "args": [
+        6,
+        7
+      ],
+      "expr": null,
+      "id": 1,
+      "tag": "binary"
+    },
+    {
+      "args": [
+        8
+      ],
+      "expr": null,
+      "id": 0,
+      "tag": "unary"
+    },
+    {
+      "args": [
+        5,
+        9
+      ],
+      "expr": null,
+      "id": 1,
+      "tag": "binary"
+    }
+  ],
+  "schema": "typed-tmd/finite-plan/007-v1",
+  "source_roots": [
+    10
+  ],
+  "unary_symbols": [
+    "exp"
+  ]
+}

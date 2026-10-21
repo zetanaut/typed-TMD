@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use typed-TMD, please cite this software and the relevant scientific inputs listed in docs/THIRD_PARTY_NOTICES.md."
 type: software
 title: "typed-TMD"
-version: "0.3.0"
+version: "0.4.0"
 authors:
   - family-names: Keller
     given-names: Dustin

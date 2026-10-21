@@ -22,3 +22,23 @@ Scientific references:
 The external calculation shares the published physics engine and model.
 Adapter and observation checks are not additional authorship of that engine,
 an independent QCD calculation, or a new reproduction of the global SV19 fit.
+
+## Finite-plan fixtures and formal tooling
+
+The finite-window fixtures contain original calculated finite coefficients,
+parameterized expression trees and numerical target responses derived from the
+accepted provider calculation. They do not contain a raw PDF grid, upstream
+source checkout or reusable provider database. CT18NNLO provider inputs retain
+their own provenance and scientific attribution; cite T.-J. Hou et al.,
+[CT18](https://arxiv.org/abs/1912.10053), and LHAPDF6 when using that diagnostic.
+The exact parent archive, provider/snapshot identities and coefficient hashes
+are retained in the fixture manifest and wire context. The separate seven-bin
+fixture contains factual geometry and calculated quadrature coefficients with
+an original analytic polynomial callback; it is not a distribution of the
+arTeMiDe kernel or experimental measured values.
+
+Lean 4.21.0 is obtained separately from the official leanprover/lean4 release
+under its upstream Apache-2.0 terms. CI pins the binary archive SHA-256. No Lean
+binary, `.olean` build product, mathlib distribution or native engine is shipped.
+The new original Python/Lean source and calculated fixtures use this project's
+MIT license; that does not relicense third-party code or PDF grids.

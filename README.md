@@ -13,7 +13,22 @@ finite-bin average. The checked fit constructor rejects that mismatch before
 backend or optimizer evaluation. A controlled synthetic experiment measures
 the change after constructing the full bin integral.
 
-Start with:
+The finite-plan layer addresses a second failure: caching a fitted-parameter
+factor at one reference point can preserve its value while corrupting its
+sensitivity. A concrete dependency/erasure checker rejects that reuse. Its
+Lean theorem preserves the entire admitted parameter family under a fixed pure
+interpretation. Categorical composition requires transporting the second cache
+reference through the first source map. These guarantees concern exact finite
+expressions; Python, floating-point arithmetic, quadrature and QCD remain
+separate obligations.
+
+Three reader paths:
+
+- **Try the runtime examples:** [cache/refusal and composition](docs/formal/EXAMPLES.md), plus the quick start below.
+- **Check the full finite-plan proof:** [clean checkout reproduction](docs/formal/REPRODUCE.md), requiring Python numerics and Lean 4.21.0 only.
+- **Reproduce the native physics benchmark:** [external setup](docs/INSTALL_EXTERNAL.md), with separately fetched backend and PDF inputs.
+
+Scientific and software documentation:
 
 - [Observation conventions and native-source audit](docs/EXTERNAL_SV19.md)
 - [Construction, rejection and repair](docs/EXAMPLES.md)
@@ -29,7 +44,7 @@ Start with:
 
 | Layer | Status | Meaning |
 |---|---|---|
-| GitHub release | **Published; bounded results accepted** | v0.3.0 assets verified; later main updates document acceptance. |
+| GitHub release | **Published; bounded results accepted** | v0.4.0 adds the concrete finite-plan implementation; v0.3.0 physics evidence is preserved. |
 | Scientific contexts and observation contracts | **Implemented** | Runtime checks retain observation meaning, model identity and parameter dependencies. |
 | External DY example | **Validated** | One pinned arTeMiDe v2.05/SV19 configuration, seven bins and one free native parameter. |
 | Midpoint/bin mismatch | **Rejected before fitting** | The invalid constructor makes zero backend and optimizer calls. |
@@ -37,7 +52,7 @@ Start with:
 | Controlled fit comparison | **Complete** | Correct and unchecked routes use identical noiseless and fixed-noise synthetic inputs. |
 | Saved-array coverage diagnostic | **Replayed** | The same 200 saved draws support a separate post-hoc statistical diagnostic. |
 | Checking overhead | **Measured** | Thirty alternating paired blocks per workload, with equal native call counts. |
-| Lean formal layer | **Abstract seed builds** | A concrete dependency-preserving checker remains future work. |
+| Lean formal layer | **Concrete checker and category laws** | 24 theorem statements; four full positive roots, one negative root; exact finite semantics under stated assumptions. |
 
 ---
 
@@ -128,7 +143,8 @@ coefficient inventory, scales, process conventions and input identities.
 │   ├── CLAIM_EVIDENCE.md
 │   ├── ROADMAP.md
 │   └── figures/external/
-├── lean/                  pinned abstract composition seed
+├── formal/007/            concrete checker, category laws and examples (Lean 4.21.0)
+├── lean/                  historical abstract composition seed
 ├── pyproject.toml
 └── requirements-*.txt
 ```
@@ -156,8 +172,28 @@ Run the core checks and analytic closure:
 .venv/bin/python examples/algebraic_closure.py --output results/closure.json
 ```
 
-The tagged release has 66 public tests and twelve analytic closure checks.
-These commands do not require the external engine.
+The source suite includes the finite-plan and publication regressions and twelve
+analytic closure checks. These commands do not require the external engine.
+The dense certificate integration test is explicitly optional on this runtime
+route; the separate full formal command requires it to execute.
+
+Run the new runtime tutorial and snapshot replay:
+
+```sh
+.venv/bin/python examples/formal/cache_and_composition.py
+.venv/bin/python scripts/replay_finite_plans.py --output results/finite-replay.json
+```
+
+With Lean 4.21.0 available, check the complete selected roots from the shipped
+coefficients (no LHAPDF or arTeMiDe installation):
+
+```sh
+.venv/bin/python scripts/check_formal.py --output-dir results/formal-check
+```
+
+Use a fresh output directory. Installation is from a source checkout; the
+wheel alone does not contain these fixtures and commands. See the
+[formal guide](docs/formal/README.md) for semantics, category laws and trust.
 
 Replay the saved-array coverage diagnostic:
 
@@ -208,7 +244,7 @@ regenerates figures from saved arrays without running another fit.
 | Fresh native installation | Pass | All saved scientific campaign values, including optimizer histories, reproduce in binary64; elapsed times are excluded. |
 | Public tests and GitHub CI | Pass | Core and analytic fixtures; CI does not build the native engine. |
 | Saved-array coverage replay | Pass | Exact saved inputs and explicit comparison tolerances; no recalibration. |
-| Existing Lean seed | Builds | Abstract composition only; no proof of Python, native execution or QCD. |
+| Concrete Lean layer | Kernel checked | Dependency/cache preservation, source substitution/category laws and transported-reference composition; four selected full literal roots and a negative certificate. |
 
 The native backend has process-global state. Use one owning session per
 process. Parameter-independent quadrature geometry is cached; parameter
@@ -217,15 +253,18 @@ outside the supported adapter contract.
 
 The [claim/evidence map](docs/CLAIM_EVIDENCE.md) connects each claim to its
 receipt and limitations. [Earlier failed attempts and corrections](docs/ATTEMPT_HISTORY.md)
-remain documented. The [next formal specification](docs/REPRESENTATION_AND_LEAN_SPEC.md)
-describes the planned concrete checker separately from the existing seed.
+remain documented. The [formal documentation](docs/formal/README.md) and
+[machine claim index](CLAIM_EVIDENCE.json) distinguish exact theorems, runtime
+checks, numerical comparisons and historical native evidence.
 
 ---
 
 ## Releases and citation
 
-[Release v0.3.0](https://github.com/zetanaut/typed-TMD/releases/tag/v0.3.0)
-contains the validated source archive, file manifest and execution receipt.
+[Release v0.4.0](https://github.com/zetanaut/typed-TMD/releases/tag/v0.4.0)
+contains the source archive, SHA-256 manifest and publication verification receipt.
+The [v0.3.0 release](https://github.com/zetanaut/typed-TMD/releases/tag/v0.3.0)
+and its native results remain unchanged.
 Use [CITATION.cff](CITATION.cff) for software citation metadata. No software
 DOI has been assigned; DOI archiving is explicitly deferred. The
 [release-status record](docs/RELEASE_STATUS.md) distinguishes the immutable

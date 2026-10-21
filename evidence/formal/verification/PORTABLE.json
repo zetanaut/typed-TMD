@@ -1,0 +1,420 @@
+{
+  "axioms": [
+    "Quot.sound",
+    "propext"
+  ],
+  "dense_regression": "passed_no_skip",
+  "fixture_manifest_sha256": "bfaaa58b88689b7c4bf0efe3ea960d6743777bd9614bd11a011199fefc25ebe6",
+  "full_runtime_replay": {
+    "scalar_comparisons": 100,
+    "status": "numerically_compared"
+  },
+  "lean": "4.21.0",
+  "negative_certificate_sha256": "6b0d46a78cf817060fe7ca216f841e3d0747eb260f5c6023cb8b4a77fa8dae20",
+  "negative_parent_wire_sha256": "4ea1a6940b4e18787ba174f846985a864feb259f5fb410865e4c4c2d96986f1a",
+  "negative_status": "kernel_checked_false",
+  "same_plan_evaluations": [
+    {
+      "case": "kernel_fixture",
+      "interpreter_value": [
+        0.7289038134560686
+      ],
+      "theta": [
+        0.25,
+        0.04
+      ],
+      "value": [
+        0.7289038134560686
+      ]
+    },
+    {
+      "case": "kernel_fixture",
+      "interpreter_value": [
+        0.77953145216759
+      ],
+      "theta": [
+        0.15163591,
+        0.08229233
+      ],
+      "value": [
+        0.77953145216759
+      ]
+    },
+    {
+      "case": "H004_A",
+      "interpreter_value": [
+        0.6347043707450764
+      ],
+      "theta": [
+        0.25,
+        0.04
+      ],
+      "value": [
+        0.6347043707450764
+      ]
+    },
+    {
+      "case": "H004_A",
+      "interpreter_value": [
+        0.6498560639989105
+      ],
+      "theta": [
+        0.15163591,
+        0.08229233
+      ],
+      "value": [
+        0.6498560639989105
+      ]
+    },
+    {
+      "case": "H004_B",
+      "interpreter_value": [
+        0.6347043707450762
+      ],
+      "theta": [
+        0.2777258872223978,
+        0.04
+      ],
+      "value": [
+        0.6347043707450762
+      ]
+    },
+    {
+      "case": "H004_B",
+      "interpreter_value": [
+        0.6498560639989105
+      ],
+      "theta": [
+        0.20867660652120862,
+        0.08229233
+      ],
+      "value": [
+        0.6498560639989105
+      ]
+    },
+    {
+      "case": "H006_observation",
+      "interpreter_value": [
+        15626.064339072003
+      ],
+      "theta": [
+        0.029551
+      ],
+      "value": [
+        15626.064339072003
+      ]
+    },
+    {
+      "case": "H006_observation",
+      "interpreter_value": [
+        17085.861467050672
+      ],
+      "theta": [
+        0.079022
+      ],
+      "value": [
+        17085.861467050672
+      ]
+    }
+  ],
+  "scope": "exact finite-plan semantics; no QCD/decoder/IEEE proof",
+  "selected_roots": [
+    {
+      "case": "kernel_fixture",
+      "certificate": "selected/kernel_fixture/Certificate.lean",
+      "certificate_sha256": "226566e18cc3c2e4510b1c98b654c359964b5992a97393a02aaee7f6310721ae",
+      "expression_nodes": 11,
+      "parent_fixture": "good.json",
+      "parent_wire_sha256": "da79972f25a8d4cbd5751a7d14d0b454c41f97ce615e162d8ab802cafae04402",
+      "plan_nodes": 11,
+      "selected_output": 0,
+      "status": "kernel_checked",
+      "theory_sources": {
+        "TypedTMDPlan.lean": "ae0a52fd8d5d5a76711a057f7cea5a894ab0d1ceac67566804b1fae8c3995eef",
+        "TypedTMDPlan/Category.lean": "7d97b9aad4f076145f76b27d0090dc803144847f3873a4f40378aa0cd0d6e98c",
+        "TypedTMDPlan/Core.lean": "b7bd6edce2860a8dd2d3f0cbc1f005b55f72445432bebd4a7539461eee93c18f",
+        "TypedTMDPlan/Examples.lean": "fb203760aa7d82366e870f5470356c107ed09fa32dd51d6d5d578c43fecc7607",
+        "lakefile.toml": "1b70059a81ee691526ab746cec63a1ec98be234650d800f6c41b649a575e2369",
+        "lean-toolchain": "d24fed434d3b13adfaab57724a0a7f270ea8bf1c818b5ae5cf25cbce24dd685c"
+      },
+      "thread_stack_kb": 65536,
+      "wire_sha256": "da79972f25a8d4cbd5751a7d14d0b454c41f97ce615e162d8ab802cafae04402"
+    },
+    {
+      "case": "H004_A",
+      "certificate": "selected/H004_A/Certificate.lean",
+      "certificate_sha256": "eb5278694f3c812038bda4d680731e090a9cc121020b23d63e7527af6b940684",
+      "expression_nodes": 4996,
+      "parent_fixture": "H004_A_finite_plan.json.gz",
+      "parent_wire_sha256": "9a67c1c0153e0f8de98a051c38a6dfcbfae7a706ebe86747c65625859a4671be",
+      "plan_nodes": 4228,
+      "selected_output": 0,
+      "status": "kernel_checked",
+      "theory_sources": {
+        "TypedTMDPlan.lean": "ae0a52fd8d5d5a76711a057f7cea5a894ab0d1ceac67566804b1fae8c3995eef",
+        "TypedTMDPlan/Category.lean": "7d97b9aad4f076145f76b27d0090dc803144847f3873a4f40378aa0cd0d6e98c",
+        "TypedTMDPlan/Core.lean": "b7bd6edce2860a8dd2d3f0cbc1f005b55f72445432bebd4a7539461eee93c18f",
+        "TypedTMDPlan/Examples.lean": "fb203760aa7d82366e870f5470356c107ed09fa32dd51d6d5d578c43fecc7607",
+        "lakefile.toml": "1b70059a81ee691526ab746cec63a1ec98be234650d800f6c41b649a575e2369",
+        "lean-toolchain": "d24fed434d3b13adfaab57724a0a7f270ea8bf1c818b5ae5cf25cbce24dd685c"
+      },
+      "thread_stack_kb": 65536,
+      "wire_sha256": "25eba5d137cf5af173d2002e30d407bcbe191a1b4a625f91382003629e155e6c"
+    },
+    {
+      "case": "H004_B",
+      "certificate": "selected/H004_B/Certificate.lean",
+      "certificate_sha256": "5104eb5d92af7cb5c188c60e518bc4a45a9eaabac91120afea6bc52972a6a7e4",
+      "expression_nodes": 6148,
+      "parent_fixture": "H004_B_finite_plan.json.gz",
+      "parent_wire_sha256": "62692a73c12f0d848020e5963b5d4d53ceec5db5a80892c386a0677520750327",
+      "plan_nodes": 5380,
+      "selected_output": 0,
+      "status": "kernel_checked",
+      "theory_sources": {
+        "TypedTMDPlan.lean": "ae0a52fd8d5d5a76711a057f7cea5a894ab0d1ceac67566804b1fae8c3995eef",
+        "TypedTMDPlan/Category.lean": "7d97b9aad4f076145f76b27d0090dc803144847f3873a4f40378aa0cd0d6e98c",
+        "TypedTMDPlan/Core.lean": "b7bd6edce2860a8dd2d3f0cbc1f005b55f72445432bebd4a7539461eee93c18f",
+        "TypedTMDPlan/Examples.lean": "fb203760aa7d82366e870f5470356c107ed09fa32dd51d6d5d578c43fecc7607",
+        "lakefile.toml": "1b70059a81ee691526ab746cec63a1ec98be234650d800f6c41b649a575e2369",
+        "lean-toolchain": "d24fed434d3b13adfaab57724a0a7f270ea8bf1c818b5ae5cf25cbce24dd685c"
+      },
+      "thread_stack_kb": 65536,
+      "wire_sha256": "f55f1f38a57a4623c213a1641dd027040962d01e0943485e0b31a4c239da40aa"
+    },
+    {
+      "case": "H006_observation",
+      "certificate": "selected/H006_observation/Certificate.lean",
+      "certificate_sha256": "6fc40a67a426fd93ebae0454476f4919d0b470e538acb12def5483eb5c383151",
+      "expression_nodes": 7917,
+      "parent_fixture": "H006_geometry_plan.json.gz",
+      "parent_wire_sha256": "2e6ee5181509db2b4cc72e2b797734536074c1714c8e6577628e5905274a781d",
+      "plan_nodes": 7170,
+      "selected_output": 0,
+      "status": "kernel_checked",
+      "theory_sources": {
+        "TypedTMDPlan.lean": "ae0a52fd8d5d5a76711a057f7cea5a894ab0d1ceac67566804b1fae8c3995eef",
+        "TypedTMDPlan/Category.lean": "7d97b9aad4f076145f76b27d0090dc803144847f3873a4f40378aa0cd0d6e98c",
+        "TypedTMDPlan/Core.lean": "b7bd6edce2860a8dd2d3f0cbc1f005b55f72445432bebd4a7539461eee93c18f",
+        "TypedTMDPlan/Examples.lean": "fb203760aa7d82366e870f5470356c107ed09fa32dd51d6d5d578c43fecc7607",
+        "lakefile.toml": "1b70059a81ee691526ab746cec63a1ec98be234650d800f6c41b649a575e2369",
+        "lean-toolchain": "d24fed434d3b13adfaab57724a0a7f270ea8bf1c818b5ae5cf25cbce24dd685c"
+      },
+      "thread_stack_kb": 65536,
+      "wire_sha256": "73d42fa664be7d804f11d35f18af5e07da00ca1d86d80b130e58505d240e8ef2"
+    }
+  ],
+  "status": "kernel_checked",
+  "theorem_count": 24,
+  "theorems": [
+    {
+      "axioms": [
+        "Quot.sound"
+      ],
+      "line": 27,
+      "name": "TypedTMDPlan.Category.Arrow.ext",
+      "source": "formal/007/TypedTMDPlan/Category.lean",
+      "source_sha256": "7d97b9aad4f076145f76b27d0090dc803144847f3873a4f40378aa0cd0d6e98c"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "line": 46,
+      "name": "TypedTMDPlan.Category.Arrow.id_comp",
+      "source": "formal/007/TypedTMDPlan/Category.lean",
+      "source_sha256": "7d97b9aad4f076145f76b27d0090dc803144847f3873a4f40378aa0cd0d6e98c"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "line": 51,
+      "name": "TypedTMDPlan.Category.Arrow.comp_id",
+      "source": "formal/007/TypedTMDPlan/Category.lean",
+      "source_sha256": "7d97b9aad4f076145f76b27d0090dc803144847f3873a4f40378aa0cd0d6e98c"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "line": 56,
+      "name": "TypedTMDPlan.Category.Arrow.comp_assoc",
+      "source": "formal/007/TypedTMDPlan/Category.lean",
+      "source_sha256": "7d97b9aad4f076145f76b27d0090dc803144847f3873a4f40378aa0cd0d6e98c"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "line": 67,
+      "name": "TypedTMDPlan.Category.Arrow.interpret_id",
+      "source": "formal/007/TypedTMDPlan/Category.lean",
+      "source_sha256": "7d97b9aad4f076145f76b27d0090dc803144847f3873a4f40378aa0cd0d6e98c"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "line": 71,
+      "name": "TypedTMDPlan.Category.Arrow.interpret_comp",
+      "source": "formal/007/TypedTMDPlan/Category.lean",
+      "source_sha256": "7d97b9aad4f076145f76b27d0090dc803144847f3873a4f40378aa0cd0d6e98c"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "line": 77,
+      "name": "TypedTMDPlan.Category.Arrow.fixed_slice_preserved",
+      "source": "formal/007/TypedTMDPlan/Category.lean",
+      "source_sha256": "7d97b9aad4f076145f76b27d0090dc803144847f3873a4f40378aa0cd0d6e98c"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "line": 85,
+      "name": "TypedTMDPlan.Category.Arrow.checked_composition",
+      "source": "formal/007/TypedTMDPlan/Category.lean",
+      "source_sha256": "7d97b9aad4f076145f76b27d0090dc803144847f3873a4f40378aa0cd0d6e98c"
+    },
+    {
+      "axioms": [],
+      "line": 16,
+      "name": "TypedTMDPlan.congrTwo",
+      "source": "formal/007/TypedTMDPlan/Core.lean",
+      "source_sha256": "b7bd6edce2860a8dd2d3f0cbc1f005b55f72445432bebd4a7539461eee93c18f"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "line": 61,
+      "name": "TypedTMDPlan.Expr.dependency_sound",
+      "source": "formal/007/TypedTMDPlan/Core.lean",
+      "source_sha256": "b7bd6edce2860a8dd2d3f0cbc1f005b55f72445432bebd4a7539461eee93c18f"
+    },
+    {
+      "axioms": [],
+      "line": 87,
+      "name": "TypedTMDPlan.Expr.interpretation_unique",
+      "source": "formal/007/TypedTMDPlan/Core.lean",
+      "source_sha256": "b7bd6edce2860a8dd2d3f0cbc1f005b55f72445432bebd4a7539461eee93c18f"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "line": 109,
+      "name": "TypedTMDPlan.Expr.subst_vars",
+      "source": "formal/007/TypedTMDPlan/Core.lean",
+      "source_sha256": "b7bd6edce2860a8dd2d3f0cbc1f005b55f72445432bebd4a7539461eee93c18f"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "line": 112,
+      "name": "TypedTMDPlan.Expr.subst_comp",
+      "source": "formal/007/TypedTMDPlan/Core.lean",
+      "source_sha256": "b7bd6edce2860a8dd2d3f0cbc1f005b55f72445432bebd4a7539461eee93c18f"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "line": 116,
+      "name": "TypedTMDPlan.Expr.eval_subst",
+      "source": "formal/007/TypedTMDPlan/Core.lean",
+      "source_sha256": "b7bd6edce2860a8dd2d3f0cbc1f005b55f72445432bebd4a7539461eee93c18f"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "line": 130,
+      "name": "TypedTMDPlan.cacheable_sound",
+      "source": "formal/007/TypedTMDPlan/Core.lean",
+      "source_sha256": "b7bd6edce2860a8dd2d3f0cbc1f005b55f72445432bebd4a7539461eee93c18f"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "line": 152,
+      "name": "TypedTMDPlan.cacheable_subst",
+      "source": "formal/007/TypedTMDPlan/Core.lean",
+      "source_sha256": "b7bd6edce2860a8dd2d3f0cbc1f005b55f72445432bebd4a7539461eee93c18f"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "line": 206,
+      "name": "TypedTMDPlan.Plan.safe_sound",
+      "source": "formal/007/TypedTMDPlan/Core.lean",
+      "source_sha256": "b7bd6edce2860a8dd2d3f0cbc1f005b55f72445432bebd4a7539461eee93c18f"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "line": 233,
+      "name": "TypedTMDPlan.check_sound",
+      "source": "formal/007/TypedTMDPlan/Core.lean",
+      "source_sha256": "b7bd6edce2860a8dd2d3f0cbc1f005b55f72445432bebd4a7539461eee93c18f"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "line": 246,
+      "name": "TypedTMDPlan.live_accepted",
+      "source": "formal/007/TypedTMDPlan/Core.lean",
+      "source_sha256": "b7bd6edce2860a8dd2d3f0cbc1f005b55f72445432bebd4a7539461eee93c18f"
+    },
+    {
+      "axioms": [],
+      "line": 24,
+      "name": "TypedTMDPlan.Examples.good_accepts",
+      "source": "formal/007/TypedTMDPlan/Examples.lean",
+      "source_sha256": "fb203760aa7d82366e870f5470356c107ed09fa32dd51d6d5d578c43fecc7607"
+    },
+    {
+      "axioms": [],
+      "line": 25,
+      "name": "TypedTMDPlan.Examples.bad_rejects",
+      "source": "formal/007/TypedTMDPlan/Examples.lean",
+      "source_sha256": "fb203760aa7d82366e870f5470356c107ed09fa32dd51d6d5d578c43fecc7607"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "line": 27,
+      "name": "TypedTMDPlan.Examples.good_preserves",
+      "source": "formal/007/TypedTMDPlan/Examples.lean",
+      "source_sha256": "fb203760aa7d82366e870f5470356c107ed09fa32dd51d6d5d578c43fecc7607"
+    },
+    {
+      "axioms": [],
+      "line": 36,
+      "name": "TypedTMDPlan.Examples.fixed_g_cache_is_admissible",
+      "source": "formal/007/TypedTMDPlan/Examples.lean",
+      "source_sha256": "fb203760aa7d82366e870f5470356c107ed09fa32dd51d6d5d578c43fecc7607"
+    },
+    {
+      "axioms": [],
+      "line": 47,
+      "name": "TypedTMDPlan.Examples.quadrature_accepts",
+      "source": "formal/007/TypedTMDPlan/Examples.lean",
+      "source_sha256": "fb203760aa7d82366e870f5470356c107ed09fa32dd51d6d5d578c43fecc7607"
+    }
+  ]
+}

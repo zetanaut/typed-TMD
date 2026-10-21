@@ -1,0 +1,6 @@
+name = "typed-tmd-finite-plan"
+version = "0.1.0"
+defaultTargets = ["TypedTMDPlan"]
+
+[[lean_lib]]
+name = "TypedTMDPlan"

@@ -1,0 +1,66 @@
+{
+  "schema": "typed-tmd/publication-status/1",
+  "status": "published_verified_results_accepted",
+  "repository": "https://github.com/zetanaut/typed-TMD",
+  "released_version": "0.3.0",
+  "release_url": "https://github.com/zetanaut/typed-TMD/releases/tag/v0.3.0",
+  "release_tag": "v0.3.0",
+  "release_commit": "fcf6d80a01dbb474af62f0929624a8dd92e6d698",
+  "published_at": "2026-10-21T01:32:54Z",
+  "verification_utc": "2026-10-21T03:38:09.321640+00:00",
+  "verification_scope": "Anonymous GitHub metadata, dereferenced annotated tag, and all three downloaded release-asset sizes and SHA-256 values; main CI checked separately.",
+  "release_assets": [
+    {
+      "name": "typed-TMD-0.3.0.manifest.json",
+      "size": 18376,
+      "sha256": "ea363d30c233a0b41ac719bc86b7bdb12d44684f1d0fcab5b5e0903dbbc268dd",
+      "url": "https://github.com/zetanaut/typed-TMD/releases/download/v0.3.0/typed-TMD-0.3.0.manifest.json",
+      "verified_anonymously": true
+    },
+    {
+      "name": "typed-TMD-0.3.0.validation.json",
+      "size": 5495,
+      "sha256": "403e86070f316bf36e239ed29365f81a479ad0248f7397a3f66200afe5636028",
+      "url": "https://github.com/zetanaut/typed-TMD/releases/download/v0.3.0/typed-TMD-0.3.0.validation.json",
+      "verified_anonymously": true
+    },
+    {
+      "name": "typed-TMD-0.3.0.zip",
+      "size": 430579,
+      "sha256": "cc5770572e50d165d46e80e839c2d0b06d6899eb241e03cbb2d5069dd600da64",
+      "url": "https://github.com/zetanaut/typed-TMD/releases/download/v0.3.0/typed-TMD-0.3.0.zip",
+      "verified_anonymously": true
+    }
+  ],
+  "results_acceptance": {
+    "status": "accepted_by_author",
+    "date_utc": "2026-10-21",
+    "scope": "Completed bounded external observation experiment and its documented limitations"
+  },
+  "main_at_verification": {
+    "commit": "e0a0d9a7d8f70e71bc782a4424ff034bd763e641",
+    "ci": {
+      "id": 39535474161,
+      "head_sha": "e0a0d9a7d8f70e71bc782a4424ff034bd763e641",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/zetanaut/typed-TMD/actions/runs/39535474161"
+    }
+  },
+  "main_policy": "Later main documentation and publication metadata updates do not retag or replace v0.3.0; this receipt identifies the release, not validation of arbitrary future candidates.",
+  "ci_scope": "Core and analytic fixtures plus saved-array coverage on Ubuntu; native campaign reproduced separately on macOS arm64.",
+  "license": "MIT",
+  "authors_and_contact": {
+    "authors": [
+      {
+        "given_names": "Dustin",
+        "family_names": "Keller"
+      }
+    ],
+    "project_contact": "https://github.com/zetanaut/typed-TMD/issues",
+    "email": null
+  },
+  "DOI": null,
+  "persistent_archive_status": "deferred_by_author; GitHub release only requested",
+  "formal_status": "Existing Lean 4.21.0 abstract seed builds; concrete dependency/translation checker remains future work."
+}

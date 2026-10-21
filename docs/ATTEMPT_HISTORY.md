@@ -41,3 +41,17 @@ external four-fit campaign. A passing unit suite alone was not treated as
 fresh-install acceptance. Full operational logs remain in the private return;
 this public account retains the scientifically and operationally relevant
 failures without machine-local paths.
+
+## Concrete finite-plan publication
+
+The full accepted finite-window certificate originally exceeded Lean's default
+thread stack. The mechanical repair uses `--tstack=65536`; theorem sources,
+coefficients and root coverage were unchanged. Both failed and successful
+attempts remain in the private provenance record.
+
+The first publication wrapper inventory mishandled a dotted Lean namespace
+and requested five nonexistent short theorem names. The library and selected
+root checks had passed; the wrapper correctly returned failure for the missing
+inventory. Namespace parsing was repaired and a regression added. The final
+inventory prints all 24 actual declarations and their axioms. This packaging
+repair changes no accepted theorem or finite-plan implementation.

@@ -1,0 +1,11 @@
+{
+  "correct_g_derivative_centered_difference": -1.707703166431429,
+  "correct_g_derivative_exact_formula": -1.707703166404056,
+  "correct_off_reference_value": 0.7120252722160417,
+  "frozen_off_reference_value": 0.7289038134560686,
+  "frozen_reference_value": 0.7289038134560686,
+  "incorrect_g_derivative": 0.0,
+  "off_reference_g": 0.05,
+  "reference_value": 0.7289038134560686,
+  "rejected_before_evaluation": "cache_depends_on_fitted_parameter"
+}

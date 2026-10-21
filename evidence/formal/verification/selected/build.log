@@ -1,0 +1,18 @@
+ℹ [2/6] Built TypedTMDPlan.Core
+info: TypedTMDPlan/Core.lean:250:0: 'TypedTMDPlan.Expr.dependency_sound' depends on axioms: [propext]
+info: TypedTMDPlan/Core.lean:251:0: 'TypedTMDPlan.Expr.interpretation_unique' does not depend on any axioms
+info: TypedTMDPlan/Core.lean:252:0: 'TypedTMDPlan.Expr.eval_subst' depends on axioms: [propext]
+info: TypedTMDPlan/Core.lean:253:0: 'TypedTMDPlan.cacheable_sound' depends on axioms: [propext]
+info: TypedTMDPlan/Core.lean:254:0: 'TypedTMDPlan.cacheable_subst' depends on axioms: [propext]
+info: TypedTMDPlan/Core.lean:255:0: 'TypedTMDPlan.check_sound' depends on axioms: [propext]
+ℹ [3/6] Built TypedTMDPlan.Category
+info: TypedTMDPlan/Category.lean:109:0: 'TypedTMDPlan.Category.Arrow.comp_assoc' depends on axioms: [propext, Quot.sound]
+info: TypedTMDPlan/Category.lean:110:0: 'TypedTMDPlan.Category.Arrow.interpret_comp' depends on axioms: [propext, Quot.sound]
+info: TypedTMDPlan/Category.lean:111:0: 'TypedTMDPlan.Category.Arrow.fixed_slice_preserved' depends on axioms: [propext]
+info: TypedTMDPlan/Category.lean:112:0: 'TypedTMDPlan.Category.Arrow.checked_composition' depends on axioms: [propext, Quot.sound]
+ℹ [4/6] Built TypedTMDPlan.Examples
+info: TypedTMDPlan/Examples.lean:49:0: 'TypedTMDPlan.Examples.good_preserves' depends on axioms: [propext]
+info: TypedTMDPlan/Examples.lean:50:0: 'TypedTMDPlan.Examples.bad_rejects' does not depend on any axioms
+info: TypedTMDPlan/Examples.lean:51:0: 'TypedTMDPlan.Examples.fixed_g_cache_is_admissible' does not depend on any axioms
+✔ [5/6] Built TypedTMDPlan
+Build completed successfully.

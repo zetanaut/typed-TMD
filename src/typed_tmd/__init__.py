@@ -16,7 +16,7 @@ from .fixtures import GaussianParameters, SyntheticGaussianModel
 from .numerics import QuadratureResult, gaussian_fourier_analytic, radial_fourier
 from .providers import AnalyticFixturePDF, CollinearProvider, LHAPDFProvider, ProviderSupport
 
-__version__ = "0.3.0"
+__version__ = "0.4.0"
 
 __all__ = [
     "AccuracySpec", "AnalyticFixturePDF", "BoundaryTMD", "BoundaryTransport",
