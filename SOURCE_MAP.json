@@ -354,7 +354,7 @@
     },
     "evidence/formal/verification/PROVENANCE.json": {
       "origin": "working-source",
-      "sha256": "56f18b08f54cae3e6e6b69e5cb8347e58c2b838d5aee23b9720c53e6ce11e910",
+      "sha256": "fc66ea695e390cef2d8cba0193f39a5456b11eee5b427e250d9fd0bc61bea64a",
       "transformation": "byte-identical",
       "working_path": "evidence/formal/verification/PROVENANCE.json"
     },
@@ -366,7 +366,7 @@
     },
     "evidence/formal/verification/dense_regression.log": {
       "origin": "working-source",
-      "sha256": "96966331cc6da298499437b51c0ea1f5a36bb254f9877e24904c9ef32933a058",
+      "sha256": "a31d3efa3d3e9b6fd18d0a1918a4d7034285cd08016bb7bddc03a13052455f01",
       "transformation": "byte-identical",
       "working_path": "evidence/formal/verification/dense_regression.log"
     },
@@ -384,7 +384,7 @@
     },
     "evidence/formal/verification/selected/H004_A.json.gz": {
       "origin": "working-source",
-      "sha256": "8cb330e626492f9721996c8f4987674de3d4d2b3737950e12303b5dcf32d0437",
+      "sha256": "c5eddd69d48540f1dc178b98786b22cf4579a9b867164ae484b457ddb652b94b",
       "transformation": "byte-identical",
       "working_path": "evidence/formal/verification/selected/H004_A.json.gz"
     },
@@ -408,7 +408,7 @@
     },
     "evidence/formal/verification/selected/H004_B.json.gz": {
       "origin": "working-source",
-      "sha256": "d630123b8a0f7a00468957e503e7c29ce22ef96578c2e28a4e5d769145c18061",
+      "sha256": "90367d2223725ad07070f094d0a81ac9fad753099db217ebcfd781cbab8f19b5",
       "transformation": "byte-identical",
       "working_path": "evidence/formal/verification/selected/H004_B.json.gz"
     },
@@ -432,7 +432,7 @@
     },
     "evidence/formal/verification/selected/H006_observation.json.gz": {
       "origin": "working-source",
-      "sha256": "7e22393bff6669f3eab8a3acc8bfb61d8bd79a80a41f7ab657ab21fc4c5c81f6",
+      "sha256": "e2bfcc12b02650d7646546e39e0c4e64de1f2590b9074ace8e63f7afa759efad",
       "transformation": "byte-identical",
       "working_path": "evidence/formal/verification/selected/H006_observation.json.gz"
     },
@@ -462,7 +462,7 @@
     },
     "evidence/formal/verification/selected/kernel_fixture.json.gz": {
       "origin": "working-source",
-      "sha256": "99af36792d3f0ec8a881cad29420e6462cec73a7b609490d01f993a64da2c862",
+      "sha256": "4b795fe66a61e8234e5cca4b37090d1588d3a0bb911acd7a1f57329a403c2dc6",
       "transformation": "byte-identical",
       "working_path": "evidence/formal/verification/selected/kernel_fixture.json.gz"
     },
