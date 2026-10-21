@@ -3,6 +3,8 @@ message: "If you use typed-TMD, please cite this software and the relevant scien
 type: software
 title: "typed-TMD"
 version: "0.4.0"
+doi: "10.5281/zenodo.23546800"
+date-released: "2026-10-21"
 authors:
   - family-names: Keller
     given-names: Dustin

@@ -23,6 +23,18 @@ preserved in this tree. The original publication receipt is retained at
 [evidence/releases/v0.3.0.json](../evidence/releases/v0.3.0.json).
 No new native campaign or fit is claimed for v0.4.0.
 
+The existing release was archived on Zenodo on 2026-10-21. Cite version 0.4.0 with
+[10.5281/zenodo.23546800](https://doi.org/10.5281/zenodo.23546800); the
+[concept DOI](https://doi.org/10.5281/zenodo.23546799) identifies all versions.
+The [archive verification receipt](../evidence/releases/zenodo-v0.4.0.json)
+records anonymous downloads of all three assets, matching SHA-256 values and
+successful resolution of both DOIs. The archived commit is
+`a5142e7a342aa6b8fb109ca1d0c65d90130da9a7`.
+
+The tag, source ZIP, manifest and original validation receipt remain unchanged.
+Their DOI-deferred statements record the earlier publication-time decision;
+this later archival receipt supersedes that status. Citation updates on `main`
+do not change the archived software or its scientific/proof evidence.
+
 Original code remains MIT, with software authorship recorded in CITATION.cff.
-DOI archiving is explicitly deferred. No software DOI, manuscript change or
-research-note revision is part of this release.
+No manuscript or research-note revision accompanies this archival follow-up.

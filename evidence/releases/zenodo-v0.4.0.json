@@ -1,0 +1,54 @@
+{
+  "GitHub_release_url": "https://github.com/zetanaut/typed-TMD/releases/tag/v0.4.0",
+  "author": "Dustin Keller",
+  "commit": "a5142e7a342aa6b8fb109ca1d0c65d90130da9a7",
+  "concept_doi": "10.5281/zenodo.23546799",
+  "doi": "10.5281/zenodo.23546800",
+  "files": [
+    {
+      "bytes": 30580,
+      "matches_GitHub_release_asset": true,
+      "name": "typed-TMD-0.4.0.manifest.json",
+      "sha256": "42bd9c531671d2e748a19a4e80e6d66d3f6da41f3dbcd1e8cf20d2399f704d5d",
+      "zenodo_url": "https://zenodo.org/api/records/23546800/files/typed-TMD-0.4.0.manifest.json/content"
+    },
+    {
+      "bytes": 1956051,
+      "matches_GitHub_release_asset": true,
+      "name": "typed-TMD-0.4.0.zip",
+      "sha256": "eef968841cd0b72349fa1622b8c996e7ebc3a30872d76a9ae155f5642bfb4c36",
+      "zenodo_url": "https://zenodo.org/api/records/23546800/files/typed-TMD-0.4.0.zip/content"
+    },
+    {
+      "bytes": 23919,
+      "matches_GitHub_release_asset": true,
+      "name": "typed-TMD-0.4.0.validation.json",
+      "sha256": "5a09b4c236110818d51fe0425385984b3a5e9aa0c3699705bca61fcba4160bc1",
+      "zenodo_url": "https://zenodo.org/api/records/23546800/files/typed-TMD-0.4.0.validation.json/content"
+    }
+  ],
+  "license": "MIT",
+  "record_id": 23546800,
+  "record_url": "https://zenodo.org/records/23546800",
+  "schema": "typed-tmd/zenodo-archive/1",
+  "scope": "Archives the existing v0.4.0 release assets unchanged; no new science, theorem changes or manuscript edits. Historical DOI-deferred statements inside the archived release describe its publication-time state.",
+  "software_version": "0.4.0",
+  "status": "published_files_verified",
+  "tag": "v0.4.0",
+  "tag_object": "d04c3f228fe52b699964387cadd36c0f023396fe",
+  "verification": {
+    "all_three_SHA256_match": true,
+    "anonymous_downloads": true,
+    "doi_resolution": {
+      "conceptdoi": {
+        "status": 200,
+        "url": "https://zenodo.org/records/23546800"
+      },
+      "doi": {
+        "status": 200,
+        "url": "https://zenodo.org/records/23546800"
+      }
+    }
+  },
+  "verified_utc": "2026-10-21T21:06:01.895067+00:00"
+}

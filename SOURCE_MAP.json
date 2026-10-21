@@ -1,6 +1,12 @@
 {
   "accepted_formal_private_commit": "1a6f5b33b0f80ed05aba2a082139db5e9c341a62",
-  "exclusion": "SOURCE_MAP.json excludes its own identity; external asset manifest covers every source file",
+  "documentation_followup": {
+    "archived_release_commit": "a5142e7a342aa6b8fb109ca1d0c65d90130da9a7",
+    "doi": "10.5281/zenodo.23546800",
+    "purpose": "Add verified Zenodo DOI and citation metadata",
+    "scope": "Only citation, release documentation and archival receipt changed; scientific sources and evidence are preserved."
+  },
+  "exclusion": "SOURCE_MAP.json excludes its own identity. The original external asset manifest covers the immutable v0.4.0 release; this map also covers the later citation documentation on main.",
   "mapping": {
     ".github/workflows/core.yml": {
       "origin": "working-source",
@@ -20,7 +26,7 @@
     },
     "CITATION.cff": {
       "origin": "working-source",
-      "sha256": "28f88c9419fa37d439afe4724bdd4bb483a09aa08f0dd4a435fb2a2fe5a8de72",
+      "sha256": "c1549c2b71da4287f1a4ad34e084970b743ff85b5cb73f943edc9c16f498da6b",
       "transformation": "byte-identical",
       "working_path": "CITATION.cff"
     },
@@ -42,13 +48,13 @@
     },
     "README.md": {
       "origin": "working-source",
-      "sha256": "0d24b3ca867d299201715538b4479e08e4b6354d98e76a75d77edd676f424c20",
+      "sha256": "019f2a2af6d0972df940c12747812612dc7d1dd75e391915f68b3803227bc244",
       "transformation": "byte-identical",
       "working_path": "docs/PUBLIC_README.md"
     },
     "RELEASE_STATUS.json": {
       "origin": "generated-release-metadata",
-      "sha256": "cdb8c673194b9da9ab4fecb2e98d8d5361a51eeb48f74552512c10c34fbb824e"
+      "sha256": "e4eac49ca00c3f51f4f7e156dbe7865a40b19d6bf9f5ea2d7b99dbb6da15e8c8"
     },
     "configs/benchmark.json": {
       "origin": "public-parent",
@@ -121,7 +127,7 @@
     },
     "docs/RELEASE_STATUS.md": {
       "origin": "working-source",
-      "sha256": "14954b408c37c453ea0911a50ecd35a11c798cd07a9754cdcff82f0035bf5d20",
+      "sha256": "5afe5e4526cf4484e707bfc9208270cd05869e60305651f0ae91e0bff26531ed",
       "transformation": "byte-identical",
       "working_path": "docs/RELEASE_STATUS.md"
     },
@@ -139,7 +145,7 @@
     },
     "docs/ROADMAP.md": {
       "origin": "working-source",
-      "sha256": "e2ddf0bc2a300691abb55961f5e9981352b0959d061fad67b14275e2531fc3d6",
+      "sha256": "f78e1692bf9f02e046a701bfd44cc47492d5337c31583dcfa2380fce8592cfc1",
       "transformation": "byte-identical",
       "working_path": "docs/ROADMAP.md"
     },
@@ -593,6 +599,12 @@
       "original_path": "RELEASE_STATUS.json",
       "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
       "sha256": "368922d7db46c1f6a4186111e01331b1176cc31772f6194fcb1b5a5a9a669198"
+    },
+    "evidence/releases/zenodo-v0.4.0.json": {
+      "origin": "working-source",
+      "sha256": "394ae740d3daffb1f9ebdcca031362b5b4696608086c573e40d7d625fc0235e1",
+      "transformation": "byte-identical",
+      "working_path": "evidence/releases/zenodo-v0.4.0.json"
     },
     "evidence/timing/summary.json": {
       "origin": "public-parent",

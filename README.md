@@ -1,6 +1,6 @@
 # typed-TMD: typed observation maps for TMD calculations
 
-[![Python](https://img.shields.io/badge/python-3.11-blue)](https://www.python.org/) [![Core checks](https://github.com/zetanaut/typed-TMD/actions/workflows/core.yml/badge.svg?branch=main)](https://github.com/zetanaut/typed-TMD/actions/workflows/core.yml) [![External example](https://img.shields.io/badge/example-SV19%20Drell--Yan-blueviolet)](#scientific-scope)
+[![Python](https://img.shields.io/badge/python-3.11-blue)](https://www.python.org/) [![Core checks](https://github.com/zetanaut/typed-TMD/actions/workflows/core.yml/badge.svg?branch=main)](https://github.com/zetanaut/typed-TMD/actions/workflows/core.yml) [![External example](https://img.shields.io/badge/example-SV19%20Drell--Yan-blueviolet)](#scientific-scope) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23546800.svg)](https://doi.org/10.5281/zenodo.23546800)
 
 This repository provides **typed scientific contexts and observation maps**
 for reproducible TMD calculations. It keeps the observation measure, units,
@@ -265,10 +265,14 @@ checks, numerical comparisons and historical native evidence.
 contains the source archive, SHA-256 manifest and publication verification receipt.
 The [v0.3.0 release](https://github.com/zetanaut/typed-TMD/releases/tag/v0.3.0)
 and its native results remain unchanged.
-Use [CITATION.cff](CITATION.cff) for software citation metadata. No software
-DOI has been assigned; DOI archiving is explicitly deferred. The
+Cite the archived **v0.4.0** release with
+[doi:10.5281/zenodo.23546800](https://doi.org/10.5281/zenodo.23546800).
+The [Zenodo record](https://zenodo.org/records/23546800) preserves the three
+release assets byte-for-byte. Use [CITATION.cff](CITATION.cff) for citation
+metadata; the [concept DOI](https://doi.org/10.5281/zenodo.23546799) identifies
+the software across versions. The
 [release-status record](docs/RELEASE_STATUS.md) distinguishes the immutable
-tagged snapshot from later documentation on `main`.
+tagged snapshot from later citation documentation on `main`.
 
 For the native calculation, cite the SV19 analysis by I. Scimemi and
 A. Vladimirov, [JHEP 06 (2020) 137](https://doi.org/10.1007/JHEP06%282020%29137).

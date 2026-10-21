@@ -1,9 +1,12 @@
 {
-  "DOI": "deferred",
+  "DOI": "10.5281/zenodo.23546800",
+  "DOI_verification": "evidence/releases/zenodo-v0.4.0.json",
+  "archived_commit": "a5142e7a342aa6b8fb109ca1d0c65d90130da9a7",
+  "concept_DOI": "10.5281/zenodo.23546799",
   "formal_component_version": "0.1.0",
   "previous_release": "evidence/releases/v0.3.0.json",
   "publication_receipt": "https://github.com/zetanaut/typed-TMD/releases/download/v0.4.0/typed-TMD-0.4.0.validation.json",
-  "publication_status": "consult separately attached post-publication receipt",
+  "publication_status": "GitHub release and Zenodo archive published and anonymously verified",
   "repository": "https://github.com/zetanaut/typed-TMD",
   "software_version": "0.4.0",
   "tag": "v0.4.0"
