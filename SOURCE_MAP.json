@@ -1,5 +1,5 @@
 {
-  "created_utc": "2026-10-21T01:22:22.982360+00:00",
+  "created_utc": "2026-10-21T02:52:58.152373+00:00",
   "mapping": [
     {
       "public_path": "src/typed_tmd/__init__.py",
@@ -299,7 +299,7 @@
       "public_path": "README.md",
       "transformation": "byte-identical copy",
       "working_path": "docs/PUBLIC_README.md",
-      "working_sha256": "6749c0f15e37a6ae6cea53fb1c3153063e6f4a93167793b5a6809dac46caae07"
+      "working_sha256": "c6bcf10d1ab6668fb804f7aa3c6fe88179c38d350140cded27b812aa9f9e5ff9"
     },
     {
       "public_path": "docs/EXTERNAL_SV19.md",
@@ -631,6 +631,18 @@
     "Use one process-wide lock across adapter sessions; single-owner numerical paths unchanged.",
     "Allow preselected validation points to execute in separate native processes; frozen observation, parameters, data and tolerances unchanged."
   ],
-  "private_source_commit": "afbde63479310c8df8d4be77232a7cd7e3bfd4de",
+  "post_release_documentation_updates": [
+    {
+      "changed_payloads": [
+        "README.md"
+      ],
+      "previous_private_source_commit": "afbde63479310c8df8d4be77232a7cd7e3bfd4de",
+      "private_source_commit": "5f13b7bfcc1c3363a92b031cb4764c0c34695d7c",
+      "release_tag_and_assets_changed": false,
+      "released_scientific_snapshot": "v0.3.0",
+      "scope": "README section layout and presentation only; scientific code and evidence unchanged"
+    }
+  ],
+  "private_source_commit": "5f13b7bfcc1c3363a92b031cb4764c0c34695d7c",
   "scope": "allowlisted publication tree; private working history is not published; hashes identify every copied/generated payload"
 }
