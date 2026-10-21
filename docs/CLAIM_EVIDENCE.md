@@ -19,5 +19,7 @@ are synthetic; the observed-data input supplies geometry and cuts only.
 
 `SOURCE_MAP.json` maps copied payloads to their private source identities.
 `configs/external/FREEZE.json` preserves the prospective experiment statement
-and scientific-file hashes. The release manifest identifies the final public
-bytes; public and private trees intentionally have different inventories.
+and scientific-file hashes. The release manifest identifies the immutable v0.3.0 public bytes; later
+documentation updates on main have their own source-map identities.
+[Release status](RELEASE_STATUS.md) records the accepted scope, asset hashes
+and publication verification. Public and private trees have different inventories.

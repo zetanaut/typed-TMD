@@ -20,6 +20,7 @@ Start with:
 - [Native installation and reproduction](docs/INSTALL_EXTERNAL.md)
 - [Results, numerical resolution and timing](docs/RESULTS.md)
 - [Claim/evidence map](docs/CLAIM_EVIDENCE.md)
+- [Release and accepted-results status](docs/RELEASE_STATUS.md)
 - [Development roadmap](docs/ROADMAP.md)
 
 ---
@@ -28,6 +29,7 @@ Start with:
 
 | Layer | Status | Meaning |
 |---|---|---|
+| GitHub release | **Published; bounded results accepted** | v0.3.0 assets verified; later main updates document acceptance. |
 | Scientific contexts and observation contracts | **Implemented** | Runtime checks retain observation meaning, model identity and parameter dependencies. |
 | External DY example | **Validated** | One pinned arTeMiDe v2.05/SV19 configuration, seven bins and one free native parameter. |
 | Midpoint/bin mismatch | **Rejected before fitting** | The invalid constructor makes zero backend and optimizer calls. |
@@ -225,7 +227,9 @@ describes the planned concrete checker separately from the existing seed.
 [Release v0.3.0](https://github.com/zetanaut/typed-TMD/releases/tag/v0.3.0)
 contains the validated source archive, file manifest and execution receipt.
 Use [CITATION.cff](CITATION.cff) for software citation metadata. No software
-DOI has been assigned.
+DOI has been assigned; DOI archiving is explicitly deferred. The
+[release-status record](docs/RELEASE_STATUS.md) distinguishes the immutable
+tagged snapshot from later documentation on `main`.
 
 For the native calculation, cite the SV19 analysis by I. Scimemi and
 A. Vladimirov, [JHEP 06 (2020) 137](https://doi.org/10.1007/JHEP06%282020%29137).

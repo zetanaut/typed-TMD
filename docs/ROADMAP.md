@@ -1,5 +1,12 @@
 # Typed hadronic computation: scientific and formal-development roadmap
 
+**Execution status, 2026-10-21 UTC:** R0's bounded external experiment and
+reader-facing GitHub v0.3.0 release are complete and accepted. R1 has runtime
+identity/dependency hooks and a specification, not the complete proposed
+language/checker. R2 and the broader program remain future work; no new
+scientific checkpoint is assigned. See [release status](RELEASE_STATUS.md)
+and [measured results](RESULTS.md). DOI archiving is explicitly deferred.
+
 ## Purpose and scope
 
 The long-term aim is AI-assisted multidimensional parton extraction and constructive derivation/proof of factorization for specified families of processes, using a physically realized axiomatic/homotopical organization of hadronic physics. This is a discovery program: it seeks construction and extension principles that can establish new physical results, not just a taxonomy of known calculations. It does not assume that every process admits a chosen factorization.
@@ -21,14 +28,14 @@ The immediate publication remains a pragmatic CPC methods paper. Category theory
 |---|---|---|
 | External comparison | Pin/build backend and fit inputs; inspect source semantics; implement native/typed/bin-integration routes; measure correction | Fix observation maps, admissibility and numerical/statistical claim boundaries; review external evidence |
 | Extraction diagnostics | Preserve/replay coverage; run the bounded wrong/correct model comparison; retain failures and arrays | Derive and interpret tangent/likelihood diagnostics; distinguish numerical closure from misspecification |
-| Performance/release | Same-backend timings, dependency locks, CI, docs, public export, release/DOI with author decisions | Define fair measurement, review claims and manuscript structure |
+| Performance/release | Completed timings, locks, CI, docs, export and GitHub v0.3.0 release; DOI deferred by author | Define fair measurement, review claims and manuscript structure |
 | Representation | Record source expressions, candidate plans, parameter dependencies, backend/input identity and evidence | Specify typed syntax/semantics, safe transformations, preservation theorem and trust boundary |
 | Lean | Preserve toolchain; implement the concrete approved checker/proofs in a separate milestone | Supply theorem statements, induction structure, invariant requirements and review false proofs |
 | Categorical/homotopical program | Maintain explicit construction/witness data before adding general machinery | Define physically meaningful categories, realization/extension hypotheses, coherence and remainder structures |
 
 This division does not make theoretical choices the coding agent's improvisation. Missing equations or semantics are explicit obligations. Conversely, implementation evidence may reveal a necessary revision of a mathematical specification.
 
-## Milestone R0 — external applicability
+## Milestone R0 — external applicability (completed and accepted)
 
 **Question:** can one declared comparison language prevent and explain a consequential misuse in a real public TMD workflow?
 

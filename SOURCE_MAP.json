@@ -1,5 +1,5 @@
 {
-  "created_utc": "2026-10-21T02:52:58.152373+00:00",
+  "created_utc": "2026-10-21T03:43:47.493191+00:00",
   "mapping": [
     {
       "public_path": "src/typed_tmd/__init__.py",
@@ -296,10 +296,16 @@
       "working_sha256": "d24fed434d3b13adfaab57724a0a7f270ea8bf1c818b5ae5cf25cbce24dd685c"
     },
     {
+      "public_path": "lean/README.md",
+      "transformation": "byte-identical copy",
+      "working_path": "lean/README.md",
+      "working_sha256": "086f8e6528eb308c1d86248a76d3daff5643912f388947f3d49f1f13a838dd3c"
+    },
+    {
       "public_path": "README.md",
       "transformation": "byte-identical copy",
       "working_path": "docs/PUBLIC_README.md",
-      "working_sha256": "c6bcf10d1ab6668fb804f7aa3c6fe88179c38d350140cded27b812aa9f9e5ff9"
+      "working_sha256": "3e3c1b245ef6061a20dbb657df4b11bda76595ecccd3ff38070887f64c3c1118"
     },
     {
       "public_path": "docs/EXTERNAL_SV19.md",
@@ -329,13 +335,13 @@
       "public_path": "docs/PROGRAM_SUMMARY.md",
       "transformation": "byte-identical copy",
       "working_path": "docs/PROGRAM_SUMMARY.md",
-      "working_sha256": "7978b26c6288436ac7cf7ddd74febb7ebd2d0f2eec676614909334175f8a991d"
+      "working_sha256": "896192fba764fa0bbdc5bedd352854b816f85fef2721633f2b614811a3610f7c"
     },
     {
       "public_path": "docs/ROADMAP.md",
       "transformation": "byte-identical copy",
       "working_path": "docs/ROADMAP.md",
-      "working_sha256": "c033859a46884ffad6a8a03103b18702fd05ada5fad7b3bb6c0482d67f4a266b"
+      "working_sha256": "34fdadbe86f8888d108fc35115cc11da9ac5355f598b2b8cc3158bb469fc7b8f"
     },
     {
       "public_path": "docs/REPRESENTATION_AND_LEAN_SPEC.md",
@@ -347,19 +353,25 @@
       "public_path": "docs/RESULTS.md",
       "transformation": "byte-identical copy",
       "working_path": "docs/RESULTS.md",
-      "working_sha256": "56a7d7e011552266a76922ee77cb45720a7b5bcbd8c92cd0eb38a34064c35e68"
+      "working_sha256": "c1ad5bfa537a39c65db8ebbfc5eb87085db237ecf2f572fcdac0481c3b5ce750"
     },
     {
       "public_path": "docs/CLAIM_EVIDENCE.md",
       "transformation": "byte-identical copy",
       "working_path": "docs/CLAIM_EVIDENCE.md",
-      "working_sha256": "17ecdf1a2b29bdf23dfc473886572cecfc9c74caa117929d8769602a9ff54df5"
+      "working_sha256": "4707227d997f231b78bc491f5586595334eadf15303bd65181fe6738b5aef27c"
     },
     {
       "public_path": "docs/ATTEMPT_HISTORY.md",
       "transformation": "byte-identical copy",
       "working_path": "docs/ATTEMPT_HISTORY.md",
       "working_sha256": "fbbb8dc3a9a5069fd9b742e3b0bd298bd4ecd245565be4072eadf82d6f9b5e40"
+    },
+    {
+      "public_path": "docs/RELEASE_STATUS.md",
+      "transformation": "byte-identical copy",
+      "working_path": "docs/RELEASE_STATUS.md",
+      "working_sha256": "9621d4ed4f31cd19bd69104959779b082b8b07f1834ce939539620464f65a71e"
     },
     {
       "public_path": "configs/external/external.lock.json",
@@ -624,6 +636,12 @@
       "transformation": "byte-identical copy",
       "working_path": "docs/figures/external/fit_table.csv",
       "working_sha256": "3ab0ed3b5ddf82a0244d0668970cbcecd1845dfcddf3913d8f10a60ec83eea15"
+    },
+    {
+      "public_path": "RELEASE_STATUS.json",
+      "transformation": "byte-identical copy",
+      "working_path": "configs/006/publication_status.json",
+      "working_sha256": "368922d7db46c1f6a4186111e01331b1176cc31772f6194fcb1b5a5a9a669198"
     }
   ],
   "original_freeze_sha256": "620dd9383673a3d5f50c90e8238aec3bf5e62bdc8cce963d3cd4be1b20fd13b7",
@@ -641,8 +659,15 @@
       "release_tag_and_assets_changed": false,
       "released_scientific_snapshot": "v0.3.0",
       "scope": "README section layout and presentation only; scientific code and evidence unchanged"
+    },
+    {
+      "private_source_commit": "e24a43feae68de19292de38ca27f3c72bf5707f7",
+      "release_tag_and_assets_changed": false,
+      "released_scientific_snapshot": "v0.3.0",
+      "scientific_payload_changes": false,
+      "scope": "Record accepted bounded results and verified GitHub publication; reconcile current docs and Lean build status"
     }
   ],
-  "private_source_commit": "5f13b7bfcc1c3363a92b031cb4764c0c34695d7c",
+  "private_source_commit": "e24a43feae68de19292de38ca27f3c72bf5707f7",
   "scope": "allowlisted publication tree; private working history is not published; hashes identify every copied/generated payload"
 }

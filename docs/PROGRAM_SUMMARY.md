@@ -3,11 +3,12 @@
 | Field | Factual entry |
 |---|---|
 | Program title | typed-TMD |
-| Software version | 0.3.0 |
+| Software version | 0.3.0; [published GitHub release](https://github.com/zetanaut/typed-TMD/releases/tag/v0.3.0) |
+| Current status | Bounded H006 results accepted; release assets anonymously verified; [release status](RELEASE_STATUS.md) |
 | Author | Dustin Keller |
 | Project contact | https://github.com/zetanaut/typed-TMD/issues |
 | Original-code license | MIT; upstream terms are separate |
-| Persistent identifier | No software DOI assigned |
+| Persistent identifier | DOI archiving explicitly deferred; no software DOI assigned |
 | Languages/interfaces | Python 3.11 package and command-line scripts; optional arTeMiDe Fortran via f2py and native LHAPDF C++; existing Lean seed |
 | Operating system tested in this execution | macOS 26.6.2, arm64 |
 | Numerical dependencies | NumPy 1.26.4, SciPy 1.14.1; native backend/model/PDF locks included |
