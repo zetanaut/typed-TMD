@@ -1,13 +1,13 @@
 {
-  "DOI": "10.5281/zenodo.23546800",
-  "DOI_verification": "evidence/releases/zenodo-v0.4.0.json",
-  "archived_commit": "a5142e7a342aa6b8fb109ca1d0c65d90130da9a7",
-  "concept_DOI": "10.5281/zenodo.23546799",
+  "DOI": "10.5281/zenodo.23546799",
+  "DOI_kind": "concept; version DOI is recorded after publication",
   "formal_component_version": "0.1.0",
-  "previous_release": "evidence/releases/v0.3.0.json",
-  "publication_receipt": "https://github.com/zetanaut/typed-TMD/releases/download/v0.4.0/typed-TMD-0.4.0.validation.json",
-  "publication_status": "GitHub release and Zenodo archive published and anonymously verified",
+  "previous_archive_verification": "evidence/releases/zenodo-v0.4.0.json",
+  "previous_release": "https://github.com/zetanaut/typed-TMD/releases/tag/v0.4.0",
+  "publication_receipt": "https://github.com/zetanaut/typed-TMD/releases/download/v0.4.1/typed-TMD-0.4.1.validation.json",
+  "publication_status": "consult separately attached post-publication receipt",
   "repository": "https://github.com/zetanaut/typed-TMD",
-  "software_version": "0.4.0",
-  "tag": "v0.4.0"
+  "scope": "documentation, metadata and sample output; scientific implementation unchanged",
+  "software_version": "0.4.1",
+  "tag": "v0.4.1"
 }

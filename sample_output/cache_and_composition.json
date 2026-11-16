@@ -1,0 +1,20 @@
+{
+  "composition_value": [
+    0.216
+  ],
+  "correct_derivative": -1.707703166431429,
+  "correct_off_reference_value": 0.7120252722160417,
+  "fixed_model_change_refusal": "fixed_parameter_changed",
+  "frozen_derivative": 0.0,
+  "frozen_off_reference_value": 0.7289038134560686,
+  "primitive_calls_before_refusal": 0,
+  "reference_value": 0.7289038134560686,
+  "scope": "Python runtime example; run check_formal.py for kernel evidence",
+  "status": "runtime_tested",
+  "transported_reference": [
+    2.2,
+    0.09
+  ],
+  "unsafe_cache_refusal": "cache_depends_on_fitted_parameter",
+  "wrong_reference_refusal": "fixed_parameter_changed"
+}

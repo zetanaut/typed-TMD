@@ -87,8 +87,9 @@ Version 0.4.0 adds the [concrete finite-plan checker and category laws](formal/R
 with 24 Lean theorem reports and four selected positive literal roots plus a
 negative certificate. These exact finite-semantic results are separate from
 the native campaign reported here. The accepted v0.3.0 physics arrays, fits,
-noise and timings are unchanged; no new native execution is claimed. DOI
-archiving remains explicitly deferred. See [release status](RELEASE_STATUS.md).
+noise and timings are unchanged; no new native execution is claimed. The
+[concept DOI](https://doi.org/10.5281/zenodo.23546799) identifies the software
+across archived versions. See [release status](RELEASE_STATUS.md).
 
 ## Checking cost on the tested machine
 

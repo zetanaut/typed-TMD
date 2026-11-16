@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "typed-tmd-core"
-version = "0.4.0"
-description = "Typed TMD transport, fixed QCD forward diagnostic and finite-window extraction"
+version = "0.4.1"
+description = "Typed TMD observation contracts, finite-plan cache checking and Lean proofs of exact finite semantics"
 authors = [{name = "Dustin Keller"}]
 license = {file = "LICENSE"}
 requires-python = ">=3.11"

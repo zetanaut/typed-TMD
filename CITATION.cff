@@ -2,13 +2,13 @@ cff-version: 1.2.0
 message: "If you use typed-TMD, please cite this software and the relevant scientific inputs listed in docs/THIRD_PARTY_NOTICES.md."
 type: software
 title: "typed-TMD"
-version: "0.4.0"
-doi: "10.5281/zenodo.23546800"
-date-released: "2026-10-21"
+version: "0.4.1"
+doi: "10.5281/zenodo.23546799"
+date-released: "2026-11-16"
 authors:
   - family-names: Keller
     given-names: Dustin
 license: MIT
 repository-code: "https://github.com/zetanaut/typed-TMD"
 url: "https://github.com/zetanaut/typed-TMD"
-abstract: "Typed scientific contexts and observation maps, with a controlled external Drell-Yan midpoint-versus-bin comparison and reproducible numerical evidence."
+abstract: "Typed scientific contexts and observation contracts, a finite-plan cache checker, and Lean proofs of exact finite-semantic preservation and variation-aware composition with transported references. Includes a controlled external Drell-Yan midpoint-versus-bin comparison and reproducible numerical evidence; the formal proofs do not verify Python, numerical accuracy or QCD."

@@ -1,0 +1,532 @@
+{
+  "all_passed": true,
+  "benchmark_id": "handoff-001-synthetic-two-boundary-dy-v1",
+  "boundary_A": {
+    "mu_GeV": 2.0,
+    "zeta_GeV2": 4.0
+  },
+  "boundary_B": {
+    "mu_GeV": 4.0,
+    "zeta_GeV2": 16.0
+  },
+  "checks": [
+    {
+      "curvature": {
+        "terms": [],
+        "variables": [
+          "u",
+          "v",
+          "b"
+        ]
+      },
+      "gamma": {
+        "terms": [
+          {
+            "coefficient": "9/50",
+            "powers": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "coefficient": "-6/25",
+            "powers": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "coefficient": "6/25",
+            "powers": [
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "variables": [
+          "u",
+          "v",
+          "b"
+        ]
+      },
+      "kernel": {
+        "terms": [
+          {
+            "coefficient": "-1/25",
+            "powers": [
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "coefficient": "-6/25",
+            "powers": [
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "variables": [
+          "u",
+          "v",
+          "b"
+        ]
+      },
+      "name": "exact_polynomial_connection",
+      "passed": true,
+      "potential": {
+        "terms": [
+          {
+            "coefficient": "-1/25",
+            "powers": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "coefficient": "9/50",
+            "powers": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "coefficient": "-6/25",
+            "powers": [
+              1,
+              1,
+              0
+            ]
+          },
+          {
+            "coefficient": "3/25",
+            "powers": [
+              2,
+              0,
+              0
+            ]
+          }
+        ],
+        "variables": [
+          "u",
+          "v",
+          "b"
+        ]
+      },
+      "status": "symbolically_checked_in_finite_rational_polynomial_grammar"
+    },
+    {
+      "name": "boundary_transport_multiple_Q",
+      "passed": true,
+      "samples": [
+        {
+          "Q_GeV": 4.0,
+          "abs_difference": 0.0,
+          "b_GeV_inv": 0.0,
+          "direct": 0.6757022785599888,
+          "tolerance": 7.757022785599887e-12,
+          "via_B": 0.6757022785599888
+        },
+        {
+          "Q_GeV": 4.0,
+          "abs_difference": 0.0,
+          "b_GeV_inv": 0.1,
+          "direct": 0.673828281903334,
+          "tolerance": 7.73828281903334e-12,
+          "via_B": 0.673828281903334
+        },
+        {
+          "Q_GeV": 4.0,
+          "abs_difference": 0.0,
+          "b_GeV_inv": 0.5,
+          "direct": 0.6303789149544179,
+          "tolerance": 7.303789149544178e-12,
+          "via_B": 0.6303789149544179
+        },
+        {
+          "Q_GeV": 4.0,
+          "abs_difference": 0.0,
+          "b_GeV_inv": 1.0,
+          "direct": 0.511847472548089,
+          "tolerance": 6.11847472548089e-12,
+          "via_B": 0.511847472548089
+        },
+        {
+          "Q_GeV": 4.0,
+          "abs_difference": 0.0,
+          "b_GeV_inv": 2.0,
+          "direct": 0.22248262614372927,
+          "tolerance": 3.2248262614372926e-12,
+          "via_B": 0.22248262614372927
+        },
+        {
+          "Q_GeV": 5.0,
+          "abs_difference": 0.0,
+          "b_GeV_inv": 0.0,
+          "direct": 0.6737250695183004,
+          "tolerance": 7.737250695183004e-12,
+          "via_B": 0.6737250695183004
+        },
+        {
+          "Q_GeV": 5.0,
+          "abs_difference": 1.1102230246251565e-16,
+          "b_GeV_inv": 0.1,
+          "direct": 0.6717965909578111,
+          "tolerance": 7.71796590957811e-12,
+          "via_B": 0.6717965909578112
+        },
+        {
+          "Q_GeV": 5.0,
+          "abs_difference": 0.0,
+          "b_GeV_inv": 0.5,
+          "direct": 0.6271333589077505,
+          "tolerance": 7.271333589077504e-12,
+          "via_B": 0.6271333589077505
+        },
+        {
+          "Q_GeV": 5.0,
+          "abs_difference": 0.0,
+          "b_GeV_inv": 1.0,
+          "direct": 0.5058147470453926,
+          "tolerance": 6.058147470453926e-12,
+          "via_B": 0.5058147470453926
+        },
+        {
+          "Q_GeV": 5.0,
+          "abs_difference": 0.0,
+          "b_GeV_inv": 2.0,
+          "direct": 0.2140512777276698,
+          "tolerance": 3.140512777276698e-12,
+          "via_B": 0.2140512777276698
+        },
+        {
+          "Q_GeV": 8.0,
+          "abs_difference": 0.0,
+          "b_GeV_inv": 0.0,
+          "direct": 0.643908071753006,
+          "tolerance": 7.43908071753006e-12,
+          "via_B": 0.643908071753006
+        },
+        {
+          "Q_GeV": 8.0,
+          "abs_difference": 0.0,
+          "b_GeV_inv": 0.1,
+          "direct": 0.6419442439224098,
+          "tolerance": 7.419442439224098e-12,
+          "via_B": 0.6419442439224098
+        },
+        {
+          "Q_GeV": 8.0,
+          "abs_difference": 1.1102230246251565e-16,
+          "b_GeV_inv": 0.5,
+          "direct": 0.5965678766384951,
+          "tolerance": 6.965678766384951e-12,
+          "via_B": 0.596567876638495
+        },
+        {
+          "Q_GeV": 8.0,
+          "abs_difference": 0.0,
+          "b_GeV_inv": 1.0,
+          "direct": 0.47442530899558377,
+          "tolerance": 5.744253089955837e-12,
+          "via_B": 0.47442530899558377
+        },
+        {
+          "Q_GeV": 8.0,
+          "abs_difference": 2.7755575615628914e-17,
+          "b_GeV_inv": 2.0,
+          "direct": 0.18975786646469928,
+          "tolerance": 2.897578664646993e-12,
+          "via_B": 0.1897578664646993
+        }
+      ],
+      "status": "numerically_validated"
+    },
+    {
+      "maximum_absolute_log_transport_error": 1.1102230246251565e-16,
+      "name": "independent_generator_line_integrals",
+      "passed": true,
+      "status": "numerically_validated_against_separately_integrated_generators",
+      "tolerance": 1e-12
+    },
+    {
+      "name": "dy_flavor_sum_and_fourier_multiple_Q",
+      "passed": true,
+      "samples": [
+        {
+          "Q_GeV": 4.0,
+          "abs_difference": 2.335982206280729e-10,
+          "analytic_W_GeV_inverse2": 0.016706105928231706,
+          "numerical": {
+            "b_max_GeV_inv": 5.4536912517803415,
+            "backend": "scipy_quad_j0",
+            "estimated_abs_error": 3.657553257514014e-09,
+            "evaluations": 21,
+            "tail_bound": 1.2500000000000002e-09,
+            "value": 0.016706106161829926
+          },
+          "tolerance": 2.6706105928231704e-08
+        },
+        {
+          "Q_GeV": 5.0,
+          "abs_difference": 2.092838853606782e-10,
+          "analytic_W_GeV_inverse2": 0.01614780342436976,
+          "numerical": {
+            "b_max_GeV_inv": 5.362016455584712,
+            "backend": "scipy_quad_j0",
+            "estimated_abs_error": 3.856978165880748e-09,
+            "evaluations": 21,
+            "tail_bound": 1.250000000000002e-09,
+            "value": 0.016147803633653646
+          },
+          "tolerance": 2.614780342436976e-08
+        },
+        {
+          "Q_GeV": 8.0,
+          "abs_difference": 1.5570703407186137e-10,
+          "analytic_W_GeV_inverse2": 0.013935469292360132,
+          "numerical": {
+            "b_max_GeV_inv": 5.170052550879473,
+            "backend": "scipy_quad_j0",
+            "estimated_abs_error": 4.187135969628272e-09,
+            "evaluations": 21,
+            "tail_bound": 1.2500000000000056e-09,
+            "value": 0.013935469448067166
+          },
+          "tolerance": 2.393546929236013e-08
+        }
+      ],
+      "status": "numerically_validated_synthetic_observable"
+    },
+    {
+      "maximum_absolute_error": 2.7755575615628914e-17,
+      "name": "synthetic_hard_and_rapidity_partition_cancellation",
+      "passed": true,
+      "status": "numerically_validated_synthetic_counterfactor_only",
+      "tolerance": 1e-12
+    },
+    {
+      "W_per_d2qT_GeV_inverse2": 0.01614780342436976,
+      "abs_difference": 2.1183627421650364e-09,
+      "analytic_bin": 0.04585146907786969,
+      "bin_GeV": [
+        0.0,
+        1.0
+      ],
+      "density_per_dqT_GeV_inverse": 0.05072982060961214,
+      "density_per_dqT_squared_GeV_inverse2": 0.05072982060961214,
+      "error_note": "Quadrature estimates are not certified global error bounds",
+      "estimated_numerical_error": 2.6016281424429074e-09,
+      "name": "density_jacobians_and_finite_radial_bin",
+      "numerical_bin": 0.04585147119623243,
+      "passed": true,
+      "status": "numerically_validated_with_independent_closed_bin_reference",
+      "tolerance": 5.585146907786969e-08
+    },
+    {
+      "error_type": "ContractError",
+      "name": "illegal_composition",
+      "passed": true,
+      "reason": "Transport source ScalePoint(mu_GeV=2.2, zeta_GeV2=4.0) does not match operand scale ScalePoint(mu_GeV=2.0, zeta_GeV2=4.0)",
+      "status": "rejected_as_expected"
+    },
+    {
+      "error_type": "ContextMismatchError",
+      "name": "convention_mismatch",
+      "passed": true,
+      "reason": "Incompatible declared context fields: conventions",
+      "status": "rejected_as_expected"
+    },
+    {
+      "error_type": "DomainCompatibilityError",
+      "name": "domain_mismatch",
+      "passed": true,
+      "reason": "Kinematic domains differ; an explicit restriction is required",
+      "status": "rejected_as_expected"
+    },
+    {
+      "error_type": "InventoryMismatchError",
+      "name": "perturbative_inventory_mismatch",
+      "note": "This checks metadata compatibility, not finite-order QCD evolution",
+      "passed": true,
+      "reason": "Perturbative coefficient inventories differ; conversion or refit is not implicit",
+      "status": "rejected_as_expected"
+    },
+    {
+      "curvature": {
+        "terms": [
+          {
+            "coefficient": "1/100",
+            "powers": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "variables": [
+          "u",
+          "v",
+          "b"
+        ]
+      },
+      "error_type": "EvolutionConsistencyError",
+      "name": "invalid_exact_generator",
+      "passed": true,
+      "reason": "Exact synthetic generators have a nonzero polynomial curvature",
+      "status": "rejected_as_expected"
+    },
+    {
+      "abs_difference": 0.0021738596531778766,
+      "name": "legitimate_model_difference",
+      "note": "No data fit, parameter bias or extraction claim follows from this difference",
+      "original_W": 0.01614780342436976,
+      "original_model_id": "synthetic-model:dc7b3cac27e4245c",
+      "other_W": 0.013973943771191884,
+      "other_model_id": "synthetic-model:4d0f6a2ab701b512",
+      "passed": true,
+      "status": "admitted_distinct_model; difference_is_not_repaired"
+    }
+  ],
+  "config_sha256": "5be8e55f15b190081a23dcac260ca4a74d733ea426c14ee88763f41b52ff29bd",
+  "context": {
+    "accuracy": {
+      "coefficients": {
+        "C": null,
+        "H": null,
+        "K": null,
+        "P": null,
+        "beta": null,
+        "cusp": null,
+        "gamma": null
+      },
+      "expansion_parameter": null,
+      "external_collinear": null,
+      "external_coupling": null,
+      "kernel_completion": null,
+      "label": "exact synthetic polynomial potential; no QCD perturbative order",
+      "mode": "synthetic_exact"
+    },
+    "conventions": {
+      "fourier": "F(k)=integral[d2b/(2pi)^2] exp(+i k.b) F(b); F(b)=integral[d2k] exp(-i k.b) F(k)",
+      "kernel": "dF/dln_sqrt_zeta=K*F",
+      "momentum_density_measure": "d2kT",
+      "provider_quantity": "f",
+      "scale_derivatives": "ln_mu,ln_sqrt_zeta",
+      "units": "momenta_GeV; b_GeV_inverse; zeta_GeV_squared"
+    },
+    "definition": {
+      "name": "synthetic-gaussian-v1",
+      "operator": "synthetic scalar fixture; no QCD operator asserted",
+      "rapidity_scheme": "not_applicable_synthetic",
+      "soft_subtraction": "not_applicable_synthetic",
+      "uv_scheme": "not_applicable_synthetic",
+      "wilson_line": "not_applicable_synthetic"
+    },
+    "domain": {
+      "Q_max_GeV": 100.0,
+      "Q_min_GeV": 2.0,
+      "b_max_GeV_inv": null,
+      "b_min_GeV_inv": 0.0,
+      "max_qT_over_Q": 0.2,
+      "x_max": 1.0,
+      "x_min": 0.0
+    },
+    "hadron": "synthetic_hadron",
+    "process": "dy_unpolarized_angular_integrated",
+    "provider_id": "analytic-fixture-pdf-v1"
+  },
+  "evidence_limits": [
+    "Type checks establish declared compatibility, not physical validity.",
+    "Polynomial identities are checked by a small exact rational algebra, not a proof assistant.",
+    "The analytic reference and the numerical Fourier evaluator are independent value computations sharing input validation.",
+    "Quadrature estimates and sampled closure do not certify arbitrary functions or all parameter values.",
+    "QCD factorization, coefficient matching, data extraction and physical scheme conversion are not implemented.",
+    "LHAPDF adapter tests use a native-interface test double unless a separate real-library smoke test is run."
+  ],
+  "example_transport_ast": {
+    "evolution_id": "synthetic-evolution:49fb9c3e6bb47569",
+    "flavor": 1,
+    "model_id": "synthetic-model:dc7b3cac27e4245c",
+    "mu_GeV": 5.0,
+    "node": "EvolvedTMD",
+    "operand": {
+      "boundary_id": "B",
+      "evolution_id": "synthetic-evolution:49fb9c3e6bb47569",
+      "flavor": 1,
+      "model_id": "synthetic-model:dc7b3cac27e4245c",
+      "mu_GeV": 4.0,
+      "node": "TransportedBoundary",
+      "operand": {
+        "boundary_id": "A",
+        "evolution_id": "synthetic-evolution:49fb9c3e6bb47569",
+        "flavor": 1,
+        "model_id": "synthetic-model:dc7b3cac27e4245c",
+        "mu_GeV": 2.0,
+        "node": "BoundaryTMD",
+        "source_id": "synthetic-gaussian-boundary-v1",
+        "zeta_GeV2": 4.0
+      },
+      "transport": {
+        "components_in_application_order": [],
+        "evidence_statuses": [
+          "symbolically_checked",
+          "analytically_derived"
+        ],
+        "evolution_id": "synthetic-evolution:49fb9c3e6bb47569",
+        "source": {
+          "mu_GeV": 2.0,
+          "zeta_GeV2": 4.0
+        },
+        "source_id": "synthetic-potential-transport-v1",
+        "target": {
+          "mu_GeV": 4.0,
+          "zeta_GeV2": 16.0
+        }
+      },
+      "zeta_GeV2": 16.0
+    },
+    "transport": {
+      "components_in_application_order": [],
+      "evidence_statuses": [
+        "symbolically_checked",
+        "analytically_derived"
+      ],
+      "evolution_id": "synthetic-evolution:49fb9c3e6bb47569",
+      "source": {
+        "mu_GeV": 4.0,
+        "zeta_GeV2": 16.0
+      },
+      "source_id": "synthetic-potential-transport-v1",
+      "target": {
+        "mu_GeV": 5.0,
+        "zeta_GeV2": 25.0
+      }
+    },
+    "zeta_GeV2": 25.0
+  },
+  "parameters": {
+    "g2_GeV2": 0.04,
+    "gamma0": 0.18,
+    "gamma_K": 0.24,
+    "reference": {
+      "mu_GeV": 2.0,
+      "zeta_GeV2": 4.0
+    },
+    "width_GeV2": 0.25
+  },
+  "schema_version": 1,
+  "scientific_status": "synthetic_fixture_only; no_physical_QCD_validation; no_extraction",
+  "status": "passed",
+  "target": {
+    "mu_GeV": 5.0,
+    "zeta_GeV2": 25.0
+  }
+}

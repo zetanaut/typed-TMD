@@ -28,7 +28,7 @@ or infer native function purity from labels. Observation integration remains
 information-losing; changing parameter boundaries also transports the model.
 
 The immediate publication is companion software for a CPC methods project.
-Manuscript scope and composition remain author decisions. Version 0.4.0 is
-[archived on Zenodo](https://doi.org/10.5281/zenodo.23546800). No new scientific
-campaign or manuscript revision is part of this software release or its DOI
-follow-up.
+Manuscript scope and composition remain author decisions. The software's
+[concept DOI](https://doi.org/10.5281/zenodo.23546799) identifies its archived
+versions. Version 0.4.1 updates documentation, citation metadata and sample
+output; it adds no scientific campaign or manuscript revision.

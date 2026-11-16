@@ -1,6 +1,6 @@
 # Reproduce from a public source checkout
 
-Use the v0.4.0 tagged checkout or release source ZIP. Python 3.11 is tested.
+Use the v0.4.1 tagged checkout or release source ZIP. Python 3.11 is tested.
 Commands below run from its root. Installation is a **source-checkout workflow**:
 scripts, formal sources and fixtures remain in that checkout; installing the
 Python wheel alone does not install these reproduction assets. No private

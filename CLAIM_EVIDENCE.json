@@ -587,6 +587,6 @@
       "wire_sha256": "73d42fa664be7d804f11d35f18af5e07da00ca1d86d80b130e58505d240e8ef2"
     }
   ],
-  "software_version": "0.4.0",
+  "software_version": "0.4.1",
   "theorem_count": 24
 }

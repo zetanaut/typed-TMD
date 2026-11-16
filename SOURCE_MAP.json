@@ -1,977 +1,930 @@
 {
-  "accepted_formal_private_commit": "1a6f5b33b0f80ed05aba2a082139db5e9c341a62",
-  "documentation_followup": {
-    "archived_release_commit": "a5142e7a342aa6b8fb109ca1d0c65d90130da9a7",
-    "doi": "10.5281/zenodo.23546800",
-    "purpose": "Add verified Zenodo DOI and citation metadata",
-    "scope": "Only citation, release documentation and archival receipt changed; scientific sources and evidence are preserved."
-  },
-  "exclusion": "SOURCE_MAP.json excludes its own identity. The original external asset manifest covers the immutable v0.4.0 release; this map also covers the later citation documentation on main.",
+  "exclusion": "SOURCE_MAP.json excludes itself; the separate release manifest hashes every source file",
   "mapping": {
     ".github/workflows/core.yml": {
-      "origin": "working-source",
-      "sha256": "365d6a8e9f13bf7885115a7b5eab373a248b8a8a3c464ea615b42d66e22ca4c2",
-      "transformation": "byte-identical",
-      "working_path": ".github/workflows/core.yml"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "365d6a8e9f13bf7885115a7b5eab373a248b8a8a3c464ea615b42d66e22ca4c2"
     },
     ".github/workflows/formal.yml": {
-      "origin": "working-source",
-      "sha256": "0bb5204ca77b3bce097ecf9b2ba89786bfc94c6f68e305d4f3bb0f77175301af",
-      "transformation": "byte-identical",
-      "working_path": ".github/workflows/formal.yml"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "0bb5204ca77b3bce097ecf9b2ba89786bfc94c6f68e305d4f3bb0f77175301af"
     },
     ".gitignore": {
-      "origin": "generated-release-metadata",
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "33ef7d71f865584a1d9fc6c386b0252f1000209425d7a1eafe4daa98889138dd"
     },
     "CITATION.cff": {
       "origin": "working-source",
-      "sha256": "c1549c2b71da4287f1a4ad34e084970b743ff85b5cb73f943edc9c16f498da6b",
+      "sha256": "fb8c186660eb83b31a02f2b01010d9fe4b21121f4fc73e1da25f4d5691a1a56d",
       "transformation": "byte-identical",
       "working_path": "CITATION.cff"
     },
     "CLAIM_EVIDENCE.json": {
       "origin": "working-source",
-      "sha256": "46606ebe096ae361125a200b579b350113ed09f67121e33f7ee16e0ab824d80d",
+      "sha256": "68d08c2e4a1457aa7b84be97536c825364d9cbbb38fed685d17fff057161d36e",
       "transformation": "byte-identical",
       "working_path": "CLAIM_EVIDENCE.json"
     },
     "CONTRIBUTING.md": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "b9d9db78e3bac94906bb315befc2bab69da43a324185eaebba2db2cfc8fa69b7"
     },
     "LICENSE": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "0f4993df16b5885f6b8897cc3f7ac0c353a16e8994ff97caccc099f929f126cd"
     },
     "README.md": {
       "origin": "working-source",
-      "sha256": "019f2a2af6d0972df940c12747812612dc7d1dd75e391915f68b3803227bc244",
+      "sha256": "648345fb2580bd00717e05aa61ef158639cd5d3ded1ac7aee6ae095838c73cfe",
       "transformation": "byte-identical",
       "working_path": "docs/PUBLIC_README.md"
     },
     "RELEASE_STATUS.json": {
+      "generator": "tools/release_0_4_1.py (private release tooling)",
       "origin": "generated-release-metadata",
-      "sha256": "e4eac49ca00c3f51f4f7e156dbe7865a40b19d6bf9f5ea2d7b99dbb6da15e8c8"
+      "sha256": "7918730d90517860b6f0b86bbe1614963dcaf6d370eda3ad0e043c83edfffb40"
     },
     "configs/benchmark.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "5be8e55f15b190081a23dcac260ca4a74d733ea426c14ee88763f41b52ff29bd"
     },
     "configs/external/FREEZE.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "8f7470b59c15f7f9c28e9d9471e533e35150f69e7d1d1b33ba2503f6ac5a56f5"
     },
     "configs/external/dependency_sources.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "1fb77db56c93bb019a1de543cbf4ad6d9463a9e866256065fcc51f12d8223cd6"
     },
     "configs/external/experiment_plan.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "83f49d85aa9559c6b522dd5f065d2fe93226a6e58db6d71dd2e26b3218a2fef8"
     },
     "configs/external/external.lock.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "80b8d178306964cc2fbd2bb122acecdfa11362226db9148eb24fefc87993f285"
     },
     "configs/external/observation_contract.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "1ee8937d6f1d6fd414a0b55ca177abea82806922555e51eedcd7b1c56e2518d7"
     },
     "docs/ATTEMPT_HISTORY.md": {
-      "origin": "working-source",
-      "sha256": "34c65fcc68fdb469df9997f75acc6a5fbd23a779e19884bc5e512d004203b0be",
-      "transformation": "byte-identical",
-      "working_path": "docs/ATTEMPT_HISTORY.md"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "34c65fcc68fdb469df9997f75acc6a5fbd23a779e19884bc5e512d004203b0be"
     },
     "docs/CLAIM_EVIDENCE.md": {
-      "origin": "working-source",
-      "sha256": "687c5d76bb23935f8d1bb26d000d69dd79449e23ea1e748133c4c24706399886",
-      "transformation": "byte-identical",
-      "working_path": "docs/CLAIM_EVIDENCE.md"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "687c5d76bb23935f8d1bb26d000d69dd79449e23ea1e748133c4c24706399886"
     },
     "docs/EXAMPLES.md": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "ef073a0d16d0b00bafd47f2d64de9101d77f8a14ddf8cf46c980e07f3bc2548a"
     },
     "docs/EXTERNAL_SV19.md": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "31da00559b4fba1bc6b97cd93bdcda39e5d8fd8a9d0e211cdf08558f76b404b0"
     },
     "docs/INSTALL_EXTERNAL.md": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "b4ac8bf6ace56de28f15d249b03e807ac1c64911447ff8568497daa7007c8008"
     },
     "docs/PROGRAM_SUMMARY.md": {
       "origin": "working-source",
-      "sha256": "f306eda5c4e70e70f58c6c760e85324867c02eca02cf8d8b0c5d9b4c12eacadb",
+      "sha256": "d0bedafe39dea2577128e367b22592f6dd4f623153a1c7248bf3838f3b765476",
       "transformation": "byte-identical",
       "working_path": "docs/PROGRAM_SUMMARY.md"
     },
     "docs/RELEASE_NOTES_0.4.0.md": {
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "ad232a3873b2209a79d11372e4e9aa7e981b597381ac201b661e5527c3031a52"
+    },
+    "docs/RELEASE_NOTES_0.4.1.md": {
       "origin": "working-source",
-      "sha256": "ad232a3873b2209a79d11372e4e9aa7e981b597381ac201b661e5527c3031a52",
+      "sha256": "ae85cd2899a27f9864dae0dbf0380e83207eeedccba50a17d27df9887a9a501d",
       "transformation": "byte-identical",
-      "working_path": "docs/RELEASE_NOTES_0.4.0.md"
+      "working_path": "docs/RELEASE_NOTES_0.4.1.md"
     },
     "docs/RELEASE_STATUS.md": {
       "origin": "working-source",
-      "sha256": "5afe5e4526cf4484e707bfc9208270cd05869e60305651f0ae91e0bff26531ed",
+      "sha256": "29737281268185103130c5ef4524c6f5a976738ef0d072f940ba6967a532105e",
       "transformation": "byte-identical",
       "working_path": "docs/RELEASE_STATUS.md"
     },
     "docs/REPRESENTATION_AND_LEAN_SPEC.md": {
-      "origin": "working-source",
-      "sha256": "938a66918779cbe6a5c00720cf14f0c435cf96199acb2053ef9be931b140e9ae",
-      "transformation": "byte-identical",
-      "working_path": "docs/REPRESENTATION_AND_LEAN_SPEC.md"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "938a66918779cbe6a5c00720cf14f0c435cf96199acb2053ef9be931b140e9ae"
     },
     "docs/RESULTS.md": {
       "origin": "working-source",
-      "sha256": "6a489c140eaffb25ab0866f0557a257273a751876789cdcf4b6873f641b4ae05",
+      "sha256": "9e9fd903c3fd65a39d018ae3bde73ada6f58088f68a2357a60b0c3ec949fd088",
       "transformation": "byte-identical",
       "working_path": "docs/RESULTS.md"
     },
     "docs/ROADMAP.md": {
       "origin": "working-source",
-      "sha256": "f78e1692bf9f02e046a701bfd44cc47492d5337c31583dcfa2380fce8592cfc1",
+      "sha256": "09d8a983d4e042db0bc6a6608f6d495e4e7cd41cf8eb6ca63a640309d541a811",
       "transformation": "byte-identical",
       "working_path": "docs/ROADMAP.md"
     },
     "docs/THIRD_PARTY_NOTICES.md": {
-      "origin": "working-source",
-      "sha256": "8715a450f52b78749e02e7ef7f1e289ffdeb847c0fa3680eccd9e9d4125da987",
-      "transformation": "byte-identical",
-      "working_path": "docs/THIRD_PARTY_NOTICES.md"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "8715a450f52b78749e02e7ef7f1e289ffdeb847c0fa3680eccd9e9d4125da987"
     },
     "docs/figures/external/external_checking_overhead.png": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "25a5be11ed372412f22a33b82b745f9471902a2ce668603cf0d0aded039e9903"
     },
     "docs/figures/external/external_checking_overhead.svg": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "20bcf24ea154430ddcdf34645297f98eb6bed6e82f150b12995f0df5b65b42c0"
     },
     "docs/figures/external/external_observation_effect.png": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "59bdbd506c04e48133cf34ab3b5881aa7d7b40edffe0f638f22bbcea5c73548e"
     },
     "docs/figures/external/external_observation_effect.svg": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "d556bec43f0e19bc11ade7180e6ffe2680e06df1f956f83f245f392fe5cb50af"
     },
     "docs/figures/external/figure_receipt.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "ec47017b9508e0c3579eb78bfd74c377b195fcd427c7a63e10fc49b63128eac2"
     },
     "docs/figures/external/fit_table.csv": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "3ab0ed3b5ddf82a0244d0668970cbcecd1845dfcddf3913d8f10a60ec83eea15"
     },
     "docs/formal/CATEGORY.md": {
-      "origin": "working-source",
-      "sha256": "efb58f0d364a7659f77c034cdabae657cc308a69e7ecc23204d33b9bd3fa5b80",
-      "transformation": "byte-identical",
-      "working_path": "docs/formal/CATEGORY.md"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "efb58f0d364a7659f77c034cdabae657cc308a69e7ecc23204d33b9bd3fa5b80"
     },
     "docs/formal/EXAMPLES.md": {
-      "origin": "working-source",
-      "sha256": "f75c11b2aebcd588ea1d27064466b808f54b12bf3d93559e229a658e3b4abc23",
-      "transformation": "byte-identical",
-      "working_path": "docs/formal/EXAMPLES.md"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "f75c11b2aebcd588ea1d27064466b808f54b12bf3d93559e229a658e3b4abc23"
     },
     "docs/formal/LEAN.md": {
       "origin": "working-source",
-      "sha256": "86898095fe204e9fa03766da8ab6377234e4ba00e8f03ce4f974e9eb7ab1b026",
+      "sha256": "048e35e82060f64771051b75a52a45daf87af79243727f01f02afc96c1ec378e",
       "transformation": "byte-identical",
       "working_path": "docs/formal/LEAN.md"
     },
     "docs/formal/README.md": {
-      "origin": "working-source",
-      "sha256": "2b329fb0c1faddd48c311d174dc916433fd834233f001941a42a17bbf09794a7",
-      "transformation": "byte-identical",
-      "working_path": "docs/formal/README.md"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "2b329fb0c1faddd48c311d174dc916433fd834233f001941a42a17bbf09794a7"
     },
     "docs/formal/REPRESENTATION.md": {
-      "origin": "working-source",
-      "sha256": "cbd817ae7dd890cfa80d0206e848eda9c9db489db31d3848c721efc0546a57fd",
-      "transformation": "byte-identical",
-      "working_path": "docs/formal/REPRESENTATION.md"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "cbd817ae7dd890cfa80d0206e848eda9c9db489db31d3848c721efc0546a57fd"
     },
     "docs/formal/REPRODUCE.md": {
       "origin": "working-source",
-      "sha256": "fc9143d2d058493dc189042f44c67575504e99190eb753f20e74f76e346ccfeb",
+      "sha256": "b379a4b100f94b8222cc0f838489215619eaf9bc282e858a90341574c8941f04",
       "transformation": "byte-identical",
       "working_path": "docs/formal/REPRODUCE.md"
     },
     "docs/formal/TRUST_AND_SCOPE.md": {
-      "origin": "working-source",
-      "sha256": "cb1560648fec46eb4ff198fd49f89e70f5661d4886acaabf268400672887295e",
-      "transformation": "byte-identical",
-      "working_path": "docs/formal/TRUST_AND_SCOPE.md"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "cb1560648fec46eb4ff198fd49f89e70f5661d4886acaabf268400672887295e"
     },
     "environment-external-osx-arm64.lock": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "10050634cdb8ca0df501bbf4fb3452fe61829cca49091aabe7295db8651a65ac"
     },
     "evidence/core_validation.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "70531d5662cbbc718a14d5e1945892dda13224bde5c56c4734e55d3d98381495"
     },
     "evidence/coverage/inputs.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "f9751b63bb0e321c39f1dcca9d2662c54f11cfd8b6ea5f3de9669c857fa17606"
     },
     "evidence/coverage/inputs.manifest.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "ac27741d3a7cdb6244c6e3bf3d69ce1b124f01ef82c9455d26ad5fae5adfc1ce"
     },
     "evidence/coverage/projection_verification.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "484e66417a5e7368fbba907aebf1f7164bcaf0f1f09c6d0a027095267dd4fb24"
     },
     "evidence/environment.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "6a6919bd7b92cb83695d28671737e2ff5b797eeba94b861a3adff199475bb369"
     },
     "evidence/experiment/consequences.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "c62a9c53b8a71b23cf51b6865b14ac97dc41e60e69f2ebd1039621588cd0012c"
     },
     "evidence/experiment/data.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "efb84287457cc50794aabe645abd1afebad89e3b9d2c6907d5fa64e7798485d5"
     },
     "evidence/experiment/fits.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "6fa92311b53cc946dc7c021c65aa3d2cfb55a6e7675292808e7a5ffa839fbf8b"
     },
     "evidence/experiment/rank_check.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "b82443597401652eac89457a25afcc0b9af3b2085f6aab3ca60df68c5642ba93"
     },
     "evidence/experiment/rejection.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "b221da0ee6a8ba97a8b30eb1198e3d3e9330c6a2be539da64646335ce59fb9d7"
     },
     "evidence/experiment/response_plans.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "7fe47a1cd012bfabc945667c2e0efbdeab5a39f9a44482b443afa7ffe8dea5a6"
     },
     "evidence/experiment/summary.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "69f007251c9b336abeed39407cc2a93d6d402d72671219c4f4d3c549f7708a8e"
     },
     "evidence/formal/fixtures/H004_A_finite_plan.json.gz": {
-      "origin": "working-source",
-      "sha256": "683843b64e6db42de853c4e6b416757fbaedb60846d7f8424d2a9865cf6240d2",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/fixtures/H004_A_finite_plan.json.gz"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "683843b64e6db42de853c4e6b416757fbaedb60846d7f8424d2a9865cf6240d2"
     },
     "evidence/formal/fixtures/H004_B_finite_plan.json.gz": {
-      "origin": "working-source",
-      "sha256": "a8dbd96ff040478bb23b7031a95ea00a21b7b37735277b2ac7ff97bedb2c8b48",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/fixtures/H004_B_finite_plan.json.gz"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "a8dbd96ff040478bb23b7031a95ea00a21b7b37735277b2ac7ff97bedb2c8b48"
     },
     "evidence/formal/fixtures/H004_bridge.json": {
-      "origin": "working-source",
-      "sha256": "36463893382e1c21ebf8ea986f6d45e7f748d50a3b84f1a61dccae904b87c1f0",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/fixtures/H004_bridge.json"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "36463893382e1c21ebf8ea986f6d45e7f748d50a3b84f1a61dccae904b87c1f0"
     },
     "evidence/formal/fixtures/H006_geometry_plan.json.gz": {
-      "origin": "working-source",
-      "sha256": "dbc7c5c09021e53b8836eddf0d84f1457fef8cbb6771f249a05d5b67af48bc65",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/fixtures/H006_geometry_plan.json.gz"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "dbc7c5c09021e53b8836eddf0d84f1457fef8cbb6771f249a05d5b67af48bc65"
     },
     "evidence/formal/fixtures/MANIFEST.json": {
-      "origin": "working-source",
-      "sha256": "bfaaa58b88689b7c4bf0efe3ea960d6743777bd9614bd11a011199fefc25ebe6",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/fixtures/MANIFEST.json"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "bfaaa58b88689b7c4bf0efe3ea960d6743777bd9614bd11a011199fefc25ebe6"
     },
     "evidence/formal/fixtures/bad.json": {
-      "origin": "working-source",
-      "sha256": "2c513d706c1afaf22ca2eddc59202bb8424c7bf0481eeadc908079ef0d8996ad",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/fixtures/bad.json"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "2c513d706c1afaf22ca2eddc59202bb8424c7bf0481eeadc908079ef0d8996ad"
     },
     "evidence/formal/fixtures/cache_counterexample.json": {
-      "origin": "working-source",
-      "sha256": "25d712f8a6941473cd6f62bd5a93000ce68172028ea45240ccf998fdd7acbe58",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/fixtures/cache_counterexample.json"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "25d712f8a6941473cd6f62bd5a93000ce68172028ea45240ccf998fdd7acbe58"
     },
     "evidence/formal/fixtures/good.json": {
-      "origin": "working-source",
-      "sha256": "237bf0703de8dc64634146eaedfb8ed842d114e23ef8eb18759db294eaec6ab7",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/fixtures/good.json"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "237bf0703de8dc64634146eaedfb8ed842d114e23ef8eb18759db294eaec6ab7"
     },
     "evidence/formal/fixtures/observation_bridge.json": {
-      "origin": "working-source",
-      "sha256": "3a34114e8b82573b7866d85df6a4affa9e09381ca2aeb691ecfe1bf40b4f7ca3",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/fixtures/observation_bridge.json"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "3a34114e8b82573b7866d85df6a4affa9e09381ca2aeb691ecfe1bf40b4f7ca3"
     },
     "evidence/formal/verification/NegativeAxioms.lean": {
-      "origin": "working-source",
-      "sha256": "2d54a6df12ea9a4391c19331c29b82488e915864ab3706edca8ef117c47e27f3",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/verification/NegativeAxioms.lean"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "2d54a6df12ea9a4391c19331c29b82488e915864ab3706edca8ef117c47e27f3"
     },
     "evidence/formal/verification/PORTABLE.json": {
-      "origin": "working-source",
-      "sha256": "eb23f756b35f9964992388403ef82021c05d57b2ac18913aaea8d370f118bcd9",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/verification/PORTABLE.json"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "eb23f756b35f9964992388403ef82021c05d57b2ac18913aaea8d370f118bcd9"
     },
     "evidence/formal/verification/PROVENANCE.json": {
-      "origin": "working-source",
-      "sha256": "fc66ea695e390cef2d8cba0193f39a5456b11eee5b427e250d9fd0bc61bea64a",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/verification/PROVENANCE.json"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "fc66ea695e390cef2d8cba0193f39a5456b11eee5b427e250d9fd0bc61bea64a"
     },
     "evidence/formal/verification/TheoremInventory.lean": {
-      "origin": "working-source",
-      "sha256": "f8915bfadd75984c388cb40be901b33c099bb1872ee989fe5696bd02711617c0",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/verification/TheoremInventory.lean"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "f8915bfadd75984c388cb40be901b33c099bb1872ee989fe5696bd02711617c0"
     },
     "evidence/formal/verification/dense_regression.log": {
-      "origin": "working-source",
-      "sha256": "a31d3efa3d3e9b6fd18d0a1918a4d7034285cd08016bb7bddc03a13052455f01",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/verification/dense_regression.log"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "a31d3efa3d3e9b6fd18d0a1918a4d7034285cd08016bb7bddc03a13052455f01"
     },
     "evidence/formal/verification/negative_axioms.log": {
-      "origin": "working-source",
-      "sha256": "1a55fb86dceb4da5a5ff098ced273d166865c36aa9d24cff1bd2ae7d69705a78",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/verification/negative_axioms.log"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "1a55fb86dceb4da5a5ff098ced273d166865c36aa9d24cff1bd2ae7d69705a78"
     },
     "evidence/formal/verification/replay.json": {
-      "origin": "working-source",
-      "sha256": "2d5d6e45fb15a55865786b38cbb908f1f270df3289adf5a64d75c3eae472a2a7",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/verification/replay.json"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "2d5d6e45fb15a55865786b38cbb908f1f270df3289adf5a64d75c3eae472a2a7"
     },
     "evidence/formal/verification/selected/H004_A.json.gz": {
-      "origin": "working-source",
-      "sha256": "c5eddd69d48540f1dc178b98786b22cf4579a9b867164ae484b457ddb652b94b",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/verification/selected/H004_A.json.gz"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "c5eddd69d48540f1dc178b98786b22cf4579a9b867164ae484b457ddb652b94b"
     },
     "evidence/formal/verification/selected/H004_A/Certificate.lean": {
-      "origin": "working-source",
-      "sha256": "eb5278694f3c812038bda4d680731e090a9cc121020b23d63e7527af6b940684",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/verification/selected/H004_A/Certificate.lean"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "eb5278694f3c812038bda4d680731e090a9cc121020b23d63e7527af6b940684"
     },
     "evidence/formal/verification/selected/H004_A/certificate.log": {
-      "origin": "working-source",
-      "sha256": "e1bf34b5b4bb9ff3ce543706c337314e9f5328a52ea614e28f7b3eb59e1085ab",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/verification/selected/H004_A/certificate.log"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "e1bf34b5b4bb9ff3ce543706c337314e9f5328a52ea614e28f7b3eb59e1085ab"
     },
     "evidence/formal/verification/selected/H004_A/version.log": {
-      "origin": "working-source",
-      "sha256": "0bc582398c343669dbdc064b55811439fc00ec74913c38579127256cfbfb4ad0",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/verification/selected/H004_A/version.log"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "0bc582398c343669dbdc064b55811439fc00ec74913c38579127256cfbfb4ad0"
     },
     "evidence/formal/verification/selected/H004_B.json.gz": {
-      "origin": "working-source",
-      "sha256": "90367d2223725ad07070f094d0a81ac9fad753099db217ebcfd781cbab8f19b5",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/verification/selected/H004_B.json.gz"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "90367d2223725ad07070f094d0a81ac9fad753099db217ebcfd781cbab8f19b5"
     },
     "evidence/formal/verification/selected/H004_B/Certificate.lean": {
-      "origin": "working-source",
-      "sha256": "5104eb5d92af7cb5c188c60e518bc4a45a9eaabac91120afea6bc52972a6a7e4",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/verification/selected/H004_B/Certificate.lean"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "5104eb5d92af7cb5c188c60e518bc4a45a9eaabac91120afea6bc52972a6a7e4"
     },
     "evidence/formal/verification/selected/H004_B/certificate.log": {
-      "origin": "working-source",
-      "sha256": "e1bf34b5b4bb9ff3ce543706c337314e9f5328a52ea614e28f7b3eb59e1085ab",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/verification/selected/H004_B/certificate.log"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "e1bf34b5b4bb9ff3ce543706c337314e9f5328a52ea614e28f7b3eb59e1085ab"
     },
     "evidence/formal/verification/selected/H004_B/version.log": {
-      "origin": "working-source",
-      "sha256": "0bc582398c343669dbdc064b55811439fc00ec74913c38579127256cfbfb4ad0",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/verification/selected/H004_B/version.log"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "0bc582398c343669dbdc064b55811439fc00ec74913c38579127256cfbfb4ad0"
     },
     "evidence/formal/verification/selected/H006_observation.json.gz": {
-      "origin": "working-source",
-      "sha256": "e2bfcc12b02650d7646546e39e0c4e64de1f2590b9074ace8e63f7afa759efad",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/verification/selected/H006_observation.json.gz"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "e2bfcc12b02650d7646546e39e0c4e64de1f2590b9074ace8e63f7afa759efad"
     },
     "evidence/formal/verification/selected/H006_observation/Certificate.lean": {
-      "origin": "working-source",
-      "sha256": "6fc40a67a426fd93ebae0454476f4919d0b470e538acb12def5483eb5c383151",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/verification/selected/H006_observation/Certificate.lean"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "6fc40a67a426fd93ebae0454476f4919d0b470e538acb12def5483eb5c383151"
     },
     "evidence/formal/verification/selected/H006_observation/certificate.log": {
-      "origin": "working-source",
-      "sha256": "e1bf34b5b4bb9ff3ce543706c337314e9f5328a52ea614e28f7b3eb59e1085ab",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/verification/selected/H006_observation/certificate.log"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "e1bf34b5b4bb9ff3ce543706c337314e9f5328a52ea614e28f7b3eb59e1085ab"
     },
     "evidence/formal/verification/selected/H006_observation/version.log": {
-      "origin": "working-source",
-      "sha256": "0bc582398c343669dbdc064b55811439fc00ec74913c38579127256cfbfb4ad0",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/verification/selected/H006_observation/version.log"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "0bc582398c343669dbdc064b55811439fc00ec74913c38579127256cfbfb4ad0"
     },
     "evidence/formal/verification/selected/build.log": {
-      "origin": "working-source",
-      "sha256": "2bd78b05a139d15d98f7757294d1a2dfa962a57b43ac3f0d39d5fa5d65d290c6",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/verification/selected/build.log"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "2bd78b05a139d15d98f7757294d1a2dfa962a57b43ac3f0d39d5fa5d65d290c6"
     },
     "evidence/formal/verification/selected/kernel_fixture.json.gz": {
-      "origin": "working-source",
-      "sha256": "4b795fe66a61e8234e5cca4b37090d1588d3a0bb911acd7a1f57329a403c2dc6",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/verification/selected/kernel_fixture.json.gz"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "4b795fe66a61e8234e5cca4b37090d1588d3a0bb911acd7a1f57329a403c2dc6"
     },
     "evidence/formal/verification/selected/kernel_fixture/Certificate.lean": {
-      "origin": "working-source",
-      "sha256": "226566e18cc3c2e4510b1c98b654c359964b5992a97393a02aaee7f6310721ae",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/verification/selected/kernel_fixture/Certificate.lean"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "226566e18cc3c2e4510b1c98b654c359964b5992a97393a02aaee7f6310721ae"
     },
     "evidence/formal/verification/selected/kernel_fixture/certificate.log": {
-      "origin": "working-source",
-      "sha256": "e1bf34b5b4bb9ff3ce543706c337314e9f5328a52ea614e28f7b3eb59e1085ab",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/verification/selected/kernel_fixture/certificate.log"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "e1bf34b5b4bb9ff3ce543706c337314e9f5328a52ea614e28f7b3eb59e1085ab"
     },
     "evidence/formal/verification/selected/kernel_fixture/version.log": {
-      "origin": "working-source",
-      "sha256": "0bc582398c343669dbdc064b55811439fc00ec74913c38579127256cfbfb4ad0",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/verification/selected/kernel_fixture/version.log"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "0bc582398c343669dbdc064b55811439fc00ec74913c38579127256cfbfb4ad0"
     },
     "evidence/formal/verification/selected/negative.lean": {
-      "origin": "working-source",
-      "sha256": "6b0d46a78cf817060fe7ca216f841e3d0747eb260f5c6023cb8b4a77fa8dae20",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/verification/selected/negative.lean"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "6b0d46a78cf817060fe7ca216f841e3d0747eb260f5c6023cb8b4a77fa8dae20"
     },
     "evidence/formal/verification/selected/negative.log": {
-      "origin": "working-source",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/verification/selected/negative.log"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     "evidence/formal/verification/selected/version.log": {
-      "origin": "working-source",
-      "sha256": "0bc582398c343669dbdc064b55811439fc00ec74913c38579127256cfbfb4ad0",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/verification/selected/version.log"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "0bc582398c343669dbdc064b55811439fc00ec74913c38579127256cfbfb4ad0"
     },
     "evidence/formal/verification/theorem_inventory.log": {
-      "origin": "working-source",
-      "sha256": "74fa84d65738cb9354b975476504fa5b5d01e18b755a001db614489a91c17c97",
-      "transformation": "byte-identical",
-      "working_path": "evidence/formal/verification/theorem_inventory.log"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "74fa84d65738cb9354b975476504fa5b5d01e18b755a001db614489a91c17c97"
     },
     "evidence/fresh_install.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "d78815f61fbcaad0050050a11ceb96b4d1e683792f7cc4181ed894100fea35fb"
     },
     "evidence/fresh_replay_comparison.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "c0a54e8d64dc8f0a027df0587e29559cd87e2186248da75b037fe7585d7dcf57"
     },
     "evidence/numerical_resolution.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "50ffd5710f1fcdd7286b58c3e9d23ed7dd888ca002f3e4f6dfa8f524258e3fa0"
     },
     "evidence/pilots/initial_failed/pilot_arrays.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "2b6d58c73cd239ed1749dc25a994cce30ee13817d4321320ba9af50d02a621df"
     },
     "evidence/pilots/initial_failed/pilot_checks.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "71eef6ab2e1f3ae802960306c5fc50e9741501f2b7fea698d4d3afdbd598e63c"
     },
     "evidence/pilots/initial_failed/summary.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "217619ee7cb2aa6c21d668facba53b1cffbb91e4182372a772acf4b9442af38e"
     },
     "evidence/pilots/nominal/native_typed_requests_and_results.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "47a3ea0adb264d814b91ef72474341e96ebebb71ce47e4d9198df636a1d90ccd"
     },
     "evidence/pilots/nominal/pilot_arrays.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "1a55c508e7a0c5647dba15aa0b24a11a84762f0041230d74526cb2c0e6a44002"
     },
     "evidence/pilots/nominal/pilot_checks.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "2f6c6ceff7165e786bb7581137104bfadb1a44e54bf18c5710a2850a54cf243f"
     },
     "evidence/pilots/nominal/summary.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "46660fa8963a06576a04bc4a3e45eab2035aa80a9eaf09509fa199659c018f5a"
     },
     "evidence/pilots/refined/pilot_arrays.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "f15a92ebd84a2cd267b0d936ada9d41474203247acc24048c0e0bb8eb0399367"
     },
     "evidence/pilots/refined/pilot_checks.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "e179164473567da242f46fc2bb3715857e58c70f721632fb87f5a346889b9ace"
     },
     "evidence/pilots/refined/summary.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "11efad079c930469af0bb7800194da06cfda0e753ea69ab7a031810515297a69"
     },
     "evidence/refinement/native_refinement_arrays.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "0054814dc1ddd6d32a029dabb9053d917115f0e8c1cc8153b24bace2296e9908"
     },
     "evidence/refinement/native_refinement_checks.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "933d4238b544d9bc19b27d0677fa15eddb9382067ee4d4376fae2b2362bb51c8"
     },
     "evidence/refinement/summary.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "b2d14a565ce30000c158e40a20e8d6964d795566c25eb02a251510db25f9dda3"
     },
     "evidence/releases/v0.3.0.json": {
       "origin": "public-parent",
-      "original_path": "RELEASE_STATUS.json",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "368922d7db46c1f6a4186111e01331b1176cc31772f6194fcb1b5a5a9a669198"
     },
     "evidence/releases/zenodo-v0.4.0.json": {
-      "origin": "working-source",
-      "sha256": "394ae740d3daffb1f9ebdcca031362b5b4696608086c573e40d7d625fc0235e1",
-      "transformation": "byte-identical",
-      "working_path": "evidence/releases/zenodo-v0.4.0.json"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "394ae740d3daffb1f9ebdcca031362b5b4696608086c573e40d7d625fc0235e1"
     },
     "evidence/timing/summary.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "468a687e23e9ce2c55e7fc6ed12219023d58715ba93119300cd000c82744e596"
     },
     "evidence/timing/timings.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "7f05b01f48a1e28fb5923947c35ec2c7802929e557099770944837f6bff8cba9"
     },
     "evidence/validation/geometry_arrays.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "f7db704ab071bbd2efe8366e6ed572e53ef629c7cd6e0949cd088018403a332d"
     },
     "evidence/validation/selected_validation_arrays.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "94e1373b18bd293cc2baeb8177fb70a6a7ce6185bd4ec10c28d084027f259f89"
     },
     "evidence/validation/selected_validation_checks.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "278a6ccbf155514faddc844bd250c23a23dc96d3f361b3a2cc6a935e6d4f0b28"
     },
     "evidence/validation/summary.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "6c773fa29ea42ba8c375cc3640d88fdbb34a443dc804610f4838129d233cf6bf"
     },
     "examples/algebraic_closure.py": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "445a75afe4bf43d4abf01640b7b63b45be834787acfcdfde7d543903cafda40d"
     },
     "examples/formal/cache_and_composition.py": {
-      "origin": "working-source",
-      "sha256": "28506dcd90ea9153053cf6134daf049f4b5c96e9164590121eeb797f7368ac2a",
-      "transformation": "byte-identical",
-      "working_path": "examples/formal/cache_and_composition.py"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "28506dcd90ea9153053cf6134daf049f4b5c96e9164590121eeb797f7368ac2a"
     },
     "formal/007/README.md": {
-      "origin": "working-source",
-      "sha256": "251c84265ca2992ce0e1a20aa9e0b61e0efa25c4ac8ee9d429c531defac4fefe",
-      "transformation": "byte-identical",
-      "working_path": "formal/007/README.md"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "251c84265ca2992ce0e1a20aa9e0b61e0efa25c4ac8ee9d429c531defac4fefe"
     },
     "formal/007/TypedTMDPlan.lean": {
-      "origin": "working-source",
-      "sha256": "ae0a52fd8d5d5a76711a057f7cea5a894ab0d1ceac67566804b1fae8c3995eef",
-      "transformation": "byte-identical",
-      "working_path": "formal/007/TypedTMDPlan.lean"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "ae0a52fd8d5d5a76711a057f7cea5a894ab0d1ceac67566804b1fae8c3995eef"
     },
     "formal/007/TypedTMDPlan/Category.lean": {
-      "origin": "working-source",
-      "sha256": "7d97b9aad4f076145f76b27d0090dc803144847f3873a4f40378aa0cd0d6e98c",
-      "transformation": "byte-identical",
-      "working_path": "formal/007/TypedTMDPlan/Category.lean"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "7d97b9aad4f076145f76b27d0090dc803144847f3873a4f40378aa0cd0d6e98c"
     },
     "formal/007/TypedTMDPlan/Core.lean": {
-      "origin": "working-source",
-      "sha256": "b7bd6edce2860a8dd2d3f0cbc1f005b55f72445432bebd4a7539461eee93c18f",
-      "transformation": "byte-identical",
-      "working_path": "formal/007/TypedTMDPlan/Core.lean"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "b7bd6edce2860a8dd2d3f0cbc1f005b55f72445432bebd4a7539461eee93c18f"
     },
     "formal/007/TypedTMDPlan/Examples.lean": {
-      "origin": "working-source",
-      "sha256": "fb203760aa7d82366e870f5470356c107ed09fa32dd51d6d5d578c43fecc7607",
-      "transformation": "byte-identical",
-      "working_path": "formal/007/TypedTMDPlan/Examples.lean"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "fb203760aa7d82366e870f5470356c107ed09fa32dd51d6d5d578c43fecc7607"
     },
     "formal/007/lake-manifest.json": {
-      "origin": "working-source",
-      "sha256": "49cd979d8fe92b1014737bc04a205b258757f01ac75c7187dd35d638c6ef780e",
-      "transformation": "byte-identical",
-      "working_path": "formal/007/lake-manifest.json"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "49cd979d8fe92b1014737bc04a205b258757f01ac75c7187dd35d638c6ef780e"
     },
     "formal/007/lakefile.toml": {
-      "origin": "working-source",
-      "sha256": "1b70059a81ee691526ab746cec63a1ec98be234650d800f6c41b649a575e2369",
-      "transformation": "byte-identical",
-      "working_path": "formal/007/lakefile.toml"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "1b70059a81ee691526ab746cec63a1ec98be234650d800f6c41b649a575e2369"
     },
     "formal/007/lean-toolchain": {
-      "origin": "working-source",
-      "sha256": "d24fed434d3b13adfaab57724a0a7f270ea8bf1c818b5ae5cf25cbce24dd685c",
-      "transformation": "byte-identical",
-      "working_path": "formal/007/lean-toolchain"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "d24fed434d3b13adfaab57724a0a7f270ea8bf1c818b5ae5cf25cbce24dd685c"
     },
     "lean/README.md": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "086f8e6528eb308c1d86248a76d3daff5643912f388947f3d49f1f13a838dd3c"
     },
     "lean/TypedTMDSeed.lean": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "35d7e1b0153a083b576b8a7503fd8a8ae90d8c358c2aa352a9d96194a3c17358"
     },
     "lean/VERIFICATION.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "c3f2b71352e28f7f189d155c9e5b99e03338f62872d6dc29ae75557355cb6425"
     },
     "lean/lake-manifest.json": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "a3d4f53d6d4bd5120846868587886f4481ad0ee551d986d8ab9acc6bdc9f7da0"
     },
     "lean/lakefile.toml": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "6a62d0eeec9348e859101721ea8365cefa28a475fbeb4a7bc48ad085eb6e48a1"
     },
     "lean/lean-toolchain": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "d24fed434d3b13adfaab57724a0a7f270ea8bf1c818b5ae5cf25cbce24dd685c"
     },
     "pyproject.toml": {
       "origin": "working-source",
-      "sha256": "232c4d75ccad03339bd6c2b084833b5939fb1a0d20f070b681cd70d369a16fc3",
+      "sha256": "6a04e354801f8cc56f8b3967aeced5e83c61aa45f051a53bec654bade8265b2a",
       "transformation": "byte-identical",
       "working_path": "pyproject.toml"
     },
     "requirements-build.txt": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "ba5351e67b29e50dad2553a5edeccf14bead5a74fab704c25205e27e5a575ef5"
     },
     "requirements-numerics.txt": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "0b3c348b3f0a3786974ec92a77449114d9f02366b4e5991a016f6be327d9c609"
     },
     "requirements-plots.txt": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "209369ec796c86a9ac6671ab3db791a2b1ed5e727c4782eb9bd9600132561aa0"
+    },
+    "sample_output/README.md": {
+      "origin": "working-source",
+      "sha256": "011bbd6eda1877d0b0a7e0baa9e97985561da7bae5e0cf1a5d8069486106162a",
+      "transformation": "byte-identical",
+      "working_path": "sample_output/README.md"
+    },
+    "sample_output/cache_and_composition.json": {
+      "origin": "working-source",
+      "sha256": "cb384589d28dadf1380520ac9634c4ad411d1575f08d17baf57f8f1dbf9737b2",
+      "transformation": "byte-identical",
+      "working_path": "sample_output/cache_and_composition.json"
+    },
+    "sample_output/closure.json": {
+      "origin": "working-source",
+      "sha256": "007850e26874c76ffd52eae455fcf8a0d3114aa511bf22ae706cce6c61990fef",
+      "transformation": "byte-identical",
+      "working_path": "sample_output/closure.json"
     },
     "scripts/build_lhapdf_006.py": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "4b3e49f830bd0704c61c6abbde638d39efe6812390176069a1a32b8f65f2fbef"
     },
     "scripts/check_formal.py": {
-      "origin": "working-source",
-      "sha256": "7a492a729e2e8d2916b33335d9e98fbc74f59ebcce13f6826f5909088fbbde21",
-      "transformation": "byte-identical",
-      "working_path": "scripts/check_formal.py"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "7a492a729e2e8d2916b33335d9e98fbc74f59ebcce13f6826f5909088fbbde21"
     },
     "scripts/check_formal_007.py": {
-      "origin": "working-source",
-      "sha256": "2b2c49e061e086334a5730587ceb6e804d502ae1fe9142d5a2e16aae32132ac1",
-      "transformation": "byte-identical",
-      "working_path": "scripts/check_formal_007.py"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "2b2c49e061e086334a5730587ceb6e804d502ae1fe9142d5a2e16aae32132ac1"
     },
     "scripts/external_campaign_006.py": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "3338467fb6ce2a86bc89ce56856f26eb0fc89c25e6b7fc81f326612f552b98b9"
     },
     "scripts/plot_external_006.py": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "6c5f41b01ca3ee34f2ae4077cb90cad93fdccdd1b5f58e37bb9044f735c6a1a1"
     },
     "scripts/prepare_external_006.py": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "8781e288cd92b6868a92bdaee8557364acb77afb124f1363e453575a4aa5b69b"
     },
     "scripts/replay_coverage.py": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "a937189a9fae04e273f00d4e87d6b02ddbd600cf5450580e9878d697e943f8b3"
     },
     "scripts/replay_finite_plans.py": {
-      "origin": "working-source",
-      "sha256": "ed22bcce37788d7bdda0910cef4f72c5d0ce020fa2daf537e02fa330d6cce011",
-      "transformation": "byte-identical",
-      "working_path": "scripts/replay_finite_plans.py"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "ed22bcce37788d7bdda0910cef4f72c5d0ce020fa2daf537e02fa330d6cce011"
     },
     "scripts/run_external_006.py": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "e5753116f4ad1688e1d51259573777bf05aa31185bba9ff07542f26877897608"
     },
     "scripts/run_formal_007.py": {
-      "origin": "working-source",
-      "sha256": "23358597832fbd0077ae60c175f30b9ab2c981523626e2d4f23a8c0312c58b70",
-      "transformation": "byte-identical",
-      "working_path": "scripts/run_formal_007.py"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "23358597832fbd0077ae60c175f30b9ab2c981523626e2d4f23a8c0312c58b70"
     },
     "scripts/validate_external_points_006.py": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "10980b8621cb143cdb6810a47944a461a619ec30ff7337db531d4f1cbfca94dd"
     },
     "scripts/verify_external_replay_006.py": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "8ff3077a056033844515e8b04a15576f6b8cb2c52a0c25d509ecd6532bef7973"
     },
     "src/typed_tmd/__init__.py": {
       "origin": "working-source",
-      "sha256": "ee2d60259bd17aa0d789d8b749a22c2e317f332ffb3d7ccd7f561739c1c527f1",
+      "sha256": "8e8ff5cabc8dae52f75ab485b97c09d48e070cb2d3d556311eaa639a77938b73",
       "transformation": "byte-identical",
       "working_path": "src/typed_tmd/__init__.py"
     },
     "src/typed_tmd/algebra.py": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "56aceb9552986b79ecc53c02e5b9a4db2c77c540e8fdd0ad3bf237d172857970"
     },
     "src/typed_tmd/artemide_adapter.py": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "1eaa2a9a1e19c92418f017d1f0a677bdea0d6251c0d54d828a9e2d25c65a5820"
     },
     "src/typed_tmd/contracts.py": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "945526e6294e3b3d52548c9abf33f2e6a00dd7e2bd2177af84f2b8eaaddf3236"
     },
     "src/typed_tmd/expressions.py": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "17935d18cce3d03ae746448f4d2df44793d1ef61b36e7970d52ff1fb5f505c14"
     },
     "src/typed_tmd/extraction.py": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "a4a45f1ca912f1a49affe8b04bfb44ba546aafbbe9c485f58e515e3234ef89f7"
     },
     "src/typed_tmd/extraction_problem.py": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "ccc4d1004eaee0ac997db3d98797a09e78a206fa0574687e0d0d8bf191e1488b"
     },
     "src/typed_tmd/extraction_production.py": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "288da4de1a99770b5e9382b3fd8a283f504550995a6440105031cd3ffdcae18e"
     },
     "src/typed_tmd/extraction_reference.py": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "798b6daa973f0b9a87307cd0efbf9eea467c252879a13f5951c920a6d145a574"
     },
     "src/typed_tmd/finite_plan.py": {
-      "origin": "working-source",
-      "sha256": "ef2c1546634dcb175ca6d9b9a2d15cea5ecba2fba100e91b784f64eb55d56d1f",
-      "transformation": "byte-identical",
-      "working_path": "src/typed_tmd/finite_plan.py"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "ef2c1546634dcb175ca6d9b9a2d15cea5ecba2fba100e91b784f64eb55d56d1f"
     },
     "src/typed_tmd/finite_plan_bridge.py": {
-      "origin": "working-source",
-      "sha256": "de0664b9803479336e1aba22b8d062f7ab55326abbcdb3e28707bb077891ab7c",
-      "transformation": "byte-identical",
-      "working_path": "src/typed_tmd/finite_plan_bridge.py"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "de0664b9803479336e1aba22b8d062f7ab55326abbcdb3e28707bb077891ab7c"
     },
     "src/typed_tmd/fixtures.py": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "f69fbd99f6adf7cbaba02604cf02f43345d1597fde303ca225d56d28cd574d9f"
     },
     "src/typed_tmd/numerics.py": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "2dfe89e7cf5a790e71237ef26868d8fa0105d10159c9438d7ed3cdaf885ab41f"
     },
     "src/typed_tmd/observation_quadrature.py": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "7708ffd99ffc7b453260b7a8e8587746616b3f1fe1a71802c7a968ebc1c43f29"
     },
     "src/typed_tmd/observations.py": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "c54eafa056f835319904ae2ecab0ce71dbff2c3c7ae2509956e95254845ffe35"
     },
     "src/typed_tmd/provider_replay.py": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "f89337b9d1da5304455cd6809c7ba71e3c12dc7b62672dd04bc3dab211664f99"
     },
     "src/typed_tmd/providers.py": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "35c129355bf16abf6f2d57ac913c7d66597cc0244521fd4684ab9508f9b8f79c"
     },
     "src/typed_tmd/qcd_forward.py": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "fc3d21906be23b0124ef5e3911560835606c70b26ed36749b2ea327555333b80"
     },
     "src/typed_tmd/qcd_plan.py": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "9102b700d950eae241fd332a83e33ec6ae8cb662acd99c4ab4ecd0d38fb893c2"
     },
     "src/typed_tmd/qcd_reference.py": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "0f2bed38a711aff67a2565f41b48e763a0f498e3b6ba56124009c50912d99e17"
     },
     "tests/test_core.py": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "a218faac697e6569e4318b6273ea64db0a34afc1175dda41f7f08f8eb603ad54"
     },
     "tests/test_external_campaign.py": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "03046f2d8f37775a7426d4a3057b21988c6bc4ba00b71f9cfbd9d34cce05bc37"
     },
     "tests/test_extraction.py": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "752ffc0efb2bcf7d33558f76815fdc58db30ff34c6640894f02272c9d2da4d72"
     },
     "tests/test_extraction_problem.py": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "04c02ef5c0ec20698909c528ddd66e7e4a88b9fbd8c7d1e3859aa313e912f97a"
     },
     "tests/test_extraction_production.py": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "f4465a5fee40438d78f30e0ce1c6178ecea862fdfed64d2555ec9191eb392f52"
     },
     "tests/test_extraction_reference.py": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "3ea3c1dd4a81e211d0c94ab572ac8e8e45d9bd82e2ebdfaca1af562fea918b2b"
     },
     "tests/test_finite_plan.py": {
-      "origin": "working-source",
-      "sha256": "b2383d25f38f9c71ed6b3d78bc634d93266526aa01c736452048266f70943374",
-      "transformation": "byte-identical",
-      "working_path": "tests/test_finite_plan.py"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "b2383d25f38f9c71ed6b3d78bc634d93266526aa01c736452048266f70943374"
     },
     "tests/test_observations.py": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "1044e65e4469276dbdbd6d4ad0c361e50776ba35ef38c53de2348f692834d7e3"
     },
     "tests/test_package_metadata.py": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "e72b58c1abbf38187e97c88e26d92d3e47e6b4818a725b1186fdb24dc3140dbe"
     },
     "tests/test_public_formal.py": {
-      "origin": "working-source",
-      "sha256": "bb8b8d6263e37a1f6ea80c294eca628eefd08a5d1ed62eb188a6998338e2c387",
-      "transformation": "byte-identical",
-      "working_path": "tests/test_public_formal.py"
+      "origin": "public-parent",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+      "sha256": "bb8b8d6263e37a1f6ea80c294eca628eefd08a5d1ed62eb188a6998338e2c387"
     },
     "tests/test_qcd_bridge.py": {
       "origin": "public-parent",
-      "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
+      "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
       "sha256": "63228b43d33ccd3682ff4c2ef8b2b6f19b89e05d9ab3fac5c7afdea2a2f3ff38"
     }
   },
-  "public_parent_commit": "cca48d14aaf1e37b9e3887f1dcf285e47b2d0f74",
-  "schema": "typed-tmd/public-source-map/2",
-  "scope": "allowlisted source bytes only; private history is never imported"
+  "public_parent_commit": "7d15ac522a4a50bb833de78b11072ee00bb4c9ce",
+  "schema": "typed-tmd/public-source-map/3",
+  "scientific_baseline_commit": "a5142e7a342aa6b8fb109ca1d0c65d90130da9a7",
+  "scope": "Explicit allowlist from working source plus unchanged public-parent bytes; no private history",
+  "software_version": "0.4.1"
 }

@@ -2,7 +2,7 @@
 
 The active project is [`formal/007`](../../formal/007), pinned to Lean **4.21.0**,
 Std only, without mathlib. Its lake component version **0.1.0** is distinct from
-the software release **0.4.0**. The four theorem source files and three build
+the software release **0.4.1**. The four theorem source files and three build
 files are preserved byte for byte from the accepted formal implementation.
 The older [`lean/`](../../lean) project is a historical abstract seed; it does
 not supply the concrete checker guarantee below.

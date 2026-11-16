@@ -1,6 +1,6 @@
 # typed-TMD: typed observation maps for TMD calculations
 
-[![Python](https://img.shields.io/badge/python-3.11-blue)](https://www.python.org/) [![Core checks](https://github.com/zetanaut/typed-TMD/actions/workflows/core.yml/badge.svg?branch=main)](https://github.com/zetanaut/typed-TMD/actions/workflows/core.yml) [![External example](https://img.shields.io/badge/example-SV19%20Drell--Yan-blueviolet)](#scientific-scope) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23546800.svg)](https://doi.org/10.5281/zenodo.23546800)
+[![Python](https://img.shields.io/badge/python-3.11-blue)](https://www.python.org/) [![Core checks](https://github.com/zetanaut/typed-TMD/actions/workflows/core.yml/badge.svg?branch=main)](https://github.com/zetanaut/typed-TMD/actions/workflows/core.yml) [![External example](https://img.shields.io/badge/example-SV19%20Drell--Yan-blueviolet)](#scientific-scope) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23546799.svg)](https://doi.org/10.5281/zenodo.23546799)
 
 This repository provides **typed scientific contexts and observation maps**
 for reproducible TMD calculations. It keeps the observation measure, units,
@@ -44,7 +44,7 @@ Scientific and software documentation:
 
 | Layer | Status | Meaning |
 |---|---|---|
-| GitHub release | **Published; bounded results accepted** | v0.4.0 adds the concrete finite-plan implementation; v0.3.0 physics evidence is preserved. |
+| GitHub release | **v0.4.1; documentation and metadata update** | Preserves the finite-plan implementation added in v0.4.0 and the accepted v0.3.0 physics evidence. |
 | Scientific contexts and observation contracts | **Implemented** | Runtime checks retain observation meaning, model identity and parameter dependencies. |
 | External DY example | **Validated** | One pinned arTeMiDe v2.05/SV19 configuration, seven bins and one free native parameter. |
 | Midpoint/bin mismatch | **Rejected before fitting** | The invalid constructor makes zero backend and optimizer calls. |
@@ -261,18 +261,19 @@ checks, numerical comparisons and historical native evidence.
 
 ## Releases and citation
 
-[Release v0.4.0](https://github.com/zetanaut/typed-TMD/releases/tag/v0.4.0)
+[Release v0.4.1](https://github.com/zetanaut/typed-TMD/releases/tag/v0.4.1)
 contains the source archive, SHA-256 manifest and publication verification receipt.
 The [v0.3.0 release](https://github.com/zetanaut/typed-TMD/releases/tag/v0.3.0)
 and its native results remain unchanged.
-Cite the archived **v0.4.0** release with
-[doi:10.5281/zenodo.23546800](https://doi.org/10.5281/zenodo.23546800).
-The [Zenodo record](https://zenodo.org/records/23546800) preserves the three
-release assets byte-for-byte. Use [CITATION.cff](CITATION.cff) for citation
-metadata; the [concept DOI](https://doi.org/10.5281/zenodo.23546799) identifies
-the software across versions. The
-[release-status record](docs/RELEASE_STATUS.md) distinguishes the immutable
-tagged snapshot from later citation documentation on `main`.
+The [concept DOI: 10.5281/zenodo.23546799](https://doi.org/10.5281/zenodo.23546799)
+identifies the software across archived versions. [CITATION.cff](CITATION.cff)
+includes this stable DOI. For the paper, select the version-specific DOI from
+the corresponding Zenodo record or GitHub release notes to identify the exact
+software used. The [v0.4.0 archive](https://zenodo.org/records/23546800) and its
+three release assets remain unchanged. See the
+[release-status record](docs/RELEASE_STATUS.md),
+[v0.4.1 notes](docs/RELEASE_NOTES_0.4.1.md) and
+[sample output](sample_output/README.md).
 
 For the native calculation, cite the SV19 analysis by I. Scimemi and
 A. Vladimirov, [JHEP 06 (2020) 137](https://doi.org/10.1007/JHEP06%282020%29137).
